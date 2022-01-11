@@ -52,6 +52,5 @@ module SwaggerClient
 
       msg
     end
-
   end
 end
