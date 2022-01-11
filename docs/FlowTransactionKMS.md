@@ -1,0 +1,12 @@
+# SwaggerClient::FlowTransactionKMS
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**account** | **String** | Blockchain account to send from | 
+**currency** | **String** | Type of asset to send | 
+**to** | **String** | Blockchain address to send assets | [optional] 
+**amount** | **String** | Amount to be sent, in Flow. | 
+**signature_id** | **String** | Identifier of the secret associated in signing application. Secret, or signature Id must be present. | 
+**index** | [**BigDecimal**](BigDecimal.md) | If signatureId is mnemonic-based, this is the index to the specific address from that mnemonic. | [optional] 
+

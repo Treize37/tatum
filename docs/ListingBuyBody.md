@@ -1,0 +1,6 @@
+# SwaggerClient::ListingBuyBody
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+
