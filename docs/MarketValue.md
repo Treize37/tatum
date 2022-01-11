@@ -1,4 +1,4 @@
-# SwaggerClient::MarketValue
+# Tatum::MarketValue
 
 ## Properties
 Name | Type | Description | Notes

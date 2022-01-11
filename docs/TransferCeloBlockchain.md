@@ -1,4 +1,4 @@
-# SwaggerClient::TransferCeloBlockchain
+# Tatum::TransferCeloBlockchain
 
 ## Properties
 Name | Type | Description | Notes

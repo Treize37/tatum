@@ -1,4 +1,4 @@
-# SwaggerClient::AdaInfoTipEpoch
+# Tatum::AdaInfoTipEpoch
 
 ## Properties
 Name | Type | Description | Notes

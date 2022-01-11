@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainFungibleTokenApi
+# Tatum::BlockchainFungibleTokenApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -22,17 +22,17 @@ Approve spending of ERC20
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
-body = SwaggerClient::TokenApproveBody.new # TokenApproveBody | 
+api_instance = Tatum::BlockchainFungibleTokenApi.new
+body = Tatum::TokenApproveBody.new # TokenApproveBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -41,7 +41,7 @@ begin
   #Approve spending of ERC20
   result = api_instance.erc20_approve(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_approve: #{e}"
 end
 ```
@@ -78,17 +78,17 @@ Burn ERC20
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
-body = SwaggerClient::TokenBurnBody.new # TokenBurnBody | 
+api_instance = Tatum::BlockchainFungibleTokenApi.new
+body = Tatum::TokenBurnBody.new # TokenBurnBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -97,7 +97,7 @@ begin
   #Burn ERC20
   result = api_instance.erc20_burn(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_burn: #{e}"
 end
 ```
@@ -134,17 +134,17 @@ Deploy ERC20 Smart Contract.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
-body = SwaggerClient::TokenDeployBody.new # TokenDeployBody | 
+api_instance = Tatum::BlockchainFungibleTokenApi.new
+body = Tatum::TokenDeployBody.new # TokenDeployBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -153,7 +153,7 @@ begin
   #Deploy ERC20 Smart Contract.
   result = api_instance.erc20_deploy(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_deploy: #{e}"
 end
 ```
@@ -190,16 +190,16 @@ Get ERC20 Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
+api_instance = Tatum::BlockchainFungibleTokenApi.new
 chain = 'chain_example' # String | Network name
 address = 'address_example' # String | Account address
 contract_address = 'contract_address_example' # String | ERC20 contract address
@@ -211,7 +211,7 @@ begin
   #Get ERC20 Account balance
   result = api_instance.erc20_get_balance(chain, address, contract_address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_get_balance: #{e}"
 end
 ```
@@ -250,24 +250,24 @@ Get ERC20 transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
+api_instance = Tatum::BlockchainFungibleTokenApi.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 token_address = 'token_address_example' # String | Token address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
   sort: 'DESC' # String | Sorting of the data. ASC - oldest first, DESC - newest first.
 }
 
@@ -275,7 +275,7 @@ begin
   #Get ERC20 transactions by address
   result = api_instance.erc20_get_transaction_by_address(chain, address, token_address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_get_transaction_by_address: #{e}"
 end
 ```
@@ -318,17 +318,17 @@ Mint ERC20
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
-body = SwaggerClient::TokenMintBody.new # TokenMintBody | 
+api_instance = Tatum::BlockchainFungibleTokenApi.new
+body = Tatum::TokenMintBody.new # TokenMintBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -337,7 +337,7 @@ begin
   #Mint ERC20
   result = api_instance.erc20_mint(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_mint: #{e}"
 end
 ```
@@ -374,17 +374,17 @@ Transfer ERC20 Token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFungibleTokenApi.new
-body = SwaggerClient::TokenTransactionBody.new # TokenTransactionBody | 
+api_instance = Tatum::BlockchainFungibleTokenApi.new
+body = Tatum::TokenTransactionBody.new # TokenTransactionBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -393,7 +393,7 @@ begin
   #Transfer ERC20 Token
   result = api_instance.erc20_transfer(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFungibleTokenApi->erc20_transfer: #{e}"
 end
 ```

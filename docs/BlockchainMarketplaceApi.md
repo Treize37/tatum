@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainMarketplaceApi
+# Tatum::BlockchainMarketplaceApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -37,24 +37,24 @@ Approve NFT token spending for the Auction / Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionApproveBody.new # AuctionApproveBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionApproveBody.new # AuctionApproveBody | 
 
 
 begin
   #Approve NFT token spending for the Auction / Marketplace
   result = api_instance.approve_nft_auction_spending(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->approve_nft_auction_spending: #{e}"
 end
 ```
@@ -90,24 +90,24 @@ Bid for asset on the NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionBidBody.new # AuctionBidBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionBidBody.new # AuctionBidBody | 
 
 
 begin
   #Bid for asset on the NFT Auction
   result = api_instance.bid_on_auction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->bid_on_auction: #{e}"
 end
 ```
@@ -143,24 +143,24 @@ Buy asset on the NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::ListingBuyBody.new # ListingBuyBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::ListingBuyBody.new # ListingBuyBody | 
 
 
 begin
   #Buy asset on the NFT Marketplace
   result = api_instance.buy_asset_on_marketplace(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->buy_asset_on_marketplace: #{e}"
 end
 ```
@@ -196,24 +196,24 @@ Cancel auction of the asset on the NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionCancelBody.new # AuctionCancelBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionCancelBody.new # AuctionCancelBody | 
 
 
 begin
   #Cancel auction of the asset on the NFT Auction
   result = api_instance.cancel_auction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->cancel_auction: #{e}"
 end
 ```
@@ -249,24 +249,24 @@ Cancel selling of the asset on the NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::ListingCancelBody.new # ListingCancelBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::ListingCancelBody.new # ListingCancelBody | 
 
 
 begin
   #Cancel selling of the asset on the NFT Marketplace
   result = api_instance.cancel_sell_marketplace_listing(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->cancel_sell_marketplace_listing: #{e}"
 end
 ```
@@ -302,24 +302,24 @@ Sell asset on the NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionSellBody.new # AuctionSellBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionSellBody.new # AuctionSellBody | 
 
 
 begin
   #Sell asset on the NFT Auction
   result = api_instance.create_auction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->create_auction: #{e}"
 end
 ```
@@ -355,24 +355,24 @@ Create NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::BlockchainAuctionBody.new # BlockchainAuctionBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::BlockchainAuctionBody.new # BlockchainAuctionBody | 
 
 
 begin
   #Create NFT Auction
   result = api_instance.generate_auction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->generate_auction: #{e}"
 end
 ```
@@ -408,24 +408,24 @@ Create NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::MarketplaceListingBody.new # MarketplaceListingBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::MarketplaceListingBody.new # MarketplaceListingBody | 
 
 
 begin
   #Create NFT Marketplace
   result = api_instance.generate_marketplace(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->generate_marketplace: #{e}"
 end
 ```
@@ -461,16 +461,16 @@ Get auction details from the NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 id = 'id_example' # String | Auction ID
@@ -480,7 +480,7 @@ begin
   #Get auction details from the NFT Auction
   result = api_instance.get_auction(chain, contract_address, id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_auction: #{e}"
 end
 ```
@@ -518,16 +518,16 @@ Estimate block height based on time
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 date = 'date_example' # String | Date and time in ISO 8601 string
 
@@ -536,7 +536,7 @@ begin
   #Estimate block height based on time
   result = api_instance.get_auction_estimated_time(chain, date)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_auction_estimated_time: #{e}"
 end
 ```
@@ -573,16 +573,16 @@ Get NFT Auction fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 
@@ -591,7 +591,7 @@ begin
   #Get NFT Auction fee
   result = api_instance.get_auction_fee(chain, contract_address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_auction_fee: #{e}"
 end
 ```
@@ -628,16 +628,16 @@ Get NFT Auction fee recipient
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 
@@ -646,7 +646,7 @@ begin
   #Get NFT Auction fee recipient
   result = api_instance.get_auction_fee_recipient(chain, contract_address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_auction_fee_recipient: #{e}"
 end
 ```
@@ -683,16 +683,16 @@ Get NFT Marketplace fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 
@@ -701,7 +701,7 @@ begin
   #Get NFT Marketplace fee
   result = api_instance.get_marketplace_fee(chain, contract_address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_marketplace_fee: #{e}"
 end
 ```
@@ -738,16 +738,16 @@ Get NFT Marketplace fee recipient
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 
@@ -756,7 +756,7 @@ begin
   #Get NFT Marketplace fee recipient
   result = api_instance.get_marketplace_fee_recipient(chain, contract_address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_marketplace_fee_recipient: #{e}"
 end
 ```
@@ -793,16 +793,16 @@ Get listing from the NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 id = 'id_example' # String | Listing ID
@@ -812,7 +812,7 @@ begin
   #Get listing from the NFT Marketplace
   result = api_instance.get_marketplace_listing(chain, contract_address, id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_marketplace_listing: #{e}"
 end
 ```
@@ -850,16 +850,16 @@ Get open/cancelled/sold listings from the NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
+api_instance = Tatum::BlockchainMarketplaceApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Contract address
 type = 'type_example' # String | Listing ID
@@ -869,7 +869,7 @@ begin
   #Get open/cancelled/sold listings from the NFT Marketplace
   result = api_instance.get_marketplace_listings(chain, contract_address, type)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->get_marketplace_listings: #{e}"
 end
 ```
@@ -907,24 +907,24 @@ Sell asset on the NFT Marketplace
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::ListingSellBody.new # ListingSellBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::ListingSellBody.new # ListingSellBody | 
 
 
 begin
   #Sell asset on the NFT Marketplace
   result = api_instance.sell_asset_on_marketplace(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->sell_asset_on_marketplace: #{e}"
 end
 ```
@@ -960,24 +960,24 @@ Settle auction of the asset on the NFT Auction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionSettleBody.new # AuctionSettleBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionSettleBody.new # AuctionSettleBody | 
 
 
 begin
   #Settle auction of the asset on the NFT Auction
   result = api_instance.settle_auction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->settle_auction: #{e}"
 end
 ```
@@ -1013,24 +1013,24 @@ Update NFT Auction fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionFeeBody.new # AuctionFeeBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionFeeBody.new # AuctionFeeBody | 
 
 
 begin
   #Update NFT Auction fee
   result = api_instance.update_auction_fee(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->update_auction_fee: #{e}"
 end
 ```
@@ -1066,24 +1066,24 @@ Update NFT Auction fee recipient
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::AuctionRecipientBody.new # AuctionRecipientBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::AuctionRecipientBody.new # AuctionRecipientBody | 
 
 
 begin
   #Update NFT Auction fee recipient
   result = api_instance.update_auction_fee_recipient(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->update_auction_fee_recipient: #{e}"
 end
 ```
@@ -1119,24 +1119,24 @@ Update NFT Marketplace fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::ListingFeeBody.new # ListingFeeBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::ListingFeeBody.new # ListingFeeBody | 
 
 
 begin
   #Update NFT Marketplace fee
   result = api_instance.update_fee(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->update_fee: #{e}"
 end
 ```
@@ -1172,24 +1172,24 @@ Update NFT Marketplace fee recipient
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMarketplaceApi.new
-body = SwaggerClient::ListingRecipientBody.new # ListingRecipientBody | 
+api_instance = Tatum::BlockchainMarketplaceApi.new
+body = Tatum::ListingRecipientBody.new # ListingRecipientBody | 
 
 
 begin
   #Update NFT Marketplace fee recipient
   result = api_instance.update_fee_recipient(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMarketplaceApi->update_fee_recipient: #{e}"
 end
 ```

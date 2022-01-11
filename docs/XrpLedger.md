@@ -1,4 +1,4 @@
-# SwaggerClient::XrpLedger
+# Tatum::XrpLedger
 
 ## Properties
 Name | Type | Description | Notes

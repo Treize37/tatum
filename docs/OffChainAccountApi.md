@@ -1,4 +1,4 @@
-# SwaggerClient::OffChainAccountApi
+# Tatum::OffChainAccountApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -21,27 +21,27 @@ Check, if deposit address is assigned
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
+api_instance = Tatum::OffChainAccountApi.new
 currency = 'currency_example' # String | Currency
 address = 'address_example' # String | Blockchain Address to check
 opts = { 
-  index: SwaggerClient::BigDecimal.new # BigDecimal | In case of XLM or XRP, this is a memo or DestinationTag to search for.
+  index: Tatum::BigDecimal.new # BigDecimal | In case of XLM or XRP, this is a memo or DestinationTag to search for.
 }
 
 begin
   #Check, if deposit address is assigned
   result = api_instance.address_exists(currency, address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->address_exists: #{e}"
 end
 ```
@@ -79,27 +79,27 @@ Assign address for account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
+api_instance = Tatum::OffChainAccountApi.new
 id = 'id_example' # String | Account ID
 address = 'address_example' # String | Blockchain address
 opts = { 
-  index: SwaggerClient::BigDecimal.new # BigDecimal | Destination tag or memo attribute for XRP or XLM addresses
+  index: Tatum::BigDecimal.new # BigDecimal | Destination tag or memo attribute for XRP or XLM addresses
 }
 
 begin
   #Assign address for account
   result = api_instance.assign_address(id, address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->assign_address: #{e}"
 end
 ```
@@ -137,26 +137,26 @@ Create new deposit address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
+api_instance = Tatum::OffChainAccountApi.new
 id = 'id_example' # String | Account ID
 opts = { 
-  index: SwaggerClient::BigDecimal.new # BigDecimal | <p>Derivation path index for specific address. If not present, last used index for given xpub of account + 1 is used. We recommend not to pass this value manually, since when some of the indexes are skipped, it is not possible to use them lately to generate address from it.</p>
+  index: Tatum::BigDecimal.new # BigDecimal | <p>Derivation path index for specific address. If not present, last used index for given xpub of account + 1 is used. We recommend not to pass this value manually, since when some of the indexes are skipped, it is not possible to use them lately to generate address from it.</p>
 }
 
 begin
   #Create new deposit address
   result = api_instance.generate_deposit_address(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->generate_deposit_address: #{e}"
 end
 ```
@@ -193,24 +193,24 @@ Create new deposit addresses in a batch call
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
-body = SwaggerClient::OffchainAddresses.new # OffchainAddresses | 
+api_instance = Tatum::OffChainAccountApi.new
+body = Tatum::OffchainAddresses.new # OffchainAddresses | 
 
 
 begin
   #Create new deposit addresses in a batch call
   result = api_instance.generate_deposit_addresses_batch(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->generate_deposit_addresses_batch: #{e}"
 end
 ```
@@ -246,16 +246,16 @@ Get all deposit addresses for account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
+api_instance = Tatum::OffChainAccountApi.new
 id = 'id_example' # String | Account ID
 
 
@@ -263,7 +263,7 @@ begin
   #Get all deposit addresses for account
   result = api_instance.get_all_deposit_addresses(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->get_all_deposit_addresses: #{e}"
 end
 ```
@@ -299,26 +299,26 @@ Remove address for account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainAccountApi.new
+api_instance = Tatum::OffChainAccountApi.new
 id = 'id_example' # String | Account ID
 address = 'address_example' # String | Blockchain address
 opts = { 
-  index: SwaggerClient::BigDecimal.new # BigDecimal | Destination tag or memo attribute for XRP or XLM addresses
+  index: Tatum::BigDecimal.new # BigDecimal | Destination tag or memo attribute for XRP or XLM addresses
 }
 
 begin
   #Remove address for account
   api_instance.remove_address(id, address, opts)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainAccountApi->remove_address: #{e}"
 end
 ```

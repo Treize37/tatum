@@ -1,4 +1,4 @@
-# SwaggerClient::ChainTransferCeloErc20TokenKMS
+# Tatum::ChainTransferCeloErc20TokenKMS
 
 ## Properties
 Name | Type | Description | Notes

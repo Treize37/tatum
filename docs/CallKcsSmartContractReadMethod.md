@@ -1,4 +1,4 @@
-# SwaggerClient::CallKcsSmartContractReadMethod
+# Tatum::CallKcsSmartContractReadMethod
 
 ## Properties
 Name | Type | Description | Notes

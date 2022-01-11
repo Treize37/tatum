@@ -1,4 +1,4 @@
-# SwaggerClient::Error403XdcMnemonicPrivateKey
+# Tatum::Error403XdcMnemonicPrivateKey
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::OffChainBlockchainApi
+# Tatum::OffChainBlockchainApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -57,24 +57,24 @@ Send ADA from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::AdaTransferBody.new # AdaTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::AdaTransferBody.new # AdaTransferBody | 
 
 
 begin
   #Send ADA from Tatum ledger to blockchain
   result = api_instance.ada_transfer_offchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->ada_transfer_offchain: #{e}"
 end
 ```
@@ -110,24 +110,24 @@ Deploy Algo ERC20 to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20DeployBody4.new # Erc20DeployBody4 | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20DeployBody4.new # Erc20DeployBody4 | 
 
 
 begin
   #Deploy Algo ERC20 to Blockchain and Ledger
   result = api_instance.algo_deploy_erc20_ledger(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->algo_deploy_erc20_ledger: #{e}"
 end
 ```
@@ -163,24 +163,24 @@ Send ALGO or Erc20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::AlgorandTransferBody.new # AlgorandTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::AlgorandTransferBody.new # AlgorandTransferBody | 
 
 
 begin
   #Send ALGO or Erc20 from Tatum ledger to blockchain
   result = api_instance.algo_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->algo_transfer: #{e}"
 end
 ```
@@ -216,24 +216,24 @@ Send Bitcoin Cash from Tatum account to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::BcashTransferBody.new # BcashTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::BcashTransferBody.new # BcashTransferBody | 
 
 
 begin
   #Send Bitcoin Cash from Tatum account to address
   result = api_instance.bch_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->bch_transfer: #{e}"
 end
 ```
@@ -269,23 +269,23 @@ Create BNB based Asset
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::CreateBnbAsset.new # CreateBnbAsset | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::CreateBnbAsset.new # CreateBnbAsset | 
 
 
 begin
   #Create BNB based Asset
   api_instance.bnb_asset_offchain(body)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->bnb_asset_offchain: #{e}"
 end
 ```
@@ -321,24 +321,24 @@ Send BNB from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::BnbTransferBody.new # BnbTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::BnbTransferBody.new # BnbTransferBody | 
 
 
 begin
   #Send BNB from Tatum ledger to blockchain
   result = api_instance.bnb_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->bnb_transfer: #{e}"
 end
 ```
@@ -374,24 +374,24 @@ Deploy BSC BEP20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Bep20DeployBody.new # Bep20DeployBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Bep20DeployBody.new # Bep20DeployBody | 
 
 
 begin
   #Deploy BSC BEP20 Smart Contract to Blockchain and Ledger
   result = api_instance.bsc_deploy_bep20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->bsc_deploy_bep20: #{e}"
 end
 ```
@@ -427,24 +427,24 @@ Send BSC or BEP20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::BscTransferBody.new # BscTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::BscTransferBody.new # BscTransferBody | 
 
 
 begin
   #Send BSC or BEP20 from Tatum ledger to blockchain
   result = api_instance.bsc_or_bep_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->bsc_or_bep_transfer: #{e}"
 end
 ```
@@ -480,24 +480,24 @@ Send Bitcoin from Tatum account to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::BitcoinTransferBody.new # BitcoinTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::BitcoinTransferBody.new # BitcoinTransferBody | 
 
 
 begin
   #Send Bitcoin from Tatum account to address
   result = api_instance.btc_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->btc_transfer: #{e}"
 end
 ```
@@ -533,24 +533,24 @@ Deploy Celo ERC-20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20DeployBody2.new # Erc20DeployBody2 | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20DeployBody2.new # Erc20DeployBody2 | 
 
 
 begin
   #Deploy Celo ERC-20 Smart Contract to Blockchain and Ledger
   result = api_instance.celo_deploy_erc20_ledger(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->celo_deploy_erc20_ledger: #{e}"
 end
 ```
@@ -586,24 +586,24 @@ Send Celo, cUSD, cEUR or ERC-20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::CeloTransferBody.new # CeloTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::CeloTransferBody.new # CeloTransferBody | 
 
 
 begin
   #Send Celo, cUSD, cEUR or ERC-20 from Tatum ledger to blockchain
   result = api_instance.celo_or_erc20_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->celo_or_erc20_transfer: #{e}"
 end
 ```
@@ -639,24 +639,24 @@ Register new BEP20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::BscBep20Body.new # BscBep20Body | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::BscBep20Body.new # BscBep20Body | 
 
 
 begin
   #Register new BEP20 token in the ledger
   result = api_instance.create_bep20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_bep20: #{e}"
 end
 ```
@@ -692,24 +692,24 @@ Register new Celo ERC-20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::CeloErc20Body.new # CeloErc20Body | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::CeloErc20Body.new # CeloErc20Body | 
 
 
 begin
   #Register new Celo ERC-20 token in the ledger
   result = api_instance.create_celo_erc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_celo_erc20: #{e}"
 end
 ```
@@ -745,24 +745,24 @@ Register new ERC20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::EthereumErc20Body.new # EthereumErc20Body | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::EthereumErc20Body.new # EthereumErc20Body | 
 
 
 begin
   #Register new ERC20 token in the ledger
   result = api_instance.create_erc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_erc20: #{e}"
 end
 ```
@@ -798,24 +798,24 @@ Register new ONE HRM20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::OneHrm20Body.new # OneHrm20Body | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::OneHrm20Body.new # OneHrm20Body | 
 
 
 begin
   #Register new ONE HRM20 token in the ledger
   result = api_instance.create_hrm20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_hrm20: #{e}"
 end
 ```
@@ -851,24 +851,24 @@ Register new TRC-10/20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Trc.new # Trc | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Trc.new # Trc | 
 
 
 begin
   #Register new TRC-10/20 token in the ledger
   result = api_instance.create_trc(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_trc: #{e}"
 end
 ```
@@ -904,24 +904,24 @@ Register new XDC ERC20 token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::XdcErc20Body.new # XdcErc20Body | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::XdcErc20Body.new # XdcErc20Body | 
 
 
 begin
   #Register new XDC ERC20 token in the ledger
   result = api_instance.create_xdc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->create_xdc20: #{e}"
 end
 ```
@@ -957,24 +957,24 @@ Send Dogecoin from Tatum account to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::DogecoinTransferBody.new # DogecoinTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::DogecoinTransferBody.new # DogecoinTransferBody | 
 
 
 begin
   #Send Dogecoin from Tatum account to address
   result = api_instance.doge_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->doge_transfer: #{e}"
 end
 ```
@@ -1010,24 +1010,24 @@ Send EGLD from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::EgldTransferBody.new # EgldTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::EgldTransferBody.new # EgldTransferBody | 
 
 
 begin
   #Send EGLD from Tatum ledger to blockchain
   result = api_instance.egld_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->egld_transfer: #{e}"
 end
 ```
@@ -1063,24 +1063,24 @@ Deploy Ethereum ERC20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20DeployBody.new # Erc20DeployBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20DeployBody.new # Erc20DeployBody | 
 
 
 begin
   #Deploy Ethereum ERC20 Smart Contract to Blockchain and Ledger
   result = api_instance.eth_deploy_erc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->eth_deploy_erc20: #{e}"
 end
 ```
@@ -1116,24 +1116,24 @@ Send Ethereum from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::EthereumTransferBody.new # EthereumTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::EthereumTransferBody.new # EthereumTransferBody | 
 
 
 begin
   #Send Ethereum from Tatum ledger to blockchain
   result = api_instance.eth_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->eth_transfer: #{e}"
 end
 ```
@@ -1169,24 +1169,24 @@ Transfer Ethereum ERC20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20TransferBody.new # Erc20TransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20TransferBody.new # Erc20TransferBody | 
 
 
 begin
   #Transfer Ethereum ERC20 from Tatum ledger to blockchain
   result = api_instance.eth_transfer_erc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->eth_transfer_erc20: #{e}"
 end
 ```
@@ -1222,24 +1222,24 @@ Send Flow or FUSD from Tatum account to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::FlowTransferBody.new # FlowTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::FlowTransferBody.new # FlowTransferBody | 
 
 
 begin
   #Send Flow or FUSD from Tatum account to address
   result = api_instance.flow_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->flow_transfer: #{e}"
 end
 ```
@@ -1275,24 +1275,24 @@ Deploy Kcs ERC20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20DeployBody3.new # Erc20DeployBody3 | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20DeployBody3.new # Erc20DeployBody3 | 
 
 
 begin
   #Deploy Kcs ERC20 Smart Contract to Blockchain and Ledger
   result = api_instance.kcs_deploy_erc20_ledger(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->kcs_deploy_erc20_ledger: #{e}"
 end
 ```
@@ -1328,24 +1328,24 @@ Send KCS from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::KcsTransferBody.new # KcsTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::KcsTransferBody.new # KcsTransferBody | 
 
 
 begin
   #Send KCS from Tatum ledger to blockchain
   result = api_instance.kcs_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->kcs_transfer: #{e}"
 end
 ```
@@ -1381,24 +1381,24 @@ Send Litecoin from Tatum account to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::LitecoinTransferBody.new # LitecoinTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::LitecoinTransferBody.new # LitecoinTransferBody | 
 
 
 begin
   #Send Litecoin from Tatum account to address
   result = api_instance.ltc_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->ltc_transfer: #{e}"
 end
 ```
@@ -1434,24 +1434,24 @@ Estimate ledger to blockchain transaction fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::OffchainEstimateFee.new # OffchainEstimateFee | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::OffchainEstimateFee.new # OffchainEstimateFee | 
 
 
 begin
   #Estimate ledger to blockchain transaction fee
   result = api_instance.offchain_estimate_fee(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->offchain_estimate_fee: #{e}"
 end
 ```
@@ -1487,26 +1487,26 @@ Deploy ONE HRM20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Hrm20DeployBody.new # Hrm20DeployBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Hrm20DeployBody.new # Hrm20DeployBody | 
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to operate on
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to operate on
 }
 
 begin
   #Deploy ONE HRM20 Smart Contract to Blockchain and Ledger
   result = api_instance.one_deploy_hrm20(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->one_deploy_hrm20: #{e}"
 end
 ```
@@ -1543,26 +1543,26 @@ Send ONE or HRM-20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::OneTransferBody.new # OneTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::OneTransferBody.new # OneTransferBody | 
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to operate on
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to operate on
 }
 
 begin
   #Send ONE or HRM-20 from Tatum ledger to blockchain
   result = api_instance.one_transfer(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->one_transfer: #{e}"
 end
 ```
@@ -1599,24 +1599,24 @@ Send MATIC from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::PolygonTransferBody.new # PolygonTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::PolygonTransferBody.new # PolygonTransferBody | 
 
 
 begin
   #Send MATIC from Tatum ledger to blockchain
   result = api_instance.polygon_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->polygon_transfer: #{e}"
 end
 ```
@@ -1652,17 +1652,17 @@ Register new token in the ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::TokenChainBody.new # TokenChainBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::TokenChainBody.new # TokenChainBody | 
 chain = 'chain_example' # String | Blockchain to work with
 
 
@@ -1670,7 +1670,7 @@ begin
   #Register new token in the ledger
   result = api_instance.register_erc20_token(bodychain)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->register_erc20_token: #{e}"
 end
 ```
@@ -1707,16 +1707,16 @@ Set Celo ERC-20 token contract address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
+api_instance = Tatum::OffChainBlockchainApi.new
 address = 'address_example' # String | ERC-20 contract address
 name = 'name_example' # String | ERC-20 symbol name.
 
@@ -1724,7 +1724,7 @@ name = 'name_example' # String | ERC-20 symbol name.
 begin
   #Set Celo ERC-20 token contract address
   api_instance.store_celo_erc20_address(address, name)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->store_celo_erc20_address: #{e}"
 end
 ```
@@ -1761,16 +1761,16 @@ Set ERC20/BEP20/HRM20/TRC20 token contract address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
+api_instance = Tatum::OffChainBlockchainApi.new
 address = 'address_example' # String | Contract address
 name = 'name_example' # String | Symbol name.
 
@@ -1778,7 +1778,7 @@ name = 'name_example' # String | Symbol name.
 begin
   #Set ERC20/BEP20/HRM20/TRC20 token contract address
   api_instance.store_token_address(address, name)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->store_token_address: #{e}"
 end
 ```
@@ -1815,16 +1815,16 @@ Set TRC token contract address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
+api_instance = Tatum::OffChainBlockchainApi.new
 address = 'address_example' # String | TRC-10 Token ID or TRC-20 contract address
 name = 'name_example' # String | TRC 10/20 symbol name.
 
@@ -1832,7 +1832,7 @@ name = 'name_example' # String | TRC 10/20 symbol name.
 begin
   #Set TRC token contract address
   api_instance.store_trc_address(address, name)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->store_trc_address: #{e}"
 end
 ```
@@ -1869,24 +1869,24 @@ Deploy Tron TRC-10/20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::TrcDeployBody.new # TrcDeployBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::TrcDeployBody.new # TrcDeployBody | 
 
 
 begin
   #Deploy Tron TRC-10/20 Smart Contract to Blockchain and Ledger
   result = api_instance.tron_deploy_trc(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->tron_deploy_trc: #{e}"
 end
 ```
@@ -1922,24 +1922,24 @@ Send Tron or TRC asset from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::TronTransferBody.new # TronTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::TronTransferBody.new # TronTransferBody | 
 
 
 begin
   #Send Tron or TRC asset from Tatum ledger to blockchain
   result = api_instance.tron_transfer_offchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->tron_transfer_offchain: #{e}"
 end
 ```
@@ -1975,24 +1975,24 @@ Deploy XDC ERC20 Smart Contract to Blockchain and Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::Erc20DeployBody1.new # Erc20DeployBody1 | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::Erc20DeployBody1.new # Erc20DeployBody1 | 
 
 
 begin
   #Deploy XDC ERC20 Smart Contract to Blockchain and Ledger
   result = api_instance.xdc_deploy_erc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xdc_deploy_erc20: #{e}"
 end
 ```
@@ -2028,24 +2028,24 @@ Send XDC or ERC-20 from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::XdcTransferBody.new # XdcTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::XdcTransferBody.new # XdcTransferBody | 
 
 
 begin
   #Send XDC or ERC-20 from Tatum ledger to blockchain
   result = api_instance.xdc_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xdc_transfer: #{e}"
 end
 ```
@@ -2081,23 +2081,23 @@ Create XLM based Asset
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::CreateXlmAsset.new # CreateXlmAsset | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::CreateXlmAsset.new # CreateXlmAsset | 
 
 
 begin
   #Create XLM based Asset
   api_instance.xlm_asset_offchain(body)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xlm_asset_offchain: #{e}"
 end
 ```
@@ -2133,24 +2133,24 @@ Send XLM / Asset from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::XlmTransferBody.new # XlmTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::XlmTransferBody.new # XlmTransferBody | 
 
 
 begin
   #Send XLM / Asset from Tatum ledger to blockchain
   result = api_instance.xlm_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xlm_transfer: #{e}"
 end
 ```
@@ -2186,23 +2186,23 @@ Create XRP based Asset
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::CreateXrpAsset.new # CreateXrpAsset | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::CreateXrpAsset.new # CreateXrpAsset | 
 
 
 begin
   #Create XRP based Asset
   api_instance.xrp_asset_offchain(body)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xrp_asset_offchain: #{e}"
 end
 ```
@@ -2238,24 +2238,24 @@ Send XRP from Tatum ledger to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainBlockchainApi.new
-body = SwaggerClient::XrpTransferBody.new # XrpTransferBody | 
+api_instance = Tatum::OffChainBlockchainApi.new
+body = Tatum::XrpTransferBody.new # XrpTransferBody | 
 
 
 begin
   #Send XRP from Tatum ledger to blockchain
   result = api_instance.xrp_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainBlockchainApi->xrp_transfer: #{e}"
 end
 ```

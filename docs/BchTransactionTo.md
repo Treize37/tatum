@@ -1,4 +1,4 @@
-# SwaggerClient::BchTransactionTo
+# Tatum::BchTransactionTo
 
 ## Properties
 Name | Type | Description | Notes

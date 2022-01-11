@@ -1,4 +1,4 @@
-# SwaggerClient::UnblockAmount
+# Tatum::UnblockAmount
 
 ## Properties
 Name | Type | Description | Notes

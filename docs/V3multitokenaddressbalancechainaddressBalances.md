@@ -1,4 +1,4 @@
-# SwaggerClient::V3multitokenaddressbalancechainaddressBalances
+# Tatum::V3multitokenaddressbalancechainaddressBalances
 
 ## Properties
 Name | Type | Description | Notes

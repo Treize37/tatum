@@ -1,4 +1,4 @@
-# SwaggerClient::TransferEgldBlockchainKMSFee
+# Tatum::TransferEgldBlockchainKMSFee
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaTransactionFromAddress
+# Tatum::ScryptaTransactionFromAddress
 
 ## Properties
 Name | Type | Description | Notes

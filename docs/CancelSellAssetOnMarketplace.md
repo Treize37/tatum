@@ -1,4 +1,4 @@
-# SwaggerClient::CancelSellAssetOnMarketplace
+# Tatum::CancelSellAssetOnMarketplace
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxNotFound
+# Tatum::Error403TxNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BcashTransactionBody
+# Tatum::BcashTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

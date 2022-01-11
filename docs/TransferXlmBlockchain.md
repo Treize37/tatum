@@ -1,4 +1,4 @@
-# SwaggerClient::TransferXlmBlockchain
+# Tatum::TransferXlmBlockchain
 
 ## Properties
 Name | Type | Description | Notes

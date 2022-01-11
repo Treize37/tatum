@@ -1,4 +1,4 @@
-# SwaggerClient::BurnNftKMS
+# Tatum::BurnNftKMS
 
 ## Properties
 Name | Type | Description | Notes

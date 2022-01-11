@@ -1,4 +1,4 @@
-# SwaggerClient::FlowEventPayloadValueFields
+# Tatum::FlowEventPayloadValueFields
 
 ## Properties
 Name | Type | Description | Notes

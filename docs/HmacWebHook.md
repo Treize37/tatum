@@ -1,4 +1,4 @@
-# SwaggerClient::HmacWebHook
+# Tatum::HmacWebHook
 
 ## Properties
 Name | Type | Description | Notes

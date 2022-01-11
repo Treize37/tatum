@@ -1,4 +1,4 @@
-# SwaggerClient::ListingRecipientBody
+# Tatum::ListingRecipientBody
 
 ## Properties
 Name | Type | Description | Notes

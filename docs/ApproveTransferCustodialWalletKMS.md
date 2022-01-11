@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveTransferCustodialWalletKMS
+# Tatum::ApproveTransferCustodialWalletKMS
 
 ## Properties
 Name | Type | Description | Notes

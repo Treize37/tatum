@@ -1,4 +1,4 @@
-# SwaggerClient::MintMultiTokenCelo
+# Tatum::MintMultiTokenCelo
 
 ## Properties
 Name | Type | Description | Notes

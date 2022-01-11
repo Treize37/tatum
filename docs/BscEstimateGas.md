@@ -1,4 +1,4 @@
-# SwaggerClient::BscEstimateGas
+# Tatum::BscEstimateGas
 
 ## Properties
 Name | Type | Description | Notes

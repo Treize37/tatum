@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AddressIndexUsed
+# Tatum::Error403AddressIndexUsed
 
 ## Properties
 Name | Type | Description | Notes

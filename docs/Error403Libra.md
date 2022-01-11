@@ -1,4 +1,4 @@
-# SwaggerClient::Error403Libra
+# Tatum::Error403Libra
 
 ## Properties
 Name | Type | Description | Notes

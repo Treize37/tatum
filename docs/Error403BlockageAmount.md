@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BlockageAmount
+# Tatum::Error403BlockageAmount
 
 ## Properties
 Name | Type | Description | Notes

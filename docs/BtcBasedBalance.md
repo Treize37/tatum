@@ -1,4 +1,4 @@
-# SwaggerClient::BtcBasedBalance
+# Tatum::BtcBasedBalance
 
 ## Properties
 Name | Type | Description | Notes

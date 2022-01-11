@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainXDCNetworkXinFinApi
+# Tatum::BlockchainXDCNetworkXinFinApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Invoke Smart Contract method
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
-body = SwaggerClient::XdcSmartcontractBody.new # XdcSmartcontractBody | 
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
+body = Tatum::XdcSmartcontractBody.new # XdcSmartcontractBody | 
 
 
 begin
   #Invoke Smart Contract method
   result = api_instance.xdc_blockchain_smart_contract_invocation(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_blockchain_smart_contract_invocation: #{e}"
 end
 ```
@@ -81,24 +81,24 @@ Send XDC / ERC20 from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
-body = SwaggerClient::XdcTransactionBody.new # XdcTransactionBody | 
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
+body = Tatum::XdcTransactionBody.new # XdcTransactionBody | 
 
 
 begin
   #Send XDC / ERC20 from account to account
   result = api_instance.xdc_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_blockchain_transfer: #{e}"
 end
 ```
@@ -134,24 +134,24 @@ Broadcast signed XDC transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed XDC transaction
   result = api_instance.xdc_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_broadcast: #{e}"
 end
 ```
@@ -187,24 +187,24 @@ Estimate XDC transaction fees
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
-body = SwaggerClient::XdcEstimateGas.new # XdcEstimateGas | 
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
+body = Tatum::XdcEstimateGas.new # XdcEstimateGas | 
 
 
 begin
   #Estimate XDC transaction fees
   result = api_instance.xdc_estimate_gas(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_estimate_gas: #{e}"
 end
 ```
@@ -240,25 +240,25 @@ Generate XDC account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate XDC account address from Extended public key
   result = api_instance.xdc_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_generate_address: #{e}"
 end
 ```
@@ -295,24 +295,24 @@ Generate XDC private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate XDC private key
   result = api_instance.xdc_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_generate_address_private_key: #{e}"
 end
 ```
@@ -348,16 +348,16 @@ Generate XDC wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -366,7 +366,7 @@ begin
   #Generate XDC wallet
   result = api_instance.xdc_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_generate_wallet: #{e}"
 end
 ```
@@ -402,16 +402,16 @@ Get XDC Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 address = 'address_example' # String | Account address
 
 
@@ -419,7 +419,7 @@ begin
   #Get XDC Account balance
   result = api_instance.xdc_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_get_balance: #{e}"
 end
 ```
@@ -455,16 +455,16 @@ Get XDC block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 hash = 'hash_example' # String | Block hash or block number
 
 
@@ -472,7 +472,7 @@ begin
   #Get XDC block by hash
   result = api_instance.xdc_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_get_block: #{e}"
 end
 ```
@@ -508,22 +508,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 
 begin
   #Get current block number
   result = api_instance.xdc_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_get_current_block: #{e}"
 end
 ```
@@ -556,16 +556,16 @@ Get XDC Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -573,7 +573,7 @@ begin
   #Get XDC Transaction
   result = api_instance.xdc_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_get_transaction: #{e}"
 end
 ```
@@ -609,16 +609,16 @@ Get count of outgoing XDC transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 address = 'address_example' # String | address
 
 
@@ -626,7 +626,7 @@ begin
   #Get count of outgoing XDC transactions
   result = api_instance.xdc_get_transaction_count(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_get_transaction_count: #{e}"
 end
 ```
@@ -662,9 +662,9 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainXDCNetworkXinFinApi.new
+api_instance = Tatum::BlockchainXDCNetworkXinFinApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
@@ -673,7 +673,7 @@ begin
   #Web3 HTTP driver
   result = api_instance.xdc_web3_driver(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXDCNetworkXinFinApi->xdc_web3_driver: #{e}"
 end
 ```

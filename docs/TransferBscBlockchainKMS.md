@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBscBlockchainKMS
+# Tatum::TransferBscBlockchainKMS
 
 ## Properties
 Name | Type | Description | Notes

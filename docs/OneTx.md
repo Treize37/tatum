@@ -1,4 +1,4 @@
-# SwaggerClient::OneTx
+# Tatum::OneTx
 
 ## Properties
 Name | Type | Description | Notes

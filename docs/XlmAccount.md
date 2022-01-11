@@ -1,4 +1,4 @@
-# SwaggerClient::XlmAccount
+# Tatum::XlmAccount
 
 ## Properties
 Name | Type | Description | Notes

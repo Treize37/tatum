@@ -1,4 +1,4 @@
-# SwaggerClient::CreateRecordFabric
+# Tatum::CreateRecordFabric
 
 ## Properties
 Name | Type | Description | Notes

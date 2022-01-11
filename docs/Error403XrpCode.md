@@ -1,4 +1,4 @@
-# SwaggerClient::Error403XrpCode
+# Tatum::Error403XrpCode
 
 ## Properties
 Name | Type | Description | Notes

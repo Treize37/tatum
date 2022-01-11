@@ -1,4 +1,4 @@
-# SwaggerClient::ListingCancelBody
+# Tatum::ListingCancelBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BchTxScriptSig
+# Tatum::BchTxScriptSig
 
 ## Properties
 Name | Type | Description | Notes

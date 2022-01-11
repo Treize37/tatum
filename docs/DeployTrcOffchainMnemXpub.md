@@ -1,4 +1,4 @@
-# SwaggerClient::DeployTrcOffchainMnemXpub
+# Tatum::DeployTrcOffchainMnemXpub
 
 ## Properties
 Name | Type | Description | Notes

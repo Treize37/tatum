@@ -1,4 +1,4 @@
-# SwaggerClient::Error401Invalid
+# Tatum::Error401Invalid
 
 ## Properties
 Name | Type | Description | Notes

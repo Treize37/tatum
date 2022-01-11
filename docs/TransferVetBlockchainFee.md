@@ -1,4 +1,4 @@
-# SwaggerClient::TransferVetBlockchainFee
+# Tatum::TransferVetBlockchainFee
 
 ## Properties
 Name | Type | Description | Notes

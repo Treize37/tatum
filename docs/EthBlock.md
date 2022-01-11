@@ -1,4 +1,4 @@
-# SwaggerClient::EthBlock
+# Tatum::EthBlock
 
 ## Properties
 Name | Type | Description | Notes

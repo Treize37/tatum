@@ -1,4 +1,4 @@
-# SwaggerClient::Error403ComplianceEth
+# Tatum::Error403ComplianceEth
 
 ## Properties
 Name | Type | Description | Notes

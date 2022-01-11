@@ -1,4 +1,4 @@
-# SwaggerClient::FlowAccountBody
+# Tatum::FlowAccountBody
 
 ## Properties
 Name | Type | Description | Notes

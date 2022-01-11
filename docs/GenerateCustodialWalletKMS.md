@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateCustodialWalletKMS
+# Tatum::GenerateCustodialWalletKMS
 
 ## Properties
 Name | Type | Description | Notes

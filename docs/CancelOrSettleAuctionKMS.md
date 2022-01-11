@@ -1,4 +1,4 @@
-# SwaggerClient::CancelOrSettleAuctionKMS
+# Tatum::CancelOrSettleAuctionKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonScBody
+# Tatum::Error403PolygonScBody
 
 ## Properties
 Name | Type | Description | Notes

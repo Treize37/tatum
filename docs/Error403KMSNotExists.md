@@ -1,4 +1,4 @@
-# SwaggerClient::Error403KMSNotExists
+# Tatum::Error403KMSNotExists
 
 ## Properties
 Name | Type | Description | Notes

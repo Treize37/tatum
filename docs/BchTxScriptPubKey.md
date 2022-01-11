@@ -1,4 +1,4 @@
-# SwaggerClient::BchTxScriptPubKey
+# Tatum::BchTxScriptPubKey
 
 ## Properties
 Name | Type | Description | Notes

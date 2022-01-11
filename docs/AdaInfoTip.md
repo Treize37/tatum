@@ -1,4 +1,4 @@
-# SwaggerClient::AdaInfoTip
+# Tatum::AdaInfoTip
 
 ## Properties
 Name | Type | Description | Notes

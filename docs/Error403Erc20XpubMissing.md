@@ -1,4 +1,4 @@
-# SwaggerClient::Error403Erc20XpubMissing
+# Tatum::Error403Erc20XpubMissing
 
 ## Properties
 Name | Type | Description | Notes

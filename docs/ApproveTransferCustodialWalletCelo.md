@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveTransferCustodialWalletCelo
+# Tatum::ApproveTransferCustodialWalletCelo
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403EgldBroadcast
+# Tatum::Error403EgldBroadcast
 
 ## Properties
 Name | Type | Description | Notes

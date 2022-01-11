@@ -1,4 +1,4 @@
-# SwaggerClient::WithdrawalResponse
+# Tatum::WithdrawalResponse
 
 ## Properties
 Name | Type | Description | Notes

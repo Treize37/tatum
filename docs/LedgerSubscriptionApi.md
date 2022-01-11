@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerSubscriptionApi
+# Tatum::LedgerSubscriptionApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -21,24 +21,24 @@ Create new subscription
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
-body = SwaggerClient::V3SubscriptionBody.new # V3SubscriptionBody | 
+api_instance = Tatum::LedgerSubscriptionApi.new
+body = Tatum::V3SubscriptionBody.new # V3SubscriptionBody | 
 
 
 begin
   #Create new subscription
   result = api_instance.create_subscription(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->create_subscription: #{e}"
 end
 ```
@@ -74,23 +74,23 @@ Cancel existing subscription
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
+api_instance = Tatum::LedgerSubscriptionApi.new
 id = 'id_example' # String | Subscription ID
 
 
 begin
   #Cancel existing subscription
   api_instance.delete_subscription(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->delete_subscription: #{e}"
 end
 ```
@@ -126,21 +126,21 @@ Disable HMAC webhook digest
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
+api_instance = Tatum::LedgerSubscriptionApi.new
 
 begin
   #Disable HMAC webhook digest
   api_instance.disable_web_hook_hmac
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->disable_web_hook_hmac: #{e}"
 end
 ```
@@ -173,23 +173,23 @@ Enable HMAC webhook digest
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
-body = SwaggerClient::HmacWebHook.new # HmacWebHook | 
+api_instance = Tatum::LedgerSubscriptionApi.new
+body = Tatum::HmacWebHook.new # HmacWebHook | 
 
 
 begin
   #Enable HMAC webhook digest
   api_instance.enable_web_hook_hmac(body)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->enable_web_hook_hmac: #{e}"
 end
 ```
@@ -225,16 +225,16 @@ Obtain report for subscription
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
+api_instance = Tatum::LedgerSubscriptionApi.new
 id = 'id_example' # String | Subscription ID
 
 
@@ -242,7 +242,7 @@ begin
   #Obtain report for subscription
   result = api_instance.get_subscription_report(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->get_subscription_report: #{e}"
 end
 ```
@@ -278,26 +278,26 @@ List all active subscriptions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerSubscriptionApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerSubscriptionApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 }
 
 begin
   #List all active subscriptions
   result = api_instance.get_subscriptions(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerSubscriptionApi->get_subscriptions: #{e}"
 end
 ```

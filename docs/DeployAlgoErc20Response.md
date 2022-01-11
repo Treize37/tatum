@@ -1,4 +1,4 @@
-# SwaggerClient::DeployAlgoErc20Response
+# Tatum::DeployAlgoErc20Response
 
 ## Properties
 Name | Type | Description | Notes

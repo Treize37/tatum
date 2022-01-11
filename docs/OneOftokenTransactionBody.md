@@ -1,4 +1,4 @@
-# SwaggerClient::OneOftokenTransactionBody
+# Tatum::OneOftokenTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

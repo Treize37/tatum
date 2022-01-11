@@ -1,4 +1,4 @@
-# SwaggerClient::TransferFlowPK
+# Tatum::TransferFlowPK
 
 ## Properties
 Name | Type | Description | Notes

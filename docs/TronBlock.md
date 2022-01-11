@@ -1,4 +1,4 @@
-# SwaggerClient::TronBlock
+# Tatum::TronBlock
 
 ## Properties
 Name | Type | Description | Notes

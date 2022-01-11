@@ -1,4 +1,4 @@
-# SwaggerClient::DeployNft
+# Tatum::DeployNft
 
 ## Properties
 Name | Type | Description | Notes

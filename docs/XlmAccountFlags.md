@@ -1,4 +1,4 @@
-# SwaggerClient::XlmAccountFlags
+# Tatum::XlmAccountFlags
 
 ## Properties
 Name | Type | Description | Notes

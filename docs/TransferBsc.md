@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBsc
+# Tatum::TransferBsc
 
 ## Properties
 Name | Type | Description | Notes

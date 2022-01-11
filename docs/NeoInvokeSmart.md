@@ -1,4 +1,4 @@
-# SwaggerClient::NeoInvokeSmart
+# Tatum::NeoInvokeSmart
 
 ## Properties
 Name | Type | Description | Notes

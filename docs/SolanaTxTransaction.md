@@ -1,4 +1,4 @@
-# SwaggerClient::SolanaTxTransaction
+# Tatum::SolanaTxTransaction
 
 ## Properties
 Name | Type | Description | Notes

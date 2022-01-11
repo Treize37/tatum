@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNftKMSCelo
+# Tatum::TransferNftKMSCelo
 
 ## Properties
 Name | Type | Description | Notes

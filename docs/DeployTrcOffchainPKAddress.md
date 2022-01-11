@@ -1,4 +1,4 @@
-# SwaggerClient::DeployTrcOffchainPKAddress
+# Tatum::DeployTrcOffchainPKAddress
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionTxInTheBlockAttr
+# Tatum::CreateSubscriptionTxInTheBlockAttr
 
 ## Properties
 Name | Type | Description | Notes

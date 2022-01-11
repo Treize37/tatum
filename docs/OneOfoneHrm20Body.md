@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfoneHrm20Body
+# Tatum::OneOfoneHrm20Body
 
 ## Properties
 Name | Type | Description | Notes

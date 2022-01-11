@@ -1,4 +1,4 @@
-# SwaggerClient::QtumWallet
+# Tatum::QtumWallet
 
 ## Properties
 Name | Type | Description | Notes

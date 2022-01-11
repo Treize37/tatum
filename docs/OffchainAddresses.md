@@ -1,4 +1,4 @@
-# SwaggerClient::OffchainAddresses
+# Tatum::OffchainAddresses
 
 ## Properties
 Name | Type | Description | Notes

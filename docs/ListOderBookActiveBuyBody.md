@@ -1,4 +1,4 @@
-# SwaggerClient::ListOderBookActiveBuyBody
+# Tatum::ListOderBookActiveBuyBody
 
 ## Properties
 Name | Type | Description | Notes

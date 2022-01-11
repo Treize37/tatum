@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxAmountEth
+# Tatum::Error403TxAmountEth
 
 ## Properties
 Name | Type | Description | Notes

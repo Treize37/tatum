@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionOffchain
+# Tatum::CreateSubscriptionOffchain
 
 ## Properties
 Name | Type | Description | Notes

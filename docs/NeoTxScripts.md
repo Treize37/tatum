@@ -1,4 +1,4 @@
-# SwaggerClient::NeoTxScripts
+# Tatum::NeoTxScripts
 
 ## Properties
 Name | Type | Description | Notes

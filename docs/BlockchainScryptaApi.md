@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainScryptaApi
+# Tatum::BlockchainScryptaApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -27,24 +27,24 @@ Broadcast signed Scrypta transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainScryptaApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Scrypta transaction
   result = api_instance.broadcastsigned_scryptatransaction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->broadcastsigned_scryptatransaction: #{e}"
 end
 ```
@@ -80,16 +80,16 @@ Generate Scrypta deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
 index = 'index_example' # String | Derivation index of desired address to be generated.
 
@@ -98,7 +98,7 @@ begin
   #Generate Scrypta deposit address from Extended public key
   result = api_instance.generate_scryptadepositaddressfrom_extendedpublickey(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->generate_scryptadepositaddressfrom_extendedpublickey: #{e}"
 end
 ```
@@ -135,24 +135,24 @@ Generate Scrypta private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainScryptaApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Scrypta private key
   result = api_instance.generate_scryptaprivatekey(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->generate_scryptaprivatekey: #{e}"
 end
 ```
@@ -188,22 +188,22 @@ Generate Scrypta wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 
 begin
   #Generate Scrypta wallet
   result = api_instance.generate_scryptawallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->generate_scryptawallet: #{e}"
 end
 ```
@@ -236,16 +236,16 @@ Get Block by hash or height
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -253,7 +253,7 @@ begin
   #Get Block by hash or height
   result = api_instance.get_scrypta_blockbyhashorheight(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_blockbyhashorheight: #{e}"
 end
 ```
@@ -289,22 +289,22 @@ Get Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 
 begin
   #Get Blockchain Information
   result = api_instance.get_scrypta_blockchain_information
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_blockchain_information: #{e}"
 end
 ```
@@ -337,16 +337,16 @@ Get Block hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 i = 'i_example' # String | The number of blocks preceding a particular block on a block chain.
 
 
@@ -354,7 +354,7 @@ begin
   #Get Block hash
   result = api_instance.get_scrypta_blockhash(i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_blockhash: #{e}"
 end
 ```
@@ -390,16 +390,16 @@ Get Scrypta Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -407,7 +407,7 @@ begin
   #Get Scrypta Transaction by hash
   result = api_instance.get_scrypta_transactionbyhash(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_transactionbyhash: #{e}"
 end
 ```
@@ -443,18 +443,18 @@ Get Transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
-offset = SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+api_instance = Tatum::BlockchainScryptaApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+offset = Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 address = 'address_example' # String | Address
 
 
@@ -462,7 +462,7 @@ begin
   #Get Transactions by address
   result = api_instance.get_scrypta_transactionsbyaddress(page_size, offset, address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_transactionsbyaddress: #{e}"
 end
 ```
@@ -500,16 +500,16 @@ Get UTXO of Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
+api_instance = Tatum::BlockchainScryptaApi.new
 hash = 'hash_example' # String | TX Hash
 index = 'index_example' # String | Index of tx output to check if spent or not
 
@@ -518,7 +518,7 @@ begin
   #Get UTXO of Transaction
   result = api_instance.get_scrypta_utx_oof_transaction(hash, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scrypta_utx_oof_transaction: #{e}"
 end
 ```
@@ -555,18 +555,18 @@ Get Scrypta spendable UTXO
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
-offset = SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+api_instance = Tatum::BlockchainScryptaApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+offset = Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 address = 'address_example' # String | Address
 
 
@@ -574,7 +574,7 @@ begin
   #Get Scrypta spendable UTXO
   result = api_instance.get_scryptaspendable_utxo(page_size, offset, address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->get_scryptaspendable_utxo: #{e}"
 end
 ```
@@ -612,24 +612,24 @@ Send LYRA to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainScryptaApi.new
-body = SwaggerClient::ScryptaTransaction.new # ScryptaTransaction | 
+api_instance = Tatum::BlockchainScryptaApi.new
+body = Tatum::ScryptaTransaction.new # ScryptaTransaction | 
 
 
 begin
   #Send LYRA to blockchain addresses
   result = api_instance.send_lyr_atoblockchainaddresses(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainScryptaApi->send_lyr_atoblockchainaddresses: #{e}"
 end
 ```

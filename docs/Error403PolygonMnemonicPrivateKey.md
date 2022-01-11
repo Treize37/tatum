@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonMnemonicPrivateKey
+# Tatum::Error403PolygonMnemonicPrivateKey
 
 ## Properties
 Name | Type | Description | Notes

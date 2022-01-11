@@ -1,4 +1,4 @@
-# SwaggerClient::Error403EthErc20NotFound
+# Tatum::Error403EthErc20NotFound
 
 ## Properties
 Name | Type | Description | Notes

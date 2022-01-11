@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfbscBep20Body
+# Tatum::OneOfbscBep20Body
 
 ## Properties
 Name | Type | Description | Notes

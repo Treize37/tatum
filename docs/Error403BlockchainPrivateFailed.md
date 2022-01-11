@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BlockchainPrivateFailed
+# Tatum::Error403BlockchainPrivateFailed
 
 ## Properties
 Name | Type | Description | Notes

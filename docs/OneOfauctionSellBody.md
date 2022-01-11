@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfauctionSellBody
+# Tatum::OneOfauctionSellBody
 
 ## Properties
 Name | Type | Description | Notes

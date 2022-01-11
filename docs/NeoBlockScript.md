@@ -1,4 +1,4 @@
-# SwaggerClient::NeoBlockScript
+# Tatum::NeoBlockScript
 
 ## Properties
 Name | Type | Description | Notes

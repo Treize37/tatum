@@ -1,4 +1,4 @@
-# SwaggerClient::EthEstimateGas
+# Tatum::EthEstimateGas
 
 ## Properties
 Name | Type | Description | Notes

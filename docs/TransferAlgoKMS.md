@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAlgoKMS
+# Tatum::TransferAlgoKMS
 
 ## Properties
 Name | Type | Description | Notes

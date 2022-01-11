@@ -1,4 +1,4 @@
-# SwaggerClient::VetBlock
+# Tatum::VetBlock
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTxPrevout
+# Tatum::BtcTxPrevout
 
 ## Properties
 Name | Type | Description | Notes

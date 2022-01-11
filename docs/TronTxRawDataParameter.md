@@ -1,4 +1,4 @@
-# SwaggerClient::TronTxRawDataParameter
+# Tatum::TronTxRawDataParameter
 
 ## Properties
 Name | Type | Description | Notes

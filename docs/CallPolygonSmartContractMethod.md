@@ -1,4 +1,4 @@
-# SwaggerClient::CallPolygonSmartContractMethod
+# Tatum::CallPolygonSmartContractMethod
 
 ## Properties
 Name | Type | Description | Notes

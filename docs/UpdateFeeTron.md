@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateFeeTron
+# Tatum::UpdateFeeTron
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Customer
+# Tatum::Customer
 
 ## Properties
 Name | Type | Description | Notes

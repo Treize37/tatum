@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VetGas
+# Tatum::Error403VetGas
 
 ## Properties
 Name | Type | Description | Notes

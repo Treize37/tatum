@@ -1,4 +1,4 @@
-# SwaggerClient::QuorumTx
+# Tatum::QuorumTx
 
 ## Properties
 Name | Type | Description | Notes

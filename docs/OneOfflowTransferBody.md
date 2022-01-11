@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfflowTransferBody
+# Tatum::OneOfflowTransferBody
 
 ## Properties
 Name | Type | Description | Notes

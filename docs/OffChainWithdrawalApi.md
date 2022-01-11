@@ -1,4 +1,4 @@
-# SwaggerClient::OffChainWithdrawalApi
+# Tatum::OffChainWithdrawalApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -20,24 +20,24 @@ Broadcast signed transaction and complete withdrawal
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainWithdrawalApi.new
-body = SwaggerClient::BroadcastWithdrawal.new # BroadcastWithdrawal | 
+api_instance = Tatum::OffChainWithdrawalApi.new
+body = Tatum::BroadcastWithdrawal.new # BroadcastWithdrawal | 
 
 
 begin
   #Broadcast signed transaction and complete withdrawal
   result = api_instance.broadcast_blockchain_transaction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainWithdrawalApi->broadcast_blockchain_transaction: #{e}"
 end
 ```
@@ -73,16 +73,16 @@ Cancel withdrawal
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainWithdrawalApi.new
+api_instance = Tatum::OffChainWithdrawalApi.new
 id = 'id_example' # String | ID of created withdrawal
 opts = { 
   revert: true # BOOLEAN | Defines whether fee should be reverted to account balance as well as amount. Defaults to true. Revert true would be typically used when withdrawal was not broadcast to blockchain. False is used usually for Ethereum based currencies when gas was consumed but transaction was reverted.
@@ -91,7 +91,7 @@ opts = {
 begin
   #Cancel withdrawal
   api_instance.cancel_in_progress_withdrawal(id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainWithdrawalApi->cancel_in_progress_withdrawal: #{e}"
 end
 ```
@@ -128,16 +128,16 @@ Complete withdrawal
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainWithdrawalApi.new
+api_instance = Tatum::OffChainWithdrawalApi.new
 id = 'id_example' # String | ID of created withdrawal
 tx_id = 'tx_id_example' # String | Blockchain transaction ID of created withdrawal
 
@@ -145,7 +145,7 @@ tx_id = 'tx_id_example' # String | Blockchain transaction ID of created withdraw
 begin
   #Complete withdrawal
   api_instance.complete_withdrawal(id, tx_id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainWithdrawalApi->complete_withdrawal: #{e}"
 end
 ```
@@ -182,28 +182,28 @@ Get withdrawals
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainWithdrawalApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::OffChainWithdrawalApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
   currency: 'currency_example', # String | Currency of the withdrawal
   status: 'status_example', # String | Status of the withdrawal
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 }
 
 begin
   #Get withdrawals
   result = api_instance.get_withdrawals(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainWithdrawalApi->get_withdrawals: #{e}"
 end
 ```
@@ -242,24 +242,24 @@ Store withdrawal
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::OffChainWithdrawalApi.new
-body = SwaggerClient::Withdrawal.new # Withdrawal | 
+api_instance = Tatum::OffChainWithdrawalApi.new
+body = Tatum::Withdrawal.new # Withdrawal | 
 
 
 begin
   #Store withdrawal
   result = api_instance.store_withdrawal(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling OffChainWithdrawalApi->store_withdrawal: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateFeeTronKMS
+# Tatum::UpdateFeeTronKMS
 
 ## Properties
 Name | Type | Description | Notes

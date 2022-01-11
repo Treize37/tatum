@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfethereumErc20Body
+# Tatum::OneOfethereumErc20Body
 
 ## Properties
 Name | Type | Description | Notes

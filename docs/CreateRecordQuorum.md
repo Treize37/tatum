@@ -1,4 +1,4 @@
-# SwaggerClient::CreateRecordQuorum
+# Tatum::CreateRecordQuorum
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::QtumIRawTransactionInfoVin
+# Tatum::QtumIRawTransactionInfoVin
 
 ## Properties
 Name | Type | Description | Notes

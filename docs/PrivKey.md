@@ -1,4 +1,4 @@
-# SwaggerClient::PrivKey
+# Tatum::PrivKey
 
 ## Properties
 Name | Type | Description | Notes

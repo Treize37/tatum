@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfadaTransferBody
+# Tatum::OneOfadaTransferBody
 
 ## Properties
 Name | Type | Description | Notes

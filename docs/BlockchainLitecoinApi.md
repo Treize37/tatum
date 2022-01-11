@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainLitecoinApi
+# Tatum::BlockchainLitecoinApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Broadcast signed Litecoin transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainLitecoinApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Litecoin transaction
   result = api_instance.ltc_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_broadcast: #{e}"
 end
 ```
@@ -81,25 +81,25 @@ Generate Litecoin deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Litecoin deposit address from Extended public key
   result = api_instance.ltc_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_generate_address: #{e}"
 end
 ```
@@ -136,24 +136,24 @@ Generate Litecoin private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainLitecoinApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Litecoin private key
   result = api_instance.ltc_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_generate_address_private_key: #{e}"
 end
 ```
@@ -189,16 +189,16 @@ Generate Litecoin wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -207,7 +207,7 @@ begin
   #Generate Litecoin wallet
   result = api_instance.ltc_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_generate_wallet: #{e}"
 end
 ```
@@ -243,16 +243,16 @@ Get Litecoin Balance of the address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 address = 'address_example' # String | Address
 
 
@@ -260,7 +260,7 @@ begin
   #Get Litecoin Balance of the address
   result = api_instance.ltc_get_balance_of_address(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_balance_of_address: #{e}"
 end
 ```
@@ -296,16 +296,16 @@ Get Litecoin Block by hash or height
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -313,7 +313,7 @@ begin
   #Get Litecoin Block by hash or height
   result = api_instance.ltc_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_block: #{e}"
 end
 ```
@@ -349,22 +349,22 @@ Get Litecoin Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 
 begin
   #Get Litecoin Blockchain Information
   result = api_instance.ltc_get_block_chain_info
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_block_chain_info: #{e}"
 end
 ```
@@ -397,24 +397,24 @@ Get Litecoin Block hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
-i = SwaggerClient::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
+api_instance = Tatum::BlockchainLitecoinApi.new
+i = Tatum::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
 
 
 begin
   #Get Litecoin Block hash
   result = api_instance.ltc_get_block_hash(i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_block_hash: #{e}"
 end
 ```
@@ -450,22 +450,22 @@ Get Mempool Transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 
 begin
   #Get Mempool Transactions
   result = api_instance.ltc_get_mempool
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_mempool: #{e}"
 end
 ```
@@ -498,16 +498,16 @@ Get Litecoin Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -515,7 +515,7 @@ begin
   #Get Litecoin Transaction by hash
   result = api_instance.ltc_get_raw_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_raw_transaction: #{e}"
 end
 ```
@@ -551,27 +551,27 @@ Get Litecoin Transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 address = 'address_example' # String | Address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 }
 
 begin
   #Get Litecoin Transactions by address
   result = api_instance.ltc_get_tx_by_address(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_tx_by_address: #{e}"
 end
 ```
@@ -609,25 +609,25 @@ Get Litecoin UTXO of Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
+api_instance = Tatum::BlockchainLitecoinApi.new
 hash = 'hash_example' # String | TX Hash
-index = SwaggerClient::BigDecimal.new # BigDecimal | Index of tx output to check if spent or not
+index = Tatum::BigDecimal.new # BigDecimal | Index of tx output to check if spent or not
 
 
 begin
   #Get Litecoin UTXO of Transaction
   result = api_instance.ltc_get_utxo(hash, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_get_utxo: #{e}"
 end
 ```
@@ -664,24 +664,24 @@ Send Litecoin to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainLitecoinApi.new
-body = SwaggerClient::LitecoinTransactionBody.new # LitecoinTransactionBody | 
+api_instance = Tatum::BlockchainLitecoinApi.new
+body = Tatum::LitecoinTransactionBody.new # LitecoinTransactionBody | 
 
 
 begin
   #Send Litecoin to blockchain addresses
   result = api_instance.ltc_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainLitecoinApi->ltc_transfer_blockchain: #{e}"
 end
 ```

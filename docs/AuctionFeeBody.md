@@ -1,4 +1,4 @@
-# SwaggerClient::AuctionFeeBody
+# Tatum::AuctionFeeBody
 
 ## Properties
 Name | Type | Description | Notes

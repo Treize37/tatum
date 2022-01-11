@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBchKeyPairKeyPair
+# Tatum::TransferBchKeyPairKeyPair
 
 ## Properties
 Name | Type | Description | Notes

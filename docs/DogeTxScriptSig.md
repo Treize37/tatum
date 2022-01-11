@@ -1,4 +1,4 @@
-# SwaggerClient::DogeTxScriptSig
+# Tatum::DogeTxScriptSig
 
 ## Properties
 Name | Type | Description | Notes

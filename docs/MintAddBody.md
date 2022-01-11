@@ -1,4 +1,4 @@
-# SwaggerClient::MintAddBody
+# Tatum::MintAddBody
 
 ## Properties
 Name | Type | Description | Notes

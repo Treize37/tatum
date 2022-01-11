@@ -1,4 +1,4 @@
-# SwaggerClient::FungibleTx
+# Tatum::FungibleTx
 
 ## Properties
 Name | Type | Description | Notes

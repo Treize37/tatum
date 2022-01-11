@@ -1,4 +1,4 @@
-# SwaggerClient::AddMultiTokenMinter
+# Tatum::AddMultiTokenMinter
 
 ## Properties
 Name | Type | Description | Notes

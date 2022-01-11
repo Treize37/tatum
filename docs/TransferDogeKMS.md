@@ -1,4 +1,4 @@
-# SwaggerClient::TransferDogeKMS
+# Tatum::TransferDogeKMS
 
 ## Properties
 Name | Type | Description | Notes

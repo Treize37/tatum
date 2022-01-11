@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAlgo
+# Tatum::TransferAlgo
 
 ## Properties
 Name | Type | Description | Notes

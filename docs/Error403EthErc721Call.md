@@ -1,4 +1,4 @@
-# SwaggerClient::Error403EthErc721Call
+# Tatum::Error403EthErc721Call
 
 ## Properties
 Name | Type | Description | Notes

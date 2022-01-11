@@ -1,4 +1,4 @@
-# SwaggerClient::SolanaBlockRewards
+# Tatum::SolanaBlockRewards
 
 ## Properties
 Name | Type | Description | Notes

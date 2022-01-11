@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveNftSpendingCeloKMS
+# Tatum::ApproveNftSpendingCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxSenderFrozen
+# Tatum::Error403TxSenderFrozen
 
 ## Properties
 Name | Type | Description | Notes

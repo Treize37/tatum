@@ -1,4 +1,4 @@
-# SwaggerClient::V3nftaddressbalancechainaddressMetadata
+# Tatum::V3nftaddressbalancechainaddressMetadata
 
 ## Properties
 Name | Type | Description | Notes

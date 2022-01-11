@@ -1,4 +1,4 @@
-# SwaggerClient::SignatureId
+# Tatum::SignatureId
 
 ## Properties
 Name | Type | Description | Notes

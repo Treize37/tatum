@@ -1,4 +1,4 @@
-# SwaggerClient::EthTxInternal
+# Tatum::EthTxInternal
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeployBep20
+# Tatum::DeployBep20
 
 ## Properties
 Name | Type | Description | Notes

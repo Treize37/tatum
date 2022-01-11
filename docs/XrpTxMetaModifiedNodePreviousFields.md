@@ -1,4 +1,4 @@
-# SwaggerClient::XrpTxMetaModifiedNodePreviousFields
+# Tatum::XrpTxMetaModifiedNodePreviousFields
 
 ## Properties
 Name | Type | Description | Notes

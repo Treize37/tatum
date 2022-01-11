@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateFeeCelo
+# Tatum::UpdateFeeCelo
 
 ## Properties
 Name | Type | Description | Notes

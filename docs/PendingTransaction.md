@@ -1,4 +1,4 @@
-# SwaggerClient::PendingTransaction
+# Tatum::PendingTransaction
 
 ## Properties
 Name | Type | Description | Notes

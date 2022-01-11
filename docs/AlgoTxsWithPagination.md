@@ -1,4 +1,4 @@
-# SwaggerClient::AlgoTxsWithPagination
+# Tatum::AlgoTxsWithPagination
 
 ## Properties
 Name | Type | Description | Notes

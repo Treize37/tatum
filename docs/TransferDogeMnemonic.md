@@ -1,4 +1,4 @@
-# SwaggerClient::TransferDogeMnemonic
+# Tatum::TransferDogeMnemonic
 
 ## Properties
 Name | Type | Description | Notes

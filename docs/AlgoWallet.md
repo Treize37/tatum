@@ -1,4 +1,4 @@
-# SwaggerClient::AlgoWallet
+# Tatum::AlgoWallet
 
 ## Properties
 Name | Type | Description | Notes

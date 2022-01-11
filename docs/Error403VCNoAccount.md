@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VCNoAccount
+# Tatum::Error403VCNoAccount
 
 ## Properties
 Name | Type | Description | Notes

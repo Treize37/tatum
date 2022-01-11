@@ -1,4 +1,4 @@
-# SwaggerClient::KcsTx
+# Tatum::KcsTx
 
 ## Properties
 Name | Type | Description | Notes

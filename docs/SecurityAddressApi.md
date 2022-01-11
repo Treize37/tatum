@@ -1,4 +1,4 @@
-# SwaggerClient::SecurityAddressApi
+# Tatum::SecurityAddressApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -16,16 +16,16 @@ Check malicous address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::SecurityAddressApi.new
+api_instance = Tatum::SecurityAddressApi.new
 address = 'address_example' # String | Blockchain Address to check
 
 
@@ -33,7 +33,7 @@ begin
   #Check malicous address
   result = api_instance.check_malicous_address(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling SecurityAddressApi->check_malicous_address: #{e}"
 end
 ```

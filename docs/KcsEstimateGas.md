@@ -1,4 +1,4 @@
-# SwaggerClient::KcsEstimateGas
+# Tatum::KcsEstimateGas
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainEthereumApi
+# Tatum::BlockchainEthereumApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -31,17 +31,17 @@ Invoke Smart Contract method
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::EthereumSmartcontractBody.new # EthereumSmartcontractBody | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::EthereumSmartcontractBody.new # EthereumSmartcontractBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -50,7 +50,7 @@ begin
   #Invoke Smart Contract method
   result = api_instance.eth_blockchain_smart_contract_invocation(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_blockchain_smart_contract_invocation: #{e}"
 end
 ```
@@ -87,17 +87,17 @@ Send Ethereum / ERC20 from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::EthereumTransactionBody.new # EthereumTransactionBody | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::EthereumTransactionBody.new # EthereumTransactionBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -106,7 +106,7 @@ begin
   #Send Ethereum / ERC20 from account to account
   result = api_instance.eth_blockchain_transfer(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_blockchain_transfer: #{e}"
 end
 ```
@@ -143,17 +143,17 @@ Broadcast signed Ethereum transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -162,7 +162,7 @@ begin
   #Broadcast signed Ethereum transaction
   result = api_instance.eth_broadcast(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_broadcast: #{e}"
 end
 ```
@@ -199,17 +199,17 @@ Estimate ethereum transaction fees
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::EthEstimateGas.new # EthEstimateGas | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::EthEstimateGas.new # EthEstimateGas | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -218,7 +218,7 @@ begin
   #Estimate ethereum transaction fees
   result = api_instance.eth_estimate_gas(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_estimate_gas: #{e}"
 end
 ```
@@ -255,17 +255,17 @@ Estimate multiple transaction fees
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::GasBatchBody.new # GasBatchBody | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::GasBatchBody.new # GasBatchBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -274,7 +274,7 @@ begin
   #Estimate multiple transaction fees
   result = api_instance.eth_estimate_gas_batch(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_estimate_gas_batch: #{e}"
 end
 ```
@@ -311,18 +311,18 @@ Generate Ethereum account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of the address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of the address to be generated.
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -331,7 +331,7 @@ begin
   #Generate Ethereum account address from Extended public key
   result = api_instance.eth_generate_address(xpub, index, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_generate_address: #{e}"
 end
 ```
@@ -369,17 +369,17 @@ Generate Ethereum private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainEthereumApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -388,7 +388,7 @@ begin
   #Generate Ethereum private key
   result = api_instance.eth_generate_address_private_key(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_generate_address_private_key: #{e}"
 end
 ```
@@ -425,16 +425,16 @@ Generate Ethereum wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 opts = { 
   mnemonic: 'mnemonic_example', # String | Mnemonic to use for generating extended public and private keys.
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
@@ -444,7 +444,7 @@ begin
   #Generate Ethereum wallet
   result = api_instance.eth_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_generate_wallet: #{e}"
 end
 ```
@@ -481,16 +481,16 @@ Get Ethereum account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 address = 'address_example' # String | Account address
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
@@ -500,7 +500,7 @@ begin
   #Get Ethereum account balance
   result = api_instance.eth_get_balance(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_balance: #{e}"
 end
 ```
@@ -537,16 +537,16 @@ Get Ethereum block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 hash = 'hash_example' # String | Block hash or block number
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
@@ -556,7 +556,7 @@ begin
   #Get Ethereum block by hash
   result = api_instance.eth_get_block(hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_block: #{e}"
 end
 ```
@@ -593,16 +593,16 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -611,7 +611,7 @@ begin
   #Get current block number
   result = api_instance.eth_get_current_block(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_current_block: #{e}"
 end
 ```
@@ -647,20 +647,20 @@ Get Ethereum internal transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 address = 'address_example' # String | Account address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
 
@@ -668,7 +668,7 @@ begin
   #Get Ethereum internal transactions by address
   result = api_instance.eth_get_internal_transaction_by_address(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_internal_transaction_by_address: #{e}"
 end
 ```
@@ -707,16 +707,16 @@ Get Ethereum Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 hash = 'hash_example' # String | Transaction hash
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
@@ -726,7 +726,7 @@ begin
   #Get Ethereum Transaction
   result = api_instance.eth_get_transaction(hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_transaction: #{e}"
 end
 ```
@@ -763,22 +763,22 @@ Get Ethereum transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 address = 'address_example' # String | Account address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
   sort: 'DESC', # String | Sorting of the data. ASC - oldest first, DESC - newest first.
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -787,7 +787,7 @@ begin
   #Get Ethereum transactions by address
   result = api_instance.eth_get_transaction_by_address(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_transaction_by_address: #{e}"
 end
 ```
@@ -829,16 +829,16 @@ Get count of outgoing Ethereum transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 address = 'address_example' # String | address
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
@@ -848,7 +848,7 @@ begin
   #Get count of outgoing Ethereum transactions
   result = api_instance.eth_get_transaction_count(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_get_transaction_count: #{e}"
 end
 ```
@@ -885,9 +885,9 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainEthereumApi.new
+api_instance = Tatum::BlockchainEthereumApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 opts = { 
@@ -898,7 +898,7 @@ begin
   #Web3 HTTP driver
   result = api_instance.eth_web3_driver(bodyx_api_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainEthereumApi->eth_web3_driver: #{e}"
 end
 ```

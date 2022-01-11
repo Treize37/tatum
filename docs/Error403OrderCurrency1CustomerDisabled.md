@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OrderCurrency1CustomerDisabled
+# Tatum::Error403OrderCurrency1CustomerDisabled
 
 ## Properties
 Name | Type | Description | Notes

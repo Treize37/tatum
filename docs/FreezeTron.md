@@ -1,4 +1,4 @@
-# SwaggerClient::FreezeTron
+# Tatum::FreezeTron
 
 ## Properties
 Name | Type | Description | Notes

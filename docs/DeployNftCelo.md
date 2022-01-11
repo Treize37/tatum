@@ -1,4 +1,4 @@
-# SwaggerClient::DeployNftCelo
+# Tatum::DeployNftCelo
 
 ## Properties
 Name | Type | Description | Notes

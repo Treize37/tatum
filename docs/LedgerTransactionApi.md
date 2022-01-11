@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerTransactionApi
+# Tatum::LedgerTransactionApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -21,20 +21,20 @@ Find transactions within the ledger.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
-body = SwaggerClient::TransactionFilterLedger.new # TransactionFilterLedger | 
+api_instance = Tatum::LedgerTransactionApi.new
+body = Tatum::TransactionFilterLedger.new # TransactionFilterLedger | 
 opts = { 
-  page_size: SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
+  page_size: Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
   count: true # BOOLEAN | Get the total transaction count based on the filter. Either count or pageSize is accepted.
 }
 
@@ -42,7 +42,7 @@ begin
   #Find transactions within the ledger.
   result = api_instance.get_transactions(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->get_transactions: #{e}"
 end
 ```
@@ -81,20 +81,20 @@ Find transactions for account.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
-body = SwaggerClient::TransactionFilter.new # TransactionFilter | 
+api_instance = Tatum::LedgerTransactionApi.new
+body = Tatum::TransactionFilter.new # TransactionFilter | 
 opts = { 
-  page_size: SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
+  page_size: Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
   count: true # BOOLEAN | Get the total transaction count based on the filter. Either count or pageSize is accepted.
 }
 
@@ -102,7 +102,7 @@ begin
   #Find transactions for account.
   result = api_instance.get_transactions_by_account_id(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->get_transactions_by_account_id: #{e}"
 end
 ```
@@ -141,20 +141,20 @@ Find transactions for a customer across all of the customer's accounts.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
-body = SwaggerClient::TransactionFilterCustomer.new # TransactionFilterCustomer | 
+api_instance = Tatum::LedgerTransactionApi.new
+body = Tatum::TransactionFilterCustomer.new # TransactionFilterCustomer | 
 opts = { 
-  page_size: SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
+  page_size: Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50. Either count or pageSize is accepted.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
   count: true # BOOLEAN | Get total transaction count based on the filter. Either count or pageSize is accepted.
 }
 
@@ -162,7 +162,7 @@ begin
   #Find transactions for a customer across all of the customer's accounts.
   result = api_instance.get_transactions_by_customer_id(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->get_transactions_by_customer_id: #{e}"
 end
 ```
@@ -201,16 +201,16 @@ Find transactions with a given reference across all accounts.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
+api_instance = Tatum::LedgerTransactionApi.new
 reference = 'reference_example' # String | 
 
 
@@ -218,7 +218,7 @@ begin
   #Find transactions with a given reference across all accounts.
   result = api_instance.get_transactions_by_reference(reference)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->get_transactions_by_reference: #{e}"
 end
 ```
@@ -254,24 +254,24 @@ Send payment
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
-body = SwaggerClient::CreateTransaction.new # CreateTransaction | 
+api_instance = Tatum::LedgerTransactionApi.new
+body = Tatum::CreateTransaction.new # CreateTransaction | 
 
 
 begin
   #Send payment
   result = api_instance.send_transaction(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->send_transaction: #{e}"
 end
 ```
@@ -307,24 +307,24 @@ Send payment in batch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerTransactionApi.new
-body = SwaggerClient::BatchCreateTransaction.new # BatchCreateTransaction | 
+api_instance = Tatum::LedgerTransactionApi.new
+body = Tatum::BatchCreateTransaction.new # BatchCreateTransaction | 
 
 
 begin
   #Send payment in batch
   result = api_instance.send_transaction_batch(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerTransactionApi->send_transaction_batch: #{e}"
 end
 ```

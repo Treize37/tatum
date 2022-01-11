@@ -1,4 +1,4 @@
-# SwaggerClient::Error
+# Tatum::Error
 
 ## Properties
 Name | Type | Description | Notes

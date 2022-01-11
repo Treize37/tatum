@@ -1,4 +1,4 @@
-# SwaggerClient::EgldBlock
+# Tatum::EgldBlock
 
 ## Properties
 Name | Type | Description | Notes

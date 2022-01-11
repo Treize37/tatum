@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainCeloApi
+# Tatum::BlockchainCeloApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Invoke Smart Contract method
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
-body = SwaggerClient::CeloSmartcontractBody.new # CeloSmartcontractBody | 
+api_instance = Tatum::BlockchainCeloApi.new
+body = Tatum::CeloSmartcontractBody.new # CeloSmartcontractBody | 
 
 
 begin
   #Invoke Smart Contract method
   result = api_instance.celo_blockchain_smart_contract_invocation(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_blockchain_smart_contract_invocation: #{e}"
 end
 ```
@@ -81,24 +81,24 @@ Send Celo / ERC20 from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
-body = SwaggerClient::CeloTransactionBody.new # CeloTransactionBody | 
+api_instance = Tatum::BlockchainCeloApi.new
+body = Tatum::CeloTransactionBody.new # CeloTransactionBody | 
 
 
 begin
   #Send Celo / ERC20 from account to account
   result = api_instance.celo_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_blockchain_transfer: #{e}"
 end
 ```
@@ -134,24 +134,24 @@ Broadcast signed Celo transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainCeloApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Celo transaction
   result = api_instance.celo_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_broadcast: #{e}"
 end
 ```
@@ -187,25 +187,25 @@ Generate Celo account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Celo account address from Extended public key
   result = api_instance.celo_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_generate_address: #{e}"
 end
 ```
@@ -242,24 +242,24 @@ Generate Celo private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainCeloApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Celo private key
   result = api_instance.celo_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_generate_address_private_key: #{e}"
 end
 ```
@@ -295,16 +295,16 @@ Generate Celo wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -313,7 +313,7 @@ begin
   #Generate Celo wallet
   result = api_instance.celo_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_generate_wallet: #{e}"
 end
 ```
@@ -349,16 +349,16 @@ Get Celo Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 address = 'address_example' # String | Account address
 
 
@@ -366,7 +366,7 @@ begin
   #Get Celo Account balance
   result = api_instance.celo_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_balance: #{e}"
 end
 ```
@@ -402,16 +402,16 @@ Get Celo block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 hash = 'hash_example' # String | Block hash or block number
 
 
@@ -419,7 +419,7 @@ begin
   #Get Celo block by hash
   result = api_instance.celo_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_block: #{e}"
 end
 ```
@@ -455,22 +455,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 
 begin
   #Get current block number
   result = api_instance.celo_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_current_block: #{e}"
 end
 ```
@@ -503,16 +503,16 @@ Get Celo Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -520,7 +520,7 @@ begin
   #Get Celo Transaction
   result = api_instance.celo_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_transaction: #{e}"
 end
 ```
@@ -556,22 +556,22 @@ Get Celo transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 address = 'address_example' # String | Account address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new, # BigDecimal | Transactions up to this block will be included.
   sort: 'DESC' # String | Sorting of the data. ASC - oldest first, DESC - newest first.
 }
 
@@ -579,7 +579,7 @@ begin
   #Get Celo transactions by address
   result = api_instance.celo_get_transaction_by_address(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_transaction_by_address: #{e}"
 end
 ```
@@ -620,16 +620,16 @@ Get count of outgoing Celo transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 address = 'address_example' # String | address
 
 
@@ -637,7 +637,7 @@ begin
   #Get count of outgoing Celo transactions
   result = api_instance.celo_get_transaction_count(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_get_transaction_count: #{e}"
 end
 ```
@@ -673,9 +673,9 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainCeloApi.new
+api_instance = Tatum::BlockchainCeloApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
@@ -684,7 +684,7 @@ begin
   #Web3 HTTP driver
   result = api_instance.celo_web3_driver(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainCeloApi->celo_web3_driver: #{e}"
 end
 ```

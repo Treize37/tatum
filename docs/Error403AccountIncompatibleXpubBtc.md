@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountIncompatibleXpubBtc
+# Tatum::Error403AccountIncompatibleXpubBtc
 
 ## Properties
 Name | Type | Description | Notes

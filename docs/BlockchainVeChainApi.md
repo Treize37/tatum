@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainVeChainApi
+# Tatum::BlockchainVeChainApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -27,24 +27,24 @@ Send VeChain from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
-body = SwaggerClient::TransferVetBlockchain.new # TransferVetBlockchain | 
+api_instance = Tatum::BlockchainVeChainApi.new
+body = Tatum::TransferVetBlockchain.new # TransferVetBlockchain | 
 
 
 begin
   #Send VeChain from account to account
   result = api_instance.vet_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_blockchain_transfer: #{e}"
 end
 ```
@@ -80,24 +80,24 @@ Broadcast signed VeChain transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainVeChainApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed VeChain transaction
   result = api_instance.vet_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_broadcast: #{e}"
 end
 ```
@@ -133,24 +133,24 @@ Estimate VeChain Gas for transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
-body = SwaggerClient::VetEstimateGas.new # VetEstimateGas | 
+api_instance = Tatum::BlockchainVeChainApi.new
+body = Tatum::VetEstimateGas.new # VetEstimateGas | 
 
 
 begin
   #Estimate VeChain Gas for transaction
   result = api_instance.vet_estimate_gas(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_estimate_gas: #{e}"
 end
 ```
@@ -186,25 +186,25 @@ Generate VeChain account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate VeChain account address from Extended public key
   result = api_instance.vet_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_generate_address: #{e}"
 end
 ```
@@ -241,24 +241,24 @@ Generate VeChain private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainVeChainApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate VeChain private key
   result = api_instance.vet_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_generate_address_private_key: #{e}"
 end
 ```
@@ -294,16 +294,16 @@ Generate VeChain wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -312,7 +312,7 @@ begin
   #Generate VeChain wallet
   result = api_instance.vet_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_generate_wallet: #{e}"
 end
 ```
@@ -348,16 +348,16 @@ Get VeChain Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 address = 'address_example' # String | Account address
 
 
@@ -365,7 +365,7 @@ begin
   #Get VeChain Account balance
   result = api_instance.vet_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_balance: #{e}"
 end
 ```
@@ -401,16 +401,16 @@ Get VeChain Block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 hash = 'hash_example' # String | Block hash or block number
 
 
@@ -418,7 +418,7 @@ begin
   #Get VeChain Block by hash
   result = api_instance.vet_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_block: #{e}"
 end
 ```
@@ -454,22 +454,22 @@ Get VeChain current block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 
 begin
   #Get VeChain current block
   result = api_instance.vet_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_current_block: #{e}"
 end
 ```
@@ -502,16 +502,16 @@ Get VeChain Account energy (VTHO)
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 address = 'address_example' # String | Account address
 
 
@@ -519,7 +519,7 @@ begin
   #Get VeChain Account energy (VTHO)
   result = api_instance.vet_get_energy(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_energy: #{e}"
 end
 ```
@@ -555,16 +555,16 @@ Get VeChain Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -572,7 +572,7 @@ begin
   #Get VeChain Transaction
   result = api_instance.vet_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_transaction: #{e}"
 end
 ```
@@ -608,16 +608,16 @@ Get VeChain Transaction Receipt
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainVeChainApi.new
+api_instance = Tatum::BlockchainVeChainApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -625,7 +625,7 @@ begin
   #Get VeChain Transaction Receipt
   result = api_instance.vet_get_transaction_receipt(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainVeChainApi->vet_get_transaction_receipt: #{e}"
 end
 ```

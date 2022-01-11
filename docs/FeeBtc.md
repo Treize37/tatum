@@ -1,4 +1,4 @@
-# SwaggerClient::FeeBtc
+# Tatum::FeeBtc
 
 ## Properties
 Name | Type | Description | Notes

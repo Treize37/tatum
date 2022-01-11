@@ -1,4 +1,4 @@
-# SwaggerClient::BurnMultiTokenKMS
+# Tatum::BurnMultiTokenKMS
 
 ## Properties
 Name | Type | Description | Notes

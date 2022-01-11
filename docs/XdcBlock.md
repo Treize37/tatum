@@ -1,4 +1,4 @@
-# SwaggerClient::XdcBlock
+# Tatum::XdcBlock
 
 ## Properties
 Name | Type | Description | Notes

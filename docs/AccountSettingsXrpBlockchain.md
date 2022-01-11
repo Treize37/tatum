@@ -1,4 +1,4 @@
-# SwaggerClient::AccountSettingsXrpBlockchain
+# Tatum::AccountSettingsXrpBlockchain
 
 ## Properties
 Name | Type | Description | Notes

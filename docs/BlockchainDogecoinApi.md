@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainDogecoinApi
+# Tatum::BlockchainDogecoinApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -26,24 +26,24 @@ Broadcast signed Dogecoin transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainDogecoinApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Dogecoin transaction
   result = api_instance.doge_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_broadcast: #{e}"
 end
 ```
@@ -79,25 +79,25 @@ Generate Dogecoin deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Dogecoin deposit address from Extended public key
   result = api_instance.doge_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_generate_address: #{e}"
 end
 ```
@@ -134,24 +134,24 @@ Generate Dogecoin private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainDogecoinApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Dogecoin private key
   result = api_instance.doge_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_generate_address_private_key: #{e}"
 end
 ```
@@ -187,16 +187,16 @@ Generate Dogecoin wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -205,7 +205,7 @@ begin
   #Generate Dogecoin wallet
   result = api_instance.doge_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_generate_wallet: #{e}"
 end
 ```
@@ -241,16 +241,16 @@ Get Dogecoin Block by hash or height
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -258,7 +258,7 @@ begin
   #Get Dogecoin Block by hash or height
   result = api_instance.doge_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_block: #{e}"
 end
 ```
@@ -294,22 +294,22 @@ Get Dogecoin Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 
 begin
   #Get Dogecoin Blockchain Information
   result = api_instance.doge_get_block_chain_info
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_block_chain_info: #{e}"
 end
 ```
@@ -342,24 +342,24 @@ Get Dogecoin Block hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
-i = SwaggerClient::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
+api_instance = Tatum::BlockchainDogecoinApi.new
+i = Tatum::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
 
 
 begin
   #Get Dogecoin Block hash
   result = api_instance.doge_get_block_hash(i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_block_hash: #{e}"
 end
 ```
@@ -395,22 +395,22 @@ Get Mempool Transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 
 begin
   #Get Mempool Transactions
   result = api_instance.doge_get_mempool
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_mempool: #{e}"
 end
 ```
@@ -443,16 +443,16 @@ Get Dogecoin Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -460,7 +460,7 @@ begin
   #Get Dogecoin Transaction by hash
   result = api_instance.doge_get_raw_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_raw_transaction: #{e}"
 end
 ```
@@ -496,25 +496,25 @@ Get Dogecoin UTXO of Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
+api_instance = Tatum::BlockchainDogecoinApi.new
 hash = 'hash_example' # String | TX Hash
-index = SwaggerClient::BigDecimal.new # BigDecimal | Index of tx output to check if spent or not
+index = Tatum::BigDecimal.new # BigDecimal | Index of tx output to check if spent or not
 
 
 begin
   #Get Dogecoin UTXO of Transaction
   result = api_instance.doge_get_utxo(hash, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_get_utxo: #{e}"
 end
 ```
@@ -551,24 +551,24 @@ Send Dogecoin to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainDogecoinApi.new
-body = SwaggerClient::DogecoinTransactionBody.new # DogecoinTransactionBody | 
+api_instance = Tatum::BlockchainDogecoinApi.new
+body = Tatum::DogecoinTransactionBody.new # DogecoinTransactionBody | 
 
 
 begin
   #Send Dogecoin to blockchain addresses
   result = api_instance.doge_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainDogecoinApi->doge_transfer_blockchain: #{e}"
 end
 ```

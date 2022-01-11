@@ -1,4 +1,4 @@
-# SwaggerClient::AdaTransactionFromUTXO
+# Tatum::AdaTransactionFromUTXO
 
 ## Properties
 Name | Type | Description | Notes

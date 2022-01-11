@@ -1,4 +1,4 @@
-# SwaggerClient::TransferTronTrc20Blockchain
+# Tatum::TransferTronTrc20Blockchain
 
 ## Properties
 Name | Type | Description | Notes

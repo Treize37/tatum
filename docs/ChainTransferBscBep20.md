@@ -1,4 +1,4 @@
-# SwaggerClient::ChainTransferBscBep20
+# Tatum::ChainTransferBscBep20
 
 ## Properties
 Name | Type | Description | Notes

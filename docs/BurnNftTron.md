@@ -1,4 +1,4 @@
-# SwaggerClient::BurnNftTron
+# Tatum::BurnNftTron
 
 ## Properties
 Name | Type | Description | Notes

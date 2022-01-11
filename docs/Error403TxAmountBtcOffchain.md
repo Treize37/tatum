@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxAmountBtcOffchain
+# Tatum::Error403TxAmountBtcOffchain
 
 ## Properties
 Name | Type | Description | Notes

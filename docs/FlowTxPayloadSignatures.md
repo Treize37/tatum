@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTxPayloadSignatures
+# Tatum::FlowTxPayloadSignatures
 
 ## Properties
 Name | Type | Description | Notes

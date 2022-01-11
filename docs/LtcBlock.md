@@ -1,4 +1,4 @@
-# SwaggerClient::LtcBlock
+# Tatum::LtcBlock
 
 ## Properties
 Name | Type | Description | Notes

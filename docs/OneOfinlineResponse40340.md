@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfinlineResponse40340
+# Tatum::OneOfinlineResponse40340
 
 ## Properties
 Name | Type | Description | Notes

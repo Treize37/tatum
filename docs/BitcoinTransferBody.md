@@ -1,4 +1,4 @@
-# SwaggerClient::BitcoinTransferBody
+# Tatum::BitcoinTransferBody
 
 ## Properties
 Name | Type | Description | Notes

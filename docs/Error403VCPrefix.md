@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VCPrefix
+# Tatum::Error403VCPrefix
 
 ## Properties
 Name | Type | Description | Notes

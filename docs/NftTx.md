@@ -1,4 +1,4 @@
-# SwaggerClient::NftTx
+# Tatum::NftTx
 
 ## Properties
 Name | Type | Description | Notes

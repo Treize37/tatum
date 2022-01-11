@@ -1,4 +1,4 @@
-# SwaggerClient::FabricDataBody
+# Tatum::FabricDataBody
 
 ## Properties
 Name | Type | Description | Notes

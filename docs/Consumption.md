@@ -1,4 +1,4 @@
-# SwaggerClient::Consumption
+# Tatum::Consumption
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateAuctionCelo
+# Tatum::CreateAuctionCelo
 
 ## Properties
 Name | Type | Description | Notes

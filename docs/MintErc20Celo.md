@@ -1,4 +1,4 @@
-# SwaggerClient::MintErc20Celo
+# Tatum::MintErc20Celo
 
 ## Properties
 Name | Type | Description | Notes

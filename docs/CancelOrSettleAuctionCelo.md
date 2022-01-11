@@ -1,4 +1,4 @@
-# SwaggerClient::CancelOrSettleAuctionCelo
+# Tatum::CancelOrSettleAuctionCelo
 
 ## Properties
 Name | Type | Description | Notes

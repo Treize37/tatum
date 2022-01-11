@@ -1,4 +1,4 @@
-# SwaggerClient::TransferTronKMS
+# Tatum::TransferTronKMS
 
 ## Properties
 Name | Type | Description | Notes

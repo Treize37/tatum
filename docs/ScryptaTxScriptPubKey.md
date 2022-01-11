@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaTxScriptPubKey
+# Tatum::ScryptaTxScriptPubKey
 
 ## Properties
 Name | Type | Description | Notes

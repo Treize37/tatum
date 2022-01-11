@@ -1,4 +1,4 @@
-# SwaggerClient::TransferTronMnemonic
+# Tatum::TransferTronMnemonic
 
 ## Properties
 Name | Type | Description | Notes

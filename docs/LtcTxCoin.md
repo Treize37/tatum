@@ -1,4 +1,4 @@
-# SwaggerClient::LtcTxCoin
+# Tatum::LtcTxCoin
 
 ## Properties
 Name | Type | Description | Notes

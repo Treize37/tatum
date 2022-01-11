@@ -1,4 +1,4 @@
-# SwaggerClient::BidOnAuctionKMS
+# Tatum::BidOnAuctionKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::SolanaTransactionBody
+# Tatum::SolanaTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

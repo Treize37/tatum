@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainXRPApi
+# Tatum::BlockchainXRPApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -27,24 +27,24 @@ Modify XRP account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
-body = SwaggerClient::AccountSettingsBody.new # AccountSettingsBody | 
+api_instance = Tatum::BlockchainXRPApi.new
+body = Tatum::AccountSettingsBody.new # AccountSettingsBody | 
 
 
 begin
   #Modify XRP account
   result = api_instance.xrp_account_settings(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_account_settings: #{e}"
 end
 ```
@@ -80,24 +80,24 @@ Broadcast signed XRP transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainXRPApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed XRP transaction
   result = api_instance.xrp_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_broadcast: #{e}"
 end
 ```
@@ -133,16 +133,16 @@ Get Account Balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 account = 'account_example' # String | Account address
 
 
@@ -150,7 +150,7 @@ begin
   #Get Account Balance
   result = api_instance.xrp_get_account_balance(account)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_account_balance: #{e}"
 end
 ```
@@ -186,16 +186,16 @@ Get Account info
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 account = 'account_example' # String | Account address
 
 
@@ -203,7 +203,7 @@ begin
   #Get Account info
   result = api_instance.xrp_get_account_info(account)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_account_info: #{e}"
 end
 ```
@@ -239,19 +239,19 @@ Get Account transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 account = 'account_example' # String | Address of XRP account.
 opts = { 
-  min: SwaggerClient::BigDecimal.new, # BigDecimal | Ledger version to start scanning for transactions from.
+  min: Tatum::BigDecimal.new, # BigDecimal | Ledger version to start scanning for transactions from.
   marker: 'marker_example' # String | Marker from the last paginated request. It is stringified JSON from previous response.
 }
 
@@ -259,7 +259,7 @@ begin
   #Get Account transactions
   result = api_instance.xrp_get_account_tx(account, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_account_tx: #{e}"
 end
 ```
@@ -297,22 +297,22 @@ Get actual Blockchain fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 
 begin
   #Get actual Blockchain fee
   result = api_instance.xrp_get_fee
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_fee: #{e}"
 end
 ```
@@ -345,22 +345,22 @@ Get XRP Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 
 begin
   #Get XRP Blockchain Information
   result = api_instance.xrp_get_last_closed_ledger
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_last_closed_ledger: #{e}"
 end
 ```
@@ -393,24 +393,24 @@ Get Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
-i = SwaggerClient::BigDecimal.new # BigDecimal | Sequence of XRP ledger.
+api_instance = Tatum::BlockchainXRPApi.new
+i = Tatum::BigDecimal.new # BigDecimal | Sequence of XRP ledger.
 
 
 begin
   #Get Ledger
   result = api_instance.xrp_get_ledger(i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_ledger: #{e}"
 end
 ```
@@ -446,16 +446,16 @@ Get XRP Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -463,7 +463,7 @@ begin
   #Get XRP Transaction by hash
   result = api_instance.xrp_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_get_transaction: #{e}"
 end
 ```
@@ -499,24 +499,24 @@ Send XRP from address to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
-body = SwaggerClient::XrpTransactionBody.new # XrpTransactionBody | 
+api_instance = Tatum::BlockchainXRPApi.new
+body = Tatum::XrpTransactionBody.new # XrpTransactionBody | 
 
 
 begin
   #Send XRP from address to address
   result = api_instance.xrp_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_transfer_blockchain: #{e}"
 end
 ```
@@ -552,24 +552,24 @@ Create / Update / Delete XRP trust line
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
-body = SwaggerClient::XrpTrustBody.new # XrpTrustBody | 
+api_instance = Tatum::BlockchainXRPApi.new
+body = Tatum::XrpTrustBody.new # XrpTrustBody | 
 
 
 begin
   #Create / Update / Delete XRP trust line
   result = api_instance.xrp_trust_line_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_trust_line_blockchain: #{e}"
 end
 ```
@@ -605,22 +605,22 @@ Generate XRP account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXRPApi.new
+api_instance = Tatum::BlockchainXRPApi.new
 
 begin
   #Generate XRP account
   result = api_instance.xrp_wallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXRPApi->xrp_wallet: #{e}"
 end
 ```

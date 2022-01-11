@@ -1,4 +1,4 @@
-# SwaggerClient::TransferMultiTokenBatchKMS
+# Tatum::TransferMultiTokenBatchKMS
 
 ## Properties
 Name | Type | Description | Notes

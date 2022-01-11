@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBatchBody
+# Tatum::TransferBatchBody
 
 ## Properties
 Name | Type | Description | Notes

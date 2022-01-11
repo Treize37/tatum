@@ -1,4 +1,4 @@
-# SwaggerClient::V3IpfsBody
+# Tatum::V3IpfsBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DogeTxVout
+# Tatum::DogeTxVout
 
 ## Properties
 Name | Type | Description | Notes

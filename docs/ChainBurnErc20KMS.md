@@ -1,4 +1,4 @@
-# SwaggerClient::ChainBurnErc20KMS
+# Tatum::ChainBurnErc20KMS
 
 ## Properties
 Name | Type | Description | Notes

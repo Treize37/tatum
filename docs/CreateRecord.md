@@ -1,4 +1,4 @@
-# SwaggerClient::CreateRecord
+# Tatum::CreateRecord
 
 ## Properties
 Name | Type | Description | Notes

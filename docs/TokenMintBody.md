@@ -1,4 +1,4 @@
-# SwaggerClient::TokenMintBody
+# Tatum::TokenMintBody
 
 ## Properties
 Name | Type | Description | Notes

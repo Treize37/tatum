@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BlockNotExists
+# Tatum::Error403BlockNotExists
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransferFlowMnemonic
+# Tatum::TransferFlowMnemonic
 
 ## Properties
 Name | Type | Description | Notes

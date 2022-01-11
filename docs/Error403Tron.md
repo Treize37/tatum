@@ -1,4 +1,4 @@
-# SwaggerClient::Error403Tron
+# Tatum::Error403Tron
 
 ## Properties
 Name | Type | Description | Notes

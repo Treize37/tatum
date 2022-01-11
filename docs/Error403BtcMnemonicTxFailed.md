@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BtcMnemonicTxFailed
+# Tatum::Error403BtcMnemonicTxFailed
 
 ## Properties
 Name | Type | Description | Notes

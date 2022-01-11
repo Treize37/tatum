@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTransactionKMS
+# Tatum::FlowTransactionKMS
 
 ## Properties
 Name | Type | Description | Notes

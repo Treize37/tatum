@@ -1,4 +1,4 @@
-# SwaggerClient::PolygonTransactionBody
+# Tatum::PolygonTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

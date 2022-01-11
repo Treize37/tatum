@@ -1,4 +1,4 @@
-# SwaggerClient::BtcBlock
+# Tatum::BtcBlock
 
 ## Properties
 Name | Type | Description | Notes

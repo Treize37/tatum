@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountCurrency
+# Tatum::Error403AccountCurrency
 
 ## Properties
 Name | Type | Description | Notes

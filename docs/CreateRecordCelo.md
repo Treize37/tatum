@@ -1,4 +1,4 @@
-# SwaggerClient::CreateRecordCelo
+# Tatum::CreateRecordCelo
 
 ## Properties
 Name | Type | Description | Notes

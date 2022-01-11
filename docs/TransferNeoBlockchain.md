@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNeoBlockchain
+# Tatum::TransferNeoBlockchain
 
 ## Properties
 Name | Type | Description | Notes

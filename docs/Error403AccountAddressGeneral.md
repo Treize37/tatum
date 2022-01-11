@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountAddressGeneral
+# Tatum::Error403AccountAddressGeneral
 
 ## Properties
 Name | Type | Description | Notes

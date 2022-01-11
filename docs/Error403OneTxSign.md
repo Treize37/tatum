@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OneTxSign
+# Tatum::Error403OneTxSign
 
 ## Properties
 Name | Type | Description | Notes

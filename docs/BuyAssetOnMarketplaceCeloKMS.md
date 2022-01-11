@@ -1,4 +1,4 @@
-# SwaggerClient::BuyAssetOnMarketplaceCeloKMS
+# Tatum::BuyAssetOnMarketplaceCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

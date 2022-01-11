@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNftFee
+# Tatum::TransferNftFee
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransactionHashKMS
+# Tatum::TransactionHashKMS
 
 ## Properties
 Name | Type | Description | Notes

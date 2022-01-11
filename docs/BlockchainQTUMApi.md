@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainQTUMApi
+# Tatum::BlockchainQTUMApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Get QTUM estimated gas fees
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
-nblocks = SwaggerClient::BigDecimal.new # BigDecimal | nblocks
+api_instance = Tatum::BlockchainQTUMApi.new
+nblocks = Tatum::BigDecimal.new # BigDecimal | nblocks
 
 
 begin
   #Get QTUM estimated gas fees
   result = api_instance.estimate_fee(nblocks)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->estimate_fee: #{e}"
 end
 ```
@@ -81,24 +81,24 @@ Get QTUM estimated gas fees per byte
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
-nblocks = SwaggerClient::BigDecimal.new # BigDecimal | nblocks
+api_instance = Tatum::BlockchainQTUMApi.new
+nblocks = Tatum::BigDecimal.new # BigDecimal | nblocks
 
 
 begin
   #Get QTUM estimated gas fees per byte
   result = api_instance.estimate_fee_per_byte(nblocks)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->estimate_fee_per_byte: #{e}"
 end
 ```
@@ -134,16 +134,16 @@ Generate QTUM Address from private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 key = 'key_example' # String | Private key
 
 
@@ -151,7 +151,7 @@ begin
   #Generate QTUM Address from private key
   result = api_instance.generate_address_privatekey(key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->generate_address_privatekey: #{e}"
 end
 ```
@@ -187,24 +187,24 @@ Generate QTUM private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
-body = SwaggerClient::WalletPrivBody.new # WalletPrivBody | 
+api_instance = Tatum::BlockchainQTUMApi.new
+body = Tatum::WalletPrivBody.new # WalletPrivBody | 
 
 
 begin
   #Generate QTUM private key
   result = api_instance.generate_private_key_from_mnemonic(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->generate_private_key_from_mnemonic: #{e}"
 end
 ```
@@ -240,27 +240,27 @@ Get QTUM Transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 address = 'address_example' # String | Address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | pageSize
+page_size = Tatum::BigDecimal.new # BigDecimal | pageSize
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | offset
+  offset: Tatum::BigDecimal.new # BigDecimal | offset
 }
 
 begin
   #Get QTUM Transactions by address
   result = api_instance.get_qtum_paginated_transaction(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->get_qtum_paginated_transaction: #{e}"
 end
 ```
@@ -298,16 +298,16 @@ Get QTUM Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 id = 'id_example' # String | Transaction hash
 
 
@@ -315,7 +315,7 @@ begin
   #Get QTUM Transaction
   result = api_instance.get_qtum_transaction(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->get_qtum_transaction: #{e}"
 end
 ```
@@ -351,16 +351,16 @@ Get UTXO
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 address = 'address_example' # String | address
 
 
@@ -368,7 +368,7 @@ begin
   #Get UTXO
   result = api_instance.get_qtum_utx_os(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->get_qtum_utx_os: #{e}"
 end
 ```
@@ -404,24 +404,24 @@ Broadcast signed QTUM transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainQTUMApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed QTUM transaction
   result = api_instance.qtum_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_broadcast: #{e}"
 end
 ```
@@ -457,25 +457,25 @@ Generate QTUM account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-i = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+i = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate QTUM account address from Extended public key
   result = api_instance.qtum_generate_address(xpub, i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_generate_address: #{e}"
 end
 ```
@@ -512,16 +512,16 @@ Generate QTUM wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic
 }
@@ -530,7 +530,7 @@ begin
   #Generate QTUM wallet
   result = api_instance.qtum_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_generate_wallet: #{e}"
 end
 ```
@@ -566,16 +566,16 @@ Get QTUM Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 address = 'address_example' # String | Account address
 
 
@@ -583,7 +583,7 @@ begin
   #Get QTUM Account balance
   result = api_instance.qtum_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_get_balance: #{e}"
 end
 ```
@@ -619,16 +619,16 @@ Get QTUM block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 hash = 'hash_example' # String | Block hash or block number
 
 
@@ -636,7 +636,7 @@ begin
   #Get QTUM block by hash
   result = api_instance.qtum_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_get_block: #{e}"
 end
 ```
@@ -672,22 +672,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQTUMApi.new
+api_instance = Tatum::BlockchainQTUMApi.new
 
 begin
   #Get current block number
   result = api_instance.qtum_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQTUMApi->qtum_get_current_block: #{e}"
 end
 ```

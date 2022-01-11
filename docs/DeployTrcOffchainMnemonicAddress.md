@@ -1,4 +1,4 @@
-# SwaggerClient::DeployTrcOffchainMnemonicAddress
+# Tatum::DeployTrcOffchainMnemonicAddress
 
 ## Properties
 Name | Type | Description | Notes

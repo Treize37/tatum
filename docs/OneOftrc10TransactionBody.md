@@ -1,4 +1,4 @@
-# SwaggerClient::OneOftrc10TransactionBody
+# Tatum::OneOftrc10TransactionBody
 
 ## Properties
 Name | Type | Description | Notes

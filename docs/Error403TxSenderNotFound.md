@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxSenderNotFound
+# Tatum::Error403TxSenderNotFound
 
 ## Properties
 Name | Type | Description | Notes

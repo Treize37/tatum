@@ -1,4 +1,4 @@
-# SwaggerClient::DeployAlgoErc20OffchainMnemonicAddress
+# Tatum::DeployAlgoErc20OffchainMnemonicAddress
 
 ## Properties
 Name | Type | Description | Notes

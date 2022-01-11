@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SubscriptionNotExists
+# Tatum::Error403SubscriptionNotExists
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfmintBatchBody1
+# Tatum::OneOfmintBatchBody1
 
 ## Properties
 Name | Type | Description | Notes

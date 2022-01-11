@@ -1,4 +1,4 @@
-# SwaggerClient::OneOftrc10DeployBody
+# Tatum::OneOftrc10DeployBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateXlmAsset
+# Tatum::CreateXlmAsset
 
 ## Properties
 Name | Type | Description | Notes

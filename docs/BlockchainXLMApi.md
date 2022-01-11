@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainXLMApi
+# Tatum::BlockchainXLMApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -26,24 +26,24 @@ Broadcast signed XLM transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainXLMApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed XLM transaction
   result = api_instance.xlm_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_broadcast: #{e}"
 end
 ```
@@ -79,16 +79,16 @@ Get XLM Account info
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 account = 'account_example' # String | Account address
 
 
@@ -96,7 +96,7 @@ begin
   #Get XLM Account info
   result = api_instance.xlm_get_account_info(account)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_account_info: #{e}"
 end
 ```
@@ -132,16 +132,16 @@ Get XLM Account transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 account = 'account_example' # String | Address of XLM account.
 opts = { 
   pagination: 'pagination_example' # String | Paging token from the last transaction gives you next page
@@ -151,7 +151,7 @@ begin
   #Get XLM Account transactions
   result = api_instance.xlm_get_account_tx(account, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_account_tx: #{e}"
 end
 ```
@@ -188,22 +188,22 @@ Get actual XLM fee
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 
 begin
   #Get actual XLM fee
   result = api_instance.xlm_get_fee
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_fee: #{e}"
 end
 ```
@@ -236,22 +236,22 @@ Get XLM Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 
 begin
   #Get XLM Blockchain Information
   result = api_instance.xlm_get_last_closed_ledger
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_last_closed_ledger: #{e}"
 end
 ```
@@ -284,16 +284,16 @@ Get XLM Blockchain Ledger by sequence
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 sequence = 'sequence_example' # String | Sequence of the ledger.
 
 
@@ -301,7 +301,7 @@ begin
   #Get XLM Blockchain Ledger by sequence
   result = api_instance.xlm_get_ledger(sequence)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_ledger: #{e}"
 end
 ```
@@ -337,16 +337,16 @@ Get XLM Blockchain Transactions in Ledger
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 sequence = 'sequence_example' # String | Sequence of the ledger.
 
 
@@ -354,7 +354,7 @@ begin
   #Get XLM Blockchain Transactions in Ledger
   result = api_instance.xlm_get_ledger_tx(sequence)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_ledger_tx: #{e}"
 end
 ```
@@ -390,16 +390,16 @@ Get XLM Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -407,7 +407,7 @@ begin
   #Get XLM Transaction by hash
   result = api_instance.xlm_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_get_transaction: #{e}"
 end
 ```
@@ -443,24 +443,24 @@ Send XLM from address to address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
-body = SwaggerClient::XlmTransactionBody.new # XlmTransactionBody | 
+api_instance = Tatum::BlockchainXLMApi.new
+body = Tatum::XlmTransactionBody.new # XlmTransactionBody | 
 
 
 begin
   #Send XLM from address to address
   result = api_instance.xlm_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_transfer_blockchain: #{e}"
 end
 ```
@@ -496,24 +496,24 @@ Create / Update / Delete XLM trust line
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
-body = SwaggerClient::XlmTrustBody.new # XlmTrustBody | 
+api_instance = Tatum::BlockchainXLMApi.new
+body = Tatum::XlmTrustBody.new # XlmTrustBody | 
 
 
 begin
   #Create / Update / Delete XLM trust line
   result = api_instance.xlm_trust_line_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_trust_line_blockchain: #{e}"
 end
 ```
@@ -549,22 +549,22 @@ Generate XLM account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainXLMApi.new
+api_instance = Tatum::BlockchainXLMApi.new
 
 begin
   #Generate XLM account
   result = api_instance.xlm_wallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainXLMApi->xlm_wallet: #{e}"
 end
 ```

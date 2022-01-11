@@ -1,4 +1,4 @@
-# SwaggerClient::NeoContract
+# Tatum::NeoContract
 
 ## Properties
 Name | Type | Description | Notes

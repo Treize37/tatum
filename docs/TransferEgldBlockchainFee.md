@@ -1,4 +1,4 @@
-# SwaggerClient::TransferEgldBlockchainFee
+# Tatum::TransferEgldBlockchainFee
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::FeeETH
+# Tatum::FeeETH
 
 ## Properties
 Name | Type | Description | Notes

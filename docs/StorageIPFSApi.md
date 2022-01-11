@@ -1,4 +1,4 @@
-# SwaggerClient::StorageIPFSApi
+# Tatum::StorageIPFSApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -17,16 +17,16 @@ Get file from IPFS
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::StorageIPFSApi.new
+api_instance = Tatum::StorageIPFSApi.new
 id = 'id_example' # String | IPFS CID of the file
 
 
@@ -34,7 +34,7 @@ begin
   #Get file from IPFS
   result = api_instance.get_ipfs_data(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling StorageIPFSApi->get_ipfs_data: #{e}"
 end
 ```
@@ -70,16 +70,16 @@ Store data to IPFS
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::StorageIPFSApi.new
+api_instance = Tatum::StorageIPFSApi.new
 file = 'file_example' # String | 
 
 
@@ -87,7 +87,7 @@ begin
   #Store data to IPFS
   result = api_instance.store_ipfs(file)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling StorageIPFSApi->store_ipfs: #{e}"
 end
 ```

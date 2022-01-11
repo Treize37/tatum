@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VCCreateFailed
+# Tatum::Error403VCCreateFailed
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainUtilsApi
+# Tatum::BlockchainUtilsApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -23,24 +23,24 @@ Approve transfer of assets from custodial wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::CustodialApproveBody.new # CustodialApproveBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::CustodialApproveBody.new # CustodialApproveBody | 
 
 
 begin
   #Approve transfer of assets from custodial wallet
   result = api_instance.approve_transfer_custodial_wallet(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->approve_transfer_custodial_wallet: #{e}"
 end
 ```
@@ -76,24 +76,24 @@ Estimate fee for transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::BlockchainEstimateBody.new # BlockchainEstimateBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::BlockchainEstimateBody.new # BlockchainEstimateBody | 
 
 
 begin
   #Estimate fee for transaction
   result = api_instance.estimate_fee_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->estimate_fee_blockchain: #{e}"
 end
 ```
@@ -129,24 +129,24 @@ Generate custodial wallet address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::ScCustodialBody.new # ScCustodialBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::ScCustodialBody.new # ScCustodialBody | 
 
 
 begin
   #Generate custodial wallet address
   result = api_instance.generate_custodial_wallet(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->generate_custodial_wallet: #{e}"
 end
 ```
@@ -182,17 +182,17 @@ Generate custodial wallet address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::CustodialBatchBody.new # CustodialBatchBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::CustodialBatchBody.new # CustodialBatchBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten.
 }
@@ -201,7 +201,7 @@ begin
   #Generate custodial wallet address
   result = api_instance.generate_custodial_wallet_batch(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->generate_custodial_wallet_batch: #{e}"
 end
 ```
@@ -238,16 +238,16 @@ Get contract address from transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
+api_instance = Tatum::BlockchainUtilsApi.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 
@@ -256,7 +256,7 @@ begin
   #Get contract address from transaction
   result = api_instance.s_c_get_contract_address(chain, hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->s_c_get_contract_address: #{e}"
 end
 ```
@@ -293,16 +293,16 @@ Get custodial addresses from transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
+api_instance = Tatum::BlockchainUtilsApi.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 
@@ -311,7 +311,7 @@ begin
   #Get custodial addresses from transaction
   result = api_instance.s_c_get_custodial_addresses(chain, hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->s_c_get_custodial_addresses: #{e}"
 end
 ```
@@ -348,24 +348,24 @@ Transfer assets from custodial wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::CustodialTransferBody.new # CustodialTransferBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::CustodialTransferBody.new # CustodialTransferBody | 
 
 
 begin
   #Transfer assets from custodial wallet
   result = api_instance.transfer_custodial_wallet(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->transfer_custodial_wallet: #{e}"
 end
 ```
@@ -401,24 +401,24 @@ Transfer multiple assets from custodial wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainUtilsApi.new
-body = SwaggerClient::TransferBatchBody.new # TransferBatchBody | 
+api_instance = Tatum::BlockchainUtilsApi.new
+body = Tatum::TransferBatchBody.new # TransferBatchBody | 
 
 
 begin
   #Transfer multiple assets from custodial wallet
   result = api_instance.transfer_custodial_wallet_batch(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainUtilsApi->transfer_custodial_wallet_batch: #{e}"
 end
 ```

@@ -11,14 +11,14 @@ Swagger Codegen version: 3.0.31
 
 require 'spec_helper'
 
-describe SwaggerClient::Configuration do
-  let(:config) { SwaggerClient::Configuration.default }
+describe Tatum::Configuration do
+  let(:config) { Tatum::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("https://api-eu1.tatum.io")
-    # SwaggerClient.configure do |c|
+    # Tatum.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end

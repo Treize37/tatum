@@ -1,4 +1,4 @@
-# SwaggerClient::BatchTransactionResult
+# Tatum::BatchTransactionResult
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeployErc721CeloKMS
+# Tatum::DeployErc721CeloKMS
 
 ## Properties
 Name | Type | Description | Notes

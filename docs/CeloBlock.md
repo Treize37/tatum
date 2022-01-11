@@ -1,4 +1,4 @@
-# SwaggerClient::CeloBlock
+# Tatum::CeloBlock
 
 ## Properties
 Name | Type | Description | Notes

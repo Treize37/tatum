@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateAuctionCeloKMS
+# Tatum::GenerateAuctionCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

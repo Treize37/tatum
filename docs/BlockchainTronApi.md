@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainTronApi
+# Tatum::BlockchainTronApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -32,16 +32,16 @@ Generate Tron wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -50,7 +50,7 @@ begin
   #Generate Tron wallet
   result = api_instance.generate_tronwallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->generate_tronwallet: #{e}"
 end
 ```
@@ -86,16 +86,16 @@ Get Tron Account transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 address = 'address_example' # String | Address to get transactions for.
 opts = { 
   _next: '_next_example' # String | If
@@ -105,7 +105,7 @@ begin
   #Get Tron Account transactions
   result = api_instance.tron_account_tx(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_account_tx: #{e}"
 end
 ```
@@ -142,16 +142,16 @@ Get Tron Account TRC20 transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 address = 'address_example' # String | Address to get transactions for.
 opts = { 
   _next: '_next_example' # String | If
@@ -161,7 +161,7 @@ begin
   #Get Tron Account TRC20 transactions
   result = api_instance.tron_account_tx20(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_account_tx20: #{e}"
 end
 ```
@@ -198,24 +198,24 @@ Broadcast Tron transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::TronBroadcast.new # TronBroadcast | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::TronBroadcast.new # TronBroadcast | 
 
 
 begin
   #Broadcast Tron transaction
   result = api_instance.tron_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_broadcast: #{e}"
 end
 ```
@@ -251,24 +251,24 @@ Create Tron TRC10 token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::Trc10DeployBody.new # Trc10DeployBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::Trc10DeployBody.new # Trc10DeployBody | 
 
 
 begin
   #Create Tron TRC10 token
   result = api_instance.tron_create_trc10(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_create_trc10: #{e}"
 end
 ```
@@ -304,24 +304,24 @@ Create Tron TRC20 token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::Trc20DeployBody.new # Trc20DeployBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::Trc20DeployBody.new # Trc20DeployBody | 
 
 
 begin
   #Create Tron TRC20 token
   result = api_instance.tron_create_trc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_create_trc20: #{e}"
 end
 ```
@@ -357,24 +357,24 @@ Freeze Tron balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::TronFreezeBalanceBody.new # TronFreezeBalanceBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::TronFreezeBalanceBody.new # TronFreezeBalanceBody | 
 
 
 begin
   #Freeze Tron balance
   result = api_instance.tron_freeze(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_freeze: #{e}"
 end
 ```
@@ -410,25 +410,25 @@ Generate Tron deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Tron deposit address from Extended public key
   result = api_instance.tron_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_generate_address: #{e}"
 end
 ```
@@ -465,24 +465,24 @@ Generate Tron private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Tron private key
   result = api_instance.tron_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_generate_address_private_key: #{e}"
 end
 ```
@@ -518,16 +518,16 @@ Get Tron Account by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 address = 'address_example' # String | Account address.
 
 
@@ -535,7 +535,7 @@ begin
   #Get Tron Account by address
   result = api_instance.tron_get_account(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_get_account: #{e}"
 end
 ```
@@ -571,16 +571,16 @@ Get Tron block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -588,7 +588,7 @@ begin
   #Get Tron block
   result = api_instance.tron_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_get_block: #{e}"
 end
 ```
@@ -624,22 +624,22 @@ Get current Tron block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 
 begin
   #Get current Tron block
   result = api_instance.tron_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_get_current_block: #{e}"
 end
 ```
@@ -672,16 +672,16 @@ Get Tron transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
+api_instance = Tatum::BlockchainTronApi.new
 hash = 'hash_example' # String | Transaction hash.
 
 
@@ -689,7 +689,7 @@ begin
   #Get Tron transaction by hash
   result = api_instance.tron_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_get_transaction: #{e}"
 end
 ```
@@ -725,24 +725,24 @@ Send Tron transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::TronTransactionBody.new # TronTransactionBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::TronTransactionBody.new # TronTransactionBody | 
 
 
 begin
   #Send Tron transaction
   result = api_instance.tron_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_transfer: #{e}"
 end
 ```
@@ -778,24 +778,24 @@ Send Tron TRC10 transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::Trc10TransactionBody.new # Trc10TransactionBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::Trc10TransactionBody.new # Trc10TransactionBody | 
 
 
 begin
   #Send Tron TRC10 transaction
   result = api_instance.tron_transfer_trc10(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_transfer_trc10: #{e}"
 end
 ```
@@ -831,24 +831,24 @@ Send Tron TRC20 transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-body = SwaggerClient::Trc20TransactionBody.new # Trc20TransactionBody | 
+api_instance = Tatum::BlockchainTronApi.new
+body = Tatum::Trc20TransactionBody.new # Trc20TransactionBody | 
 
 
 begin
   #Send Tron TRC20 transaction
   result = api_instance.tron_transfer_trc20(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_transfer_trc20: #{e}"
 end
 ```
@@ -884,24 +884,24 @@ Get Tron TRC10 token detail
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainTronApi.new
-id = SwaggerClient::BigDecimal.new # BigDecimal | TRC10 token ID
+api_instance = Tatum::BlockchainTronApi.new
+id = Tatum::BigDecimal.new # BigDecimal | TRC10 token ID
 
 
 begin
   #Get Tron TRC10 token detail
   result = api_instance.tron_trc10_detail(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainTronApi->tron_trc10_detail: #{e}"
 end
 ```

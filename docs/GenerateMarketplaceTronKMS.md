@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateMarketplaceTronKMS
+# Tatum::GenerateMarketplaceTronKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Trc
+# Tatum::Trc
 
 ## Properties
 Name | Type | Description | Notes

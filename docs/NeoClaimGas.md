@@ -1,4 +1,4 @@
-# SwaggerClient::NeoClaimGas
+# Tatum::NeoClaimGas
 
 ## Properties
 Name | Type | Description | Notes

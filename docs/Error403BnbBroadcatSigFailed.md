@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BnbBroadcatSigFailed
+# Tatum::Error403BnbBroadcatSigFailed
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TatumServiceApi
+# Tatum::TatumServiceApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -20,21 +20,21 @@ Freeze API Key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TatumServiceApi.new
+api_instance = Tatum::TatumServiceApi.new
 
 begin
   #Freeze API Key
   api_instance.freeze_api_key
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling TatumServiceApi->freeze_api_key: #{e}"
 end
 ```
@@ -67,22 +67,22 @@ List credit consumption for last month
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TatumServiceApi.new
+api_instance = Tatum::TatumServiceApi.new
 
 begin
   #List credit consumption for last month
   result = api_instance.get_credits
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling TatumServiceApi->get_credits: #{e}"
 end
 ```
@@ -115,16 +115,16 @@ Get currenct exchange rate of the supported FIAT / crypto asset
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TatumServiceApi.new
+api_instance = Tatum::TatumServiceApi.new
 currency = 'currency_example' # String | FIAT or crypto asset
 opts = { 
   base_pair: 'base_pair_example' # String | FIAT to convert as a basePair
@@ -134,7 +134,7 @@ begin
   #Get currenct exchange rate of the supported FIAT / crypto asset
   result = api_instance.get_exchange_rate(currency, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling TatumServiceApi->get_exchange_rate: #{e}"
 end
 ```
@@ -171,22 +171,22 @@ Get API version
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TatumServiceApi.new
+api_instance = Tatum::TatumServiceApi.new
 
 begin
   #Get API version
   result = api_instance.get_version
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling TatumServiceApi->get_version: #{e}"
 end
 ```
@@ -219,21 +219,21 @@ Unfreeze API Key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TatumServiceApi.new
+api_instance = Tatum::TatumServiceApi.new
 
 begin
   #Unfreeze API Key
   api_instance.unfreeze_api_key
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling TatumServiceApi->unfreeze_api_key: #{e}"
 end
 ```

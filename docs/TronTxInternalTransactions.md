@@ -1,4 +1,4 @@
-# SwaggerClient::TronTxInternalTransactions
+# Tatum::TronTxInternalTransactions
 
 ## Properties
 Name | Type | Description | Notes

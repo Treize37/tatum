@@ -1,4 +1,4 @@
-# SwaggerClient::Erc20Address
+# Tatum::Erc20Address
 
 ## Properties
 Name | Type | Description | Notes

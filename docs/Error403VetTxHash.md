@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VetTxHash
+# Tatum::Error403VetTxHash
 
 ## Properties
 Name | Type | Description | Notes

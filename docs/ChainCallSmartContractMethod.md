@@ -1,4 +1,4 @@
-# SwaggerClient::ChainCallSmartContractMethod
+# Tatum::ChainCallSmartContractMethod
 
 ## Properties
 Name | Type | Description | Notes

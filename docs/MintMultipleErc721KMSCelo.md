@@ -1,4 +1,4 @@
-# SwaggerClient::MintMultipleErc721KMSCelo
+# Tatum::MintMultipleErc721KMSCelo
 
 ## Properties
 Name | Type | Description | Notes

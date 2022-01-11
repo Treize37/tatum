@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonBep20Unsupported
+# Tatum::Error403PolygonBep20Unsupported
 
 ## Properties
 Name | Type | Description | Notes

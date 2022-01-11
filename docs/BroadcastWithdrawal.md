@@ -1,4 +1,4 @@
-# SwaggerClient::BroadcastWithdrawal
+# Tatum::BroadcastWithdrawal
 
 ## Properties
 Name | Type | Description | Notes

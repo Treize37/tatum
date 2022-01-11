@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateMarketplaceCeloKMS
+# Tatum::GenerateMarketplaceCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

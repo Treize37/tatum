@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfaccountSettingsBody
+# Tatum::OneOfaccountSettingsBody
 
 ## Properties
 Name | Type | Description | Notes

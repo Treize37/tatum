@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBnbKMS
+# Tatum::TransferBnbKMS
 
 ## Properties
 Name | Type | Description | Notes

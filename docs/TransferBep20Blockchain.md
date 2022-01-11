@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBep20Blockchain
+# Tatum::TransferBep20Blockchain
 
 ## Properties
 Name | Type | Description | Notes

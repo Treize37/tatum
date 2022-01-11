@@ -1,4 +1,4 @@
-# SwaggerClient::AlgoTx
+# Tatum::AlgoTx
 
 ## Properties
 Name | Type | Description | Notes

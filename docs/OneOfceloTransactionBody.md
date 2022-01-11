@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfceloTransactionBody
+# Tatum::OneOfceloTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

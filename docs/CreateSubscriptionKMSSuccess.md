@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionKMSSuccess
+# Tatum::CreateSubscriptionKMSSuccess
 
 ## Properties
 Name | Type | Description | Notes

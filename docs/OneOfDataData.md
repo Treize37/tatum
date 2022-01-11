@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfDataData
+# Tatum::OneOfDataData
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransferCeloKMS
+# Tatum::TransferCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

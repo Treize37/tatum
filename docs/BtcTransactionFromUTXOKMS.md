@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTransactionFromUTXOKMS
+# Tatum::BtcTransactionFromUTXOKMS
 
 ## Properties
 Name | Type | Description | Notes

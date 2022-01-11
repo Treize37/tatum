@@ -1,4 +1,4 @@
-# SwaggerClient::TransferPolygonBlockchainKMS
+# Tatum::TransferPolygonBlockchainKMS
 
 ## Properties
 Name | Type | Description | Notes

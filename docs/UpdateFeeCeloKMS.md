@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateFeeCeloKMS
+# Tatum::UpdateFeeCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

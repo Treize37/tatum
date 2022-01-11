@@ -1,4 +1,4 @@
-# SwaggerClient::TransferQuorum
+# Tatum::TransferQuorum
 
 ## Properties
 Name | Type | Description | Notes

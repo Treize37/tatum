@@ -1,4 +1,4 @@
-# SwaggerClient::XrpFeeDrops
+# Tatum::XrpFeeDrops
 
 ## Properties
 Name | Type | Description | Notes

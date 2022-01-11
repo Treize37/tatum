@@ -1,4 +1,4 @@
-# SwaggerClient::QtumIRawTransactionInfoScriptPubKey
+# Tatum::QtumIRawTransactionInfoScriptPubKey
 
 ## Properties
 Name | Type | Description | Notes

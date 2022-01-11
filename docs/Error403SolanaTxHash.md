@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SolanaTxHash
+# Tatum::Error403SolanaTxHash
 
 ## Properties
 Name | Type | Description | Notes

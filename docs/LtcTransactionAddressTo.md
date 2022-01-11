@@ -1,4 +1,4 @@
-# SwaggerClient::LtcTransactionAddressTo
+# Tatum::LtcTransactionAddressTo
 
 ## Properties
 Name | Type | Description | Notes

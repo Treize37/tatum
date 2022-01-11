@@ -1,4 +1,4 @@
-# SwaggerClient::MintNftSolanaKMSMetadata
+# Tatum::MintNftSolanaKMSMetadata
 
 ## Properties
 Name | Type | Description | Notes

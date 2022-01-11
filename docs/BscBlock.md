@@ -1,4 +1,4 @@
-# SwaggerClient::BscBlock
+# Tatum::BscBlock
 
 ## Properties
 Name | Type | Description | Notes

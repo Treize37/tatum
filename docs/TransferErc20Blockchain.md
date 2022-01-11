@@ -1,4 +1,4 @@
-# SwaggerClient::TransferErc20Blockchain
+# Tatum::TransferErc20Blockchain
 
 ## Properties
 Name | Type | Description | Notes

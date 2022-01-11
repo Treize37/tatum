@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaTxInputs
+# Tatum::ScryptaTxInputs
 
 ## Properties
 Name | Type | Description | Notes

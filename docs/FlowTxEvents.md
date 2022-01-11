@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTxEvents
+# Tatum::FlowTxEvents
 
 ## Properties
 Name | Type | Description | Notes

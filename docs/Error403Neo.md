@@ -1,4 +1,4 @@
-# SwaggerClient::Error403Neo
+# Tatum::Error403Neo
 
 ## Properties
 Name | Type | Description | Notes

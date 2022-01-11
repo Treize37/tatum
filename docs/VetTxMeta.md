@@ -1,4 +1,4 @@
-# SwaggerClient::VetTxMeta
+# Tatum::VetTxMeta
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Chart
+# Tatum::Chart
 
 ## Properties
 Name | Type | Description | Notes

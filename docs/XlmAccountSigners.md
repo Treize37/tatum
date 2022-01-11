@@ -1,4 +1,4 @@
-# SwaggerClient::XlmAccountSigners
+# Tatum::XlmAccountSigners
 
 ## Properties
 Name | Type | Description | Notes

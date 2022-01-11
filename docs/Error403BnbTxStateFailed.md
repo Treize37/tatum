@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BnbTxStateFailed
+# Tatum::Error403BnbTxStateFailed
 
 ## Properties
 Name | Type | Description | Notes

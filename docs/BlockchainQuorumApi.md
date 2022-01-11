@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainQuorumApi
+# Tatum::BlockchainQuorumApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -23,17 +23,17 @@ Send Quorum transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
-body = SwaggerClient::TransferQuorum.new # TransferQuorum | 
+api_instance = Tatum::BlockchainQuorumApi.new
+body = Tatum::TransferQuorum.new # TransferQuorum | 
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 
 
@@ -41,7 +41,7 @@ begin
   #Send Quorum transaction
   result = api_instance.quorum_blockchain_transfer(bodyx_quorum_endpoint)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_blockchain_transfer: #{e}"
 end
 ```
@@ -78,17 +78,17 @@ Generate Quorum Account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
-body = SwaggerClient::QuorumAccountBody.new # QuorumAccountBody | 
+api_instance = Tatum::BlockchainQuorumApi.new
+body = Tatum::QuorumAccountBody.new # QuorumAccountBody | 
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 
 
@@ -96,7 +96,7 @@ begin
   #Generate Quorum Account
   result = api_instance.quorum_generate_account(bodyx_quorum_endpoint)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_generate_account: #{e}"
 end
 ```
@@ -133,16 +133,16 @@ Get Quorum block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
+api_instance = Tatum::BlockchainQuorumApi.new
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 hash = 'hash_example' # String | Block hash or block number
 
@@ -151,7 +151,7 @@ begin
   #Get Quorum block by hash
   result = api_instance.quorum_get_block(x_quorum_endpoint, hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_get_block: #{e}"
 end
 ```
@@ -188,16 +188,16 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
+api_instance = Tatum::BlockchainQuorumApi.new
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 
 
@@ -205,7 +205,7 @@ begin
   #Get current block number
   result = api_instance.quorum_get_current_block(x_quorum_endpoint)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_get_current_block: #{e}"
 end
 ```
@@ -241,16 +241,16 @@ Get Quorum Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
+api_instance = Tatum::BlockchainQuorumApi.new
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 hash = 'hash_example' # String | Transaction hash
 
@@ -259,7 +259,7 @@ begin
   #Get Quorum Transaction
   result = api_instance.quorum_get_transaction(x_quorum_endpoint, hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_get_transaction: #{e}"
 end
 ```
@@ -296,16 +296,16 @@ Get Quorum transaction receipt
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
+api_instance = Tatum::BlockchainQuorumApi.new
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 hash = 'hash_example' # String | Transaction hash
 
@@ -314,7 +314,7 @@ begin
   #Get Quorum transaction receipt
   result = api_instance.quorum_get_transaction_receipt(x_quorum_endpoint, hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_get_transaction_receipt: #{e}"
 end
 ```
@@ -351,17 +351,17 @@ Unlock Quorum Account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
-body = SwaggerClient::AddressUnlockBody.new # AddressUnlockBody | 
+api_instance = Tatum::BlockchainQuorumApi.new
+body = Tatum::AddressUnlockBody.new # AddressUnlockBody | 
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 address = 'address_example' # String | Account address
 
@@ -370,7 +370,7 @@ begin
   #Unlock Quorum Account
   result = api_instance.quorum_unlock_account(bodyx_quorum_endpointaddress)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_unlock_account: #{e}"
 end
 ```
@@ -408,9 +408,9 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainQuorumApi.new
+api_instance = Tatum::BlockchainQuorumApi.new
 body = nil # Object | 
 x_quorum_endpoint = 'x_quorum_endpoint_example' # String | URL of the Quorum network
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
@@ -420,7 +420,7 @@ begin
   #Web3 HTTP driver
   result = api_instance.quorum_web3_driver(bodyx_quorum_endpointx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainQuorumApi->quorum_web3_driver: #{e}"
 end
 ```

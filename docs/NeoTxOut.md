@@ -1,4 +1,4 @@
-# SwaggerClient::NeoTxOut
+# Tatum::NeoTxOut
 
 ## Properties
 Name | Type | Description | Notes

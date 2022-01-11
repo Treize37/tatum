@@ -1,4 +1,4 @@
-# SwaggerClient::BscSmartcontractBody
+# Tatum::BscSmartcontractBody
 
 ## Properties
 Name | Type | Description | Notes

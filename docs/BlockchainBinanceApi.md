@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainBinanceApi
+# Tatum::BlockchainBinanceApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -22,24 +22,24 @@ Send Binance / Binance Token from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
-body = SwaggerClient::BnbTransactionBody.new # BnbTransactionBody | 
+api_instance = Tatum::BlockchainBinanceApi.new
+body = Tatum::BnbTransactionBody.new # BnbTransactionBody | 
 
 
 begin
   #Send Binance / Binance Token from account to account
   result = api_instance.bnb_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_blockchain_transfer: #{e}"
 end
 ```
@@ -75,24 +75,24 @@ Broadcast signed BNB transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
-body = SwaggerClient::Broadcast.new # Broadcast | 
+api_instance = Tatum::BlockchainBinanceApi.new
+body = Tatum::Broadcast.new # Broadcast | 
 
 
 begin
   #Broadcast signed BNB transaction
   result = api_instance.bnb_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_broadcast: #{e}"
 end
 ```
@@ -128,22 +128,22 @@ Generate Binance wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
+api_instance = Tatum::BlockchainBinanceApi.new
 
 begin
   #Generate Binance wallet
   result = api_instance.bnb_generate_wallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_generate_wallet: #{e}"
 end
 ```
@@ -176,16 +176,16 @@ Get Binance Account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
+api_instance = Tatum::BlockchainBinanceApi.new
 address = 'address_example' # String | Account address
 
 
@@ -193,7 +193,7 @@ begin
   #Get Binance Account
   result = api_instance.bnb_get_account(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_get_account: #{e}"
 end
 ```
@@ -229,24 +229,24 @@ Get Binance Transactions in Block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
-height = SwaggerClient::BigDecimal.new # BigDecimal | Block height
+api_instance = Tatum::BlockchainBinanceApi.new
+height = Tatum::BigDecimal.new # BigDecimal | Block height
 
 
 begin
   #Get Binance Transactions in Block
   result = api_instance.bnb_get_block(height)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_get_block: #{e}"
 end
 ```
@@ -282,22 +282,22 @@ Get Binance current block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
+api_instance = Tatum::BlockchainBinanceApi.new
 
 begin
   #Get Binance current block
   result = api_instance.bnb_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_get_current_block: #{e}"
 end
 ```
@@ -330,16 +330,16 @@ Get Binance Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBinanceApi.new
+api_instance = Tatum::BlockchainBinanceApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -347,7 +347,7 @@ begin
   #Get Binance Transaction
   result = api_instance.bnb_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBinanceApi->bnb_get_transaction: #{e}"
 end
 ```

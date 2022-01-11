@@ -1,4 +1,4 @@
-# SwaggerClient::DeployTrcOffchainKMSXpub
+# Tatum::DeployTrcOffchainKMSXpub
 
 ## Properties
 Name | Type | Description | Notes

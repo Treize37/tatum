@@ -1,4 +1,4 @@
-# SwaggerClient::TransferErc721
+# Tatum::TransferErc721
 
 ## Properties
 Name | Type | Description | Notes

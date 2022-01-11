@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateAccount
+# Tatum::UpdateAccount
 
 ## Properties
 Name | Type | Description | Notes

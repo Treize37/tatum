@@ -1,4 +1,4 @@
-# SwaggerClient::CeloTx
+# Tatum::CeloTx
 
 ## Properties
 Name | Type | Description | Notes

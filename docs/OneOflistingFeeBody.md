@@ -1,4 +1,4 @@
-# SwaggerClient::OneOflistingFeeBody
+# Tatum::OneOflistingFeeBody
 
 ## Properties
 Name | Type | Description | Notes

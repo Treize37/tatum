@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBchMnemonic
+# Tatum::TransferBchMnemonic
 
 ## Properties
 Name | Type | Description | Notes

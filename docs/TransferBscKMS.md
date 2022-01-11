@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBscKMS
+# Tatum::TransferBscKMS
 
 ## Properties
 Name | Type | Description | Notes

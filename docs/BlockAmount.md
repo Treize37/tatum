@@ -1,4 +1,4 @@
-# SwaggerClient::BlockAmount
+# Tatum::BlockAmount
 
 ## Properties
 Name | Type | Description | Notes

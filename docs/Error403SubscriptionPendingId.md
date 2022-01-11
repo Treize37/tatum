@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SubscriptionPendingId
+# Tatum::Error403SubscriptionPendingId
 
 ## Properties
 Name | Type | Description | Notes

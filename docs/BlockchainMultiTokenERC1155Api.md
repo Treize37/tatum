@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainMultiTokenERC1155Api
+# Tatum::BlockchainMultiTokenERC1155Api
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -30,17 +30,17 @@ Add Multi Token miter
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MintAddBody1.new # MintAddBody1 | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MintAddBody1.new # MintAddBody1 | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -49,7 +49,7 @@ begin
   #Add Multi Token miter
   result = api_instance.add_multi_token_minter(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->add_multi_token_minter: #{e}"
 end
 ```
@@ -86,17 +86,17 @@ Burn Multi Token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MultitokenBurnBody.new # MultitokenBurnBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MultitokenBurnBody.new # MultitokenBurnBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -105,7 +105,7 @@ begin
   #Burn Multi Token
   result = api_instance.burn_multi_token(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->burn_multi_token: #{e}"
 end
 ```
@@ -142,17 +142,17 @@ Burn Multi Token Batch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::BurnBatchBody.new # BurnBatchBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::BurnBatchBody.new # BurnBatchBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -161,7 +161,7 @@ begin
   #Burn Multi Token Batch
   result = api_instance.burn_multi_token_batch(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->burn_multi_token_batch: #{e}"
 end
 ```
@@ -198,17 +198,17 @@ Deploy Multi Token Smart Contract.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MultitokenDeployBody.new # MultitokenDeployBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MultitokenDeployBody.new # MultitokenDeployBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -217,7 +217,7 @@ begin
   #Deploy Multi Token Smart Contract.
   result = api_instance.deploy_multi_token(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->deploy_multi_token: #{e}"
 end
 ```
@@ -254,17 +254,17 @@ Mint Multi Token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MultitokenMintBody.new # MultitokenMintBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MultitokenMintBody.new # MultitokenMintBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -273,7 +273,7 @@ begin
   #Mint Multi Token
   result = api_instance.mint_multi_token(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->mint_multi_token: #{e}"
 end
 ```
@@ -310,17 +310,17 @@ Mint Multi Token Batch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MintBatchBody1.new # MintBatchBody1 | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MintBatchBody1.new # MintBatchBody1 | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -329,7 +329,7 @@ begin
   #Mint Multi Token Batch
   result = api_instance.mint_multi_token_batch(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->mint_multi_token_batch: #{e}"
 end
 ```
@@ -366,16 +366,16 @@ Get Multi Tokens by Address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Blockchain address
 opts = { 
@@ -386,7 +386,7 @@ begin
   #Get Multi Tokens by Address
   result = api_instance.multi_token_get_address_balance(chain, address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_address_balance: #{e}"
 end
 ```
@@ -424,16 +424,16 @@ Get Multi Token Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 contract_address = 'contract_address_example' # String | Multi Token contract address
@@ -446,7 +446,7 @@ begin
   #Get Multi Token Account balance
   result = api_instance.multi_token_get_balance(chain, address, contract_address, token_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_balance: #{e}"
 end
 ```
@@ -486,16 +486,16 @@ Get Multi Token Account balance Batch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | Multi Token contract address
 token_id = 'token_id_example' # String | Comma separated TokenIds to get balance for
@@ -508,7 +508,7 @@ begin
   #Get Multi Token Account balance Batch
   result = api_instance.multi_token_get_balance_batch(chain, contract_address, token_id, address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_balance_batch: #{e}"
 end
 ```
@@ -548,16 +548,16 @@ Get Contract address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 opts = { 
@@ -568,7 +568,7 @@ begin
   #Get Contract address
   result = api_instance.multi_token_get_contract_address(chain, hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_contract_address: #{e}"
 end
 ```
@@ -606,16 +606,16 @@ Get Multi Token Token Metadata
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 token = 'token_example' # String | Token ID
 contract_address = 'contract_address_example' # String | Multi Token contract address
@@ -627,7 +627,7 @@ begin
   #Get Multi Token Token Metadata
   result = api_instance.multi_token_get_metadata(chain, token, contract_address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_metadata: #{e}"
 end
 ```
@@ -666,16 +666,16 @@ Get Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 opts = { 
@@ -686,7 +686,7 @@ begin
   #Get Transaction
   result = api_instance.multi_token_get_transaction(chain, hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_transaction: #{e}"
 end
 ```
@@ -724,31 +724,31 @@ Get Multi Token transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 token_address = 'token_address_example' # String | Token address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
 }
 
 begin
   #Get Multi Token transactions by address
   result = api_instance.multi_token_get_transaction_by_address(chain, address, token_address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->multi_token_get_transaction_by_address: #{e}"
 end
 ```
@@ -790,17 +790,17 @@ Transfer Multi Token Token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::MultitokenTransactionBody.new # MultitokenTransactionBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::MultitokenTransactionBody.new # MultitokenTransactionBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -809,7 +809,7 @@ begin
   #Transfer Multi Token Token
   result = api_instance.transfer_multi_token(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->transfer_multi_token: #{e}"
 end
 ```
@@ -846,17 +846,17 @@ Transfer Multi Token Batch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainMultiTokenERC1155Api.new
-body = SwaggerClient::TransactionBatchBody.new # TransactionBatchBody | 
+api_instance = Tatum::BlockchainMultiTokenERC1155Api.new
+body = Tatum::TransactionBatchBody.new # TransactionBatchBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -865,7 +865,7 @@ begin
   #Transfer Multi Token Batch
   result = api_instance.transfer_multi_token_batch(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainMultiTokenERC1155Api->transfer_multi_token_batch: #{e}"
 end
 ```

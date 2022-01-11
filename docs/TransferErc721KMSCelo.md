@@ -1,4 +1,4 @@
-# SwaggerClient::TransferErc721KMSCelo
+# Tatum::TransferErc721KMSCelo
 
 ## Properties
 Name | Type | Description | Notes

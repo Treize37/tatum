@@ -1,4 +1,4 @@
-# SwaggerClient::BnbTxTxValueValueCoins
+# Tatum::BnbTxTxValueValueCoins
 
 ## Properties
 Name | Type | Description | Notes

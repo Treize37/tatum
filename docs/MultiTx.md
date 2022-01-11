@@ -1,4 +1,4 @@
-# SwaggerClient::MultiTx
+# Tatum::MultiTx
 
 ## Properties
 Name | Type | Description | Notes

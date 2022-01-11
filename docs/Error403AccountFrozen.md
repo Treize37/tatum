@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountFrozen
+# Tatum::Error403AccountFrozen
 
 ## Properties
 Name | Type | Description | Notes

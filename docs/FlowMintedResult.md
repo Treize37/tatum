@@ -1,4 +1,4 @@
-# SwaggerClient::FlowMintedResult
+# Tatum::FlowMintedResult
 
 ## Properties
 Name | Type | Description | Notes

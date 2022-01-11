@@ -1,4 +1,4 @@
-# SwaggerClient::SolanaMintedResult
+# Tatum::SolanaMintedResult
 
 ## Properties
 Name | Type | Description | Notes

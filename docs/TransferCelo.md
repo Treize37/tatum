@@ -1,4 +1,4 @@
-# SwaggerClient::TransferCelo
+# Tatum::TransferCelo
 
 ## Properties
 Name | Type | Description | Notes

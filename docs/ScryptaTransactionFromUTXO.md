@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaTransactionFromUTXO
+# Tatum::ScryptaTransactionFromUTXO
 
 ## Properties
 Name | Type | Description | Notes

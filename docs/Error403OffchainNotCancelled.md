@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OffchainNotCancelled
+# Tatum::Error403OffchainNotCancelled
 
 ## Properties
 Name | Type | Description | Notes

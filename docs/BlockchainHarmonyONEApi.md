@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainHarmonyONEApi
+# Tatum::BlockchainHarmonyONEApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,26 +28,26 @@ Invoke Smart Contract method
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
-body = SwaggerClient::OneSmartcontractBody.new # OneSmartcontractBody | 
+api_instance = Tatum::BlockchainHarmonyONEApi.new
+body = Tatum::OneSmartcontractBody.new # OneSmartcontractBody | 
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Invoke Smart Contract method
   result = api_instance.one_blockchain_smart_contract_invocation(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_blockchain_smart_contract_invocation: #{e}"
 end
 ```
@@ -84,26 +84,26 @@ Send ONE / HRM20 from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
-body = SwaggerClient::OneTransactionBody.new # OneTransactionBody | 
+api_instance = Tatum::BlockchainHarmonyONEApi.new
+body = Tatum::OneTransactionBody.new # OneTransactionBody | 
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Send ONE / HRM20 from account to account
   result = api_instance.one_blockchain_transfer(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_blockchain_transfer: #{e}"
 end
 ```
@@ -140,26 +140,26 @@ Broadcast signed ONE transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainHarmonyONEApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Broadcast signed ONE transaction
   result = api_instance.one_broadcast(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_broadcast: #{e}"
 end
 ```
@@ -196,16 +196,16 @@ Transform HEX address to Bech32 ONE address format
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 address = 'address_example' # String | Address in HEX (ETH compatible) format.
 
 
@@ -213,7 +213,7 @@ begin
   #Transform HEX address to Bech32 ONE address format
   result = api_instance.one_format_address(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_format_address: #{e}"
 end
 ```
@@ -249,25 +249,25 @@ Generate ONE account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate ONE account address from Extended public key
   result = api_instance.one_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_generate_address: #{e}"
 end
 ```
@@ -304,24 +304,24 @@ Generate ONE private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainHarmonyONEApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate ONE private key
   result = api_instance.one_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_generate_address_private_key: #{e}"
 end
 ```
@@ -357,16 +357,16 @@ Generate ONE wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -375,7 +375,7 @@ begin
   #Generate ONE wallet
   result = api_instance.one_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_generate_wallet: #{e}"
 end
 ```
@@ -411,26 +411,26 @@ Get ONE Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 address = 'address_example' # String | Account address
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Get ONE Account balance
   result = api_instance.one_get_balance(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_get_balance: #{e}"
 end
 ```
@@ -467,26 +467,26 @@ Get ONE block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 hash = 'hash_example' # String | Block hash or block number
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Get ONE block by hash
   result = api_instance.one_get_block(hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_get_block: #{e}"
 end
 ```
@@ -523,22 +523,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 
 begin
   #Get current block number
   result = api_instance.one_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_get_current_block: #{e}"
 end
 ```
@@ -571,26 +571,26 @@ Get ONE Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 hash = 'hash_example' # String | Transaction hash
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Get ONE Transaction
   result = api_instance.one_get_transaction(hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_get_transaction: #{e}"
 end
 ```
@@ -627,26 +627,26 @@ Get count of outgoing ONE transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 address = 'address_example' # String | address
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Get count of outgoing ONE transactions
   result = api_instance.one_get_transaction_count(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_get_transaction_count: #{e}"
 end
 ```
@@ -683,20 +683,20 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainHarmonyONEApi.new
+api_instance = Tatum::BlockchainHarmonyONEApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 opts = { 
-  shard_id: SwaggerClient::BigDecimal.new # BigDecimal | Shard to read data from
+  shard_id: Tatum::BigDecimal.new # BigDecimal | Shard to read data from
 }
 
 begin
   #Web3 HTTP driver
   result = api_instance.one_web3_driver(bodyx_api_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainHarmonyONEApi->one_web3_driver: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::QuorumAccountBody
+# Tatum::QuorumAccountBody
 
 ## Properties
 Name | Type | Description | Notes

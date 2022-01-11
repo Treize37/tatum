@@ -1,4 +1,4 @@
-# SwaggerClient::BurnMultiTokenBatchCelo
+# Tatum::BurnMultiTokenBatchCelo
 
 ## Properties
 Name | Type | Description | Notes

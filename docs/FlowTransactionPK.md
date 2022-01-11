@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTransactionPK
+# Tatum::FlowTransactionPK
 
 ## Properties
 Name | Type | Description | Notes

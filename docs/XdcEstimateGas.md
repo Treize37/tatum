@@ -1,4 +1,4 @@
-# SwaggerClient::XdcEstimateGas
+# Tatum::XdcEstimateGas
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DogeBlock
+# Tatum::DogeBlock
 
 ## Properties
 Name | Type | Description | Notes

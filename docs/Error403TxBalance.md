@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxBalance
+# Tatum::Error403TxBalance
 
 ## Properties
 Name | Type | Description | Notes

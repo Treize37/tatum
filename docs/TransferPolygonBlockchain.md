@@ -1,4 +1,4 @@
-# SwaggerClient::TransferPolygonBlockchain
+# Tatum::TransferPolygonBlockchain
 
 ## Properties
 Name | Type | Description | Notes

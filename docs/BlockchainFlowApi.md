@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainFlowApi
+# Tatum::BlockchainFlowApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Add public key to Flow address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
-body = SwaggerClient::FlowAccountBody.new # FlowAccountBody | 
+api_instance = Tatum::BlockchainFlowApi.new
+body = Tatum::FlowAccountBody.new # FlowAccountBody | 
 
 
 begin
   #Add public key to Flow address
   result = api_instance.flow_add_pub_key_to_address(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_add_pub_key_to_address: #{e}"
 end
 ```
@@ -81,24 +81,24 @@ Create Flow address from public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
-body = SwaggerClient::FlowAccountBody1.new # FlowAccountBody1 | 
+api_instance = Tatum::BlockchainFlowApi.new
+body = Tatum::FlowAccountBody1.new # FlowAccountBody1 | 
 
 
 begin
   #Create Flow address from public key
   result = api_instance.flow_create_address_from_pub_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_create_address_from_pub_key: #{e}"
 end
 ```
@@ -134,25 +134,25 @@ Generate Flow address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Flow address from Extended public key
   result = api_instance.flow_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_generate_address: #{e}"
 end
 ```
@@ -189,25 +189,25 @@ Generate Flow public key from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Flow public key from Extended public key
   result = api_instance.flow_generate_pub_key(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_generate_pub_key: #{e}"
 end
 ```
@@ -244,24 +244,24 @@ Generate Flow private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainFlowApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Flow private key
   result = api_instance.flow_generate_pub_key_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_generate_pub_key_private_key: #{e}"
 end
 ```
@@ -297,16 +297,16 @@ Generate Flow wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -315,7 +315,7 @@ begin
   #Generate Flow wallet
   result = api_instance.flow_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_generate_wallet: #{e}"
 end
 ```
@@ -351,16 +351,16 @@ Get Flow account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 address = 'address_example' # String | Account address
 
 
@@ -368,7 +368,7 @@ begin
   #Get Flow account
   result = api_instance.flow_get_account(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_get_account: #{e}"
 end
 ```
@@ -404,16 +404,16 @@ Get Flow Block by hash or height
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -421,7 +421,7 @@ begin
   #Get Flow Block by hash or height
   result = api_instance.flow_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_get_block: #{e}"
 end
 ```
@@ -457,22 +457,22 @@ Get Flow current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 
 begin
   #Get Flow current block number
   result = api_instance.flow_get_block_chain_info
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_get_block_chain_info: #{e}"
 end
 ```
@@ -505,26 +505,26 @@ Get Flow events from blocks
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 type = 'type_example' # String | Event type to search for
-from = SwaggerClient::BigDecimal.new # BigDecimal | Block height to start searching
-to = SwaggerClient::BigDecimal.new # BigDecimal | Block height to end searching
+from = Tatum::BigDecimal.new # BigDecimal | Block height to start searching
+to = Tatum::BigDecimal.new # BigDecimal | Block height to end searching
 
 
 begin
   #Get Flow events from blocks
   result = api_instance.flow_get_block_events(type, from, to)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_get_block_events: #{e}"
 end
 ```
@@ -562,16 +562,16 @@ Get Flow Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
+api_instance = Tatum::BlockchainFlowApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -579,7 +579,7 @@ begin
   #Get Flow Transaction by hash
   result = api_instance.flow_get_raw_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_get_raw_transaction: #{e}"
 end
 ```
@@ -615,24 +615,24 @@ Send Flow to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
-body = SwaggerClient::FlowTransactionBody.new # FlowTransactionBody | 
+api_instance = Tatum::BlockchainFlowApi.new
+body = Tatum::FlowTransactionBody.new # FlowTransactionBody | 
 
 
 begin
   #Send Flow to blockchain addresses
   result = api_instance.flow_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_transfer_blockchain: #{e}"
 end
 ```
@@ -668,24 +668,24 @@ Send arbitrary transaction to blockchain
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainFlowApi.new
-body = SwaggerClient::TransactionCustomBody.new # TransactionCustomBody | 
+api_instance = Tatum::BlockchainFlowApi.new
+body = Tatum::TransactionCustomBody.new # TransactionCustomBody | 
 
 
 begin
   #Send arbitrary transaction to blockchain
   result = api_instance.flow_transfer_custom_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainFlowApi->flow_transfer_custom_blockchain: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::Blockage
+# Tatum::Blockage
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionKMSError
+# Tatum::CreateSubscriptionKMSError
 
 ## Properties
 Name | Type | Description | Notes

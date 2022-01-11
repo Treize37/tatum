@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNft
+# Tatum::TransferNft
 
 ## Properties
 Name | Type | Description | Notes

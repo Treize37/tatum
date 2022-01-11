@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNftKMSTron
+# Tatum::TransferNftKMSTron
 
 ## Properties
 Name | Type | Description | Notes

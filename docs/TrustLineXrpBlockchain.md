@@ -1,4 +1,4 @@
-# SwaggerClient::TrustLineXrpBlockchain
+# Tatum::TrustLineXrpBlockchain
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403XrpBroadcast
+# Tatum::Error403XrpBroadcast
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::FlowCreateAddressFromPubKeyMnemonic
+# Tatum::FlowCreateAddressFromPubKeyMnemonic
 
 ## Properties
 Name | Type | Description | Notes

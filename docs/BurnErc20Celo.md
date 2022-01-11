@@ -1,4 +1,4 @@
-# SwaggerClient::BurnErc20Celo
+# Tatum::BurnErc20Celo
 
 ## Properties
 Name | Type | Description | Notes

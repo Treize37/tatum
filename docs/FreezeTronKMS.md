@@ -1,4 +1,4 @@
-# SwaggerClient::FreezeTronKMS
+# Tatum::FreezeTronKMS
 
 ## Properties
 Name | Type | Description | Notes

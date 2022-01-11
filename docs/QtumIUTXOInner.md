@@ -1,4 +1,4 @@
-# SwaggerClient::QtumIUTXOInner
+# Tatum::QtumIUTXOInner
 
 ## Properties
 Name | Type | Description | Notes

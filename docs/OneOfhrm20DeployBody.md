@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfhrm20DeployBody
+# Tatum::OneOfhrm20DeployBody
 
 ## Properties
 Name | Type | Description | Notes

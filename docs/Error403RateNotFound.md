@@ -1,4 +1,4 @@
-# SwaggerClient::Error403RateNotFound
+# Tatum::Error403RateNotFound
 
 ## Properties
 Name | Type | Description | Notes

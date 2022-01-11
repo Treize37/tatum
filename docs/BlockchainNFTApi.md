@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainNFTApi
+# Tatum::BlockchainNFTApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -31,17 +31,17 @@ Add NFT Minter
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::MintAddBody.new # MintAddBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::MintAddBody.new # MintAddBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -50,7 +50,7 @@ begin
   #Add NFT Minter
   result = api_instance.nft_add_minter(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_add_minter: #{e}"
 end
 ```
@@ -87,17 +87,17 @@ Burn NFT
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::NftBurnBody.new # NftBurnBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::NftBurnBody.new # NftBurnBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -106,7 +106,7 @@ begin
   #Burn NFT
   result = api_instance.nft_burn_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_burn_erc721: #{e}"
 end
 ```
@@ -143,17 +143,17 @@ Deploy NFT Smart Contract.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::NftDeployBody.new # NftDeployBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::NftDeployBody.new # NftDeployBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -162,7 +162,7 @@ begin
   #Deploy NFT Smart Contract.
   result = api_instance.nft_deploy_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_deploy_erc721: #{e}"
 end
 ```
@@ -199,16 +199,16 @@ Get NFT Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 contract_address = 'contract_address_example' # String | NFT contract address
@@ -220,7 +220,7 @@ begin
   #Get NFT Account balance
   result = api_instance.nft_get_balance_erc721(chain, address, contract_address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_balance_erc721: #{e}"
 end
 ```
@@ -259,16 +259,16 @@ Get contract address from transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 opts = { 
@@ -279,7 +279,7 @@ begin
   #Get contract address from transaction
   result = api_instance.nft_get_contract_address(chain, hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_contract_address: #{e}"
 end
 ```
@@ -317,16 +317,16 @@ Get NFT Token Metadata
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | NFT contract address
 token = 'token_example' # String | Token ID, required for all except SOL
@@ -339,7 +339,7 @@ begin
   #Get NFT Token Metadata
   result = api_instance.nft_get_metadata_erc721(chain, contract_address, token, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_metadata_erc721: #{e}"
 end
 ```
@@ -379,16 +379,16 @@ Get NFT Token Provenance Data
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 token_id = 'token_id_example' # String | Token ID
 contract_address = 'contract_address_example' # String | NFT contract address
@@ -400,7 +400,7 @@ begin
   #Get NFT Token Provenance Data
   result = api_instance.nft_get_provenance_data_erc721(chain, token_id, contract_address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_provenance_data_erc721: #{e}"
 end
 ```
@@ -439,16 +439,16 @@ Get NFT Token Royalty information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 contract_address = 'contract_address_example' # String | NFT contract address
 token = 'token_example' # String | Token ID, required for all except SOL
@@ -460,7 +460,7 @@ begin
   #Get NFT Token Royalty information
   result = api_instance.nft_get_royalty_erc721(chain, contract_address, token, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_royalty_erc721: #{e}"
 end
 ```
@@ -499,16 +499,16 @@ Get NFT tokens for address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 
@@ -517,7 +517,7 @@ begin
   #Get NFT tokens for address
   result = api_instance.nft_get_tokens_by_address_erc721(chain, address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_tokens_by_address_erc721: #{e}"
 end
 ```
@@ -554,16 +554,16 @@ Get Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 hash = 'hash_example' # String | Transaction hash
 opts = { 
@@ -574,7 +574,7 @@ begin
   #Get Transaction
   result = api_instance.nft_get_transact_erc721(chain, hash, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_transact_erc721: #{e}"
 end
 ```
@@ -612,31 +612,31 @@ Get NFT transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 address = 'address_example' # String | Account address
 token_address = 'token_address_example' # String | Token address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
 }
 
 begin
   #Get NFT transactions by address
   result = api_instance.nft_get_transaction_by_address(chain, address, token_address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_transaction_by_address: #{e}"
 end
 ```
@@ -678,31 +678,31 @@ Get NFT transactions by token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
+api_instance = Tatum::BlockchainNFTApi.new
 chain = 'chain_example' # String | Blockchain to work with
 token_id = 56 # Integer | NFT Token ID
 token_address = 'token_address_example' # String | Token address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
-  from: SwaggerClient::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
-  to: SwaggerClient::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  from: Tatum::BigDecimal.new, # BigDecimal | Transactions from this block onwords will be included.
+  to: Tatum::BigDecimal.new # BigDecimal | Transactions up to this block will be included.
 }
 
 begin
   #Get NFT transactions by token
   result = api_instance.nft_get_transaction_by_token(chain, token_id, token_address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_get_transaction_by_token: #{e}"
 end
 ```
@@ -744,17 +744,17 @@ Mint NFT
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::NftMintBody.new # NftMintBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::NftMintBody.new # NftMintBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -763,7 +763,7 @@ begin
   #Mint NFT
   result = api_instance.nft_mint_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_mint_erc721: #{e}"
 end
 ```
@@ -800,17 +800,17 @@ Mint NFT Multiple Tokens
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::MintBatchBody.new # MintBatchBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::MintBatchBody.new # MintBatchBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -819,7 +819,7 @@ begin
   #Mint NFT Multiple Tokens
   result = api_instance.nft_mint_multiple_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_mint_multiple_erc721: #{e}"
 end
 ```
@@ -856,17 +856,17 @@ Transfer NFT Token
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::NftTransactionBody.new # NftTransactionBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::NftTransactionBody.new # NftTransactionBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -875,7 +875,7 @@ begin
   #Transfer NFT Token
   result = api_instance.nft_transfer_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_transfer_erc721: #{e}"
 end
 ```
@@ -912,17 +912,17 @@ Update Royalty NFT
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNFTApi.new
-body = SwaggerClient::NftRoyaltyBody.new # NftRoyaltyBody | 
+api_instance = Tatum::BlockchainNFTApi.new
+body = Tatum::NftRoyaltyBody.new # NftRoyaltyBody | 
 opts = { 
   x_testnet_type: 'ethereum-ropsten' # String | Type of Ethereum testnet. Defaults to ropsten. Valid only for ETH invocations.
 }
@@ -931,7 +931,7 @@ begin
   #Update Royalty NFT
   result = api_instance.nft_update_cashback_erc721(body, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNFTApi->nft_update_cashback_erc721: #{e}"
 end
 ```

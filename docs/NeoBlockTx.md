@@ -1,4 +1,4 @@
-# SwaggerClient::NeoBlockTx
+# Tatum::NeoBlockTx
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BurnErc721KMSCelo
+# Tatum::BurnErc721KMSCelo
 
 ## Properties
 Name | Type | Description | Notes

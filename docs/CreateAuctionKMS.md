@@ -1,4 +1,4 @@
-# SwaggerClient::CreateAuctionKMS
+# Tatum::CreateAuctionKMS
 
 ## Properties
 Name | Type | Description | Notes

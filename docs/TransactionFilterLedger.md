@@ -1,4 +1,4 @@
-# SwaggerClient::TransactionFilterLedger
+# Tatum::TransactionFilterLedger
 
 ## Properties
 Name | Type | Description | Notes

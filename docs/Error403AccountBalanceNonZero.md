@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountBalanceNonZero
+# Tatum::Error403AccountBalanceNonZero
 
 ## Properties
 Name | Type | Description | Notes

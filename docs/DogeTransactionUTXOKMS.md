@@ -1,4 +1,4 @@
-# SwaggerClient::DogeTransactionUTXOKMS
+# Tatum::DogeTransactionUTXOKMS
 
 ## Properties
 Name | Type | Description | Notes

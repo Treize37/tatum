@@ -1,4 +1,4 @@
-# SwaggerClient::KcsBlock
+# Tatum::KcsBlock
 
 ## Properties
 Name | Type | Description | Notes

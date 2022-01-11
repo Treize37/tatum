@@ -1,4 +1,4 @@
-# SwaggerClient::TransferCustodialWalletTron
+# Tatum::TransferCustodialWalletTron
 
 ## Properties
 Name | Type | Description | Notes

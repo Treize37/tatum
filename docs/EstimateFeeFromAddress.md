@@ -1,4 +1,4 @@
-# SwaggerClient::EstimateFeeFromAddress
+# Tatum::EstimateFeeFromAddress
 
 ## Properties
 Name | Type | Description | Notes

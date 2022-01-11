@@ -1,4 +1,4 @@
-# SwaggerClient::XrpTx
+# Tatum::XrpTx
 
 ## Properties
 Name | Type | Description | Notes

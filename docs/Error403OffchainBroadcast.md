@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OffchainBroadcast
+# Tatum::Error403OffchainBroadcast
 
 ## Properties
 Name | Type | Description | Notes

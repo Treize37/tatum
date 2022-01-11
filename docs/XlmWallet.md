@@ -1,4 +1,4 @@
-# SwaggerClient::XlmWallet
+# Tatum::XlmWallet
 
 ## Properties
 Name | Type | Description | Notes

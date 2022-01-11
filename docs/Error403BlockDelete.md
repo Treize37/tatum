@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BlockDelete
+# Tatum::Error403BlockDelete
 
 ## Properties
 Name | Type | Description | Notes

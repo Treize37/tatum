@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OrderCurrency1Balance
+# Tatum::Error403OrderCurrency1Balance
 
 ## Properties
 Name | Type | Description | Notes

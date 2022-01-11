@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTransactionFromAddressFromAddress
+# Tatum::BtcTransactionFromAddressFromAddress
 
 ## Properties
 Name | Type | Description | Notes

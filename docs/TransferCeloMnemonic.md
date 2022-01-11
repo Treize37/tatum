@@ -1,4 +1,4 @@
-# SwaggerClient::TransferCeloMnemonic
+# Tatum::TransferCeloMnemonic
 
 ## Properties
 Name | Type | Description | Notes

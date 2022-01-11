@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfxrpTrustBody
+# Tatum::OneOfxrpTrustBody
 
 ## Properties
 Name | Type | Description | Notes

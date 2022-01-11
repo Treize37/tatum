@@ -1,4 +1,4 @@
-# SwaggerClient::BchTransactionKMS
+# Tatum::BchTransactionKMS
 
 ## Properties
 Name | Type | Description | Notes

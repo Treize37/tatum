@@ -1,4 +1,4 @@
-# SwaggerClient::FlowCreateAddressFromPubKeySecret
+# Tatum::FlowCreateAddressFromPubKeySecret
 
 ## Properties
 Name | Type | Description | Notes

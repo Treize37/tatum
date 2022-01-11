@@ -1,4 +1,4 @@
-# SwaggerClient::MintNftKMS
+# Tatum::MintNftKMS
 
 ## Properties
 Name | Type | Description | Notes

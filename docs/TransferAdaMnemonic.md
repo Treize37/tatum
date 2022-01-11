@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAdaMnemonic
+# Tatum::TransferAdaMnemonic
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BurnMultiTokenKMSCelo
+# Tatum::BurnMultiTokenKMSCelo
 
 ## Properties
 Name | Type | Description | Notes

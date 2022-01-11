@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainAdaApi
+# Tatum::BlockchainAdaApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -26,24 +26,24 @@ Broadcast signed Ada transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainAdaApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Ada transaction
   result = api_instance.ada_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_broadcast: #{e}"
 end
 ```
@@ -79,25 +79,25 @@ Generate Ada deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 xpub = 'xpub_example' # String | Extended public key of a wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of the desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of the desired address to be generated.
 
 
 begin
   #Generate Ada deposit address from Extended public key
   result = api_instance.ada_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_generate_address: #{e}"
 end
 ```
@@ -134,24 +134,24 @@ Generate Ada private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainAdaApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Ada private key
   result = api_instance.ada_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_generate_address_private_key: #{e}"
 end
 ```
@@ -187,16 +187,16 @@ Generate Ada wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -205,7 +205,7 @@ begin
   #Generate Ada wallet
   result = api_instance.ada_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_generate_wallet: #{e}"
 end
 ```
@@ -241,16 +241,16 @@ Gets a Ada account by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 address = 'address_example' # String | Address
 
 
@@ -258,7 +258,7 @@ begin
   #Gets a Ada account by address
   result = api_instance.ada_get_account(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_account: #{e}"
 end
 ```
@@ -294,16 +294,16 @@ Get Block by hash or height
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -311,7 +311,7 @@ begin
   #Get Block by hash or height
   result = api_instance.ada_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_block: #{e}"
 end
 ```
@@ -347,22 +347,22 @@ Get Blockchain information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 
 begin
   #Get Blockchain information
   result = api_instance.ada_get_block_chain_info
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_block_chain_info: #{e}"
 end
 ```
@@ -395,16 +395,16 @@ Get transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -412,7 +412,7 @@ begin
   #Get transaction by hash
   result = api_instance.ada_get_raw_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_raw_transaction: #{e}"
 end
 ```
@@ -448,27 +448,27 @@ Get transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 address = 'address_example' # String | Address
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
 }
 
 begin
   #Get transactions by address
   result = api_instance.ada_get_tx_by_address(address, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_tx_by_address: #{e}"
 end
 ```
@@ -506,16 +506,16 @@ Get UTXOs by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
+api_instance = Tatum::BlockchainAdaApi.new
 address = 'address_example' # String | Address
 
 
@@ -523,7 +523,7 @@ begin
   #Get UTXOs by address
   result = api_instance.ada_get_utxo_by_address(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_get_utxo_by_address: #{e}"
 end
 ```
@@ -559,24 +559,24 @@ Send Ada to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAdaApi.new
-body = SwaggerClient::AdaTransactionBody.new # AdaTransactionBody | 
+api_instance = Tatum::BlockchainAdaApi.new
+body = Tatum::AdaTransactionBody.new # AdaTransactionBody | 
 
 
 begin
   #Send Ada to blockchain addresses
   result = api_instance.ada_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAdaApi->ada_transfer_blockchain: #{e}"
 end
 ```

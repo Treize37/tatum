@@ -1,4 +1,4 @@
-# SwaggerClient::LtcTransactionUTXOKMS
+# Tatum::LtcTransactionUTXOKMS
 
 ## Properties
 Name | Type | Description | Notes

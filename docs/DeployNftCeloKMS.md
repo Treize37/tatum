@@ -1,4 +1,4 @@
-# SwaggerClient::DeployNftCeloKMS
+# Tatum::DeployNftCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

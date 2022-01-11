@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainNEOApi
+# Tatum::BlockchainNEOApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,16 +28,16 @@ Get NEO Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 address = 'address_example' # String | Address to get balance
 
 
@@ -45,7 +45,7 @@ begin
   #Get NEO Account balance
   result = api_instance.neo_account_detail(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_account_detail: #{e}"
 end
 ```
@@ -81,16 +81,16 @@ Get NEO Account transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 address = 'address_example' # String | 
 
 
@@ -98,7 +98,7 @@ begin
   #Get NEO Account transactions
   result = api_instance.neo_account_tx(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_account_tx: #{e}"
 end
 ```
@@ -134,16 +134,16 @@ Get Neo Asset details
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 asset = 'asset_example' # String | Asset ID
 
 
@@ -151,7 +151,7 @@ begin
   #Get Neo Asset details
   result = api_instance.neo_asset(asset)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_asset: #{e}"
 end
 ```
@@ -187,24 +187,24 @@ Broadcast NEO transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
-body = SwaggerClient::Broadcast.new # Broadcast | 
+api_instance = Tatum::BlockchainNEOApi.new
+body = Tatum::Broadcast.new # Broadcast | 
 
 
 begin
   #Broadcast NEO transaction
   result = api_instance.neo_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_broadcast: #{e}"
 end
 ```
@@ -240,24 +240,24 @@ Claim GAS
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
-body = SwaggerClient::NeoClaimGas.new # NeoClaimGas | 
+api_instance = Tatum::BlockchainNEOApi.new
+body = Tatum::NeoClaimGas.new # NeoClaimGas | 
 
 
 begin
   #Claim GAS
   result = api_instance.neo_claim_gas(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_claim_gas: #{e}"
 end
 ```
@@ -293,16 +293,16 @@ Get NEO contract details
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 script_hash = 'script_hash_example' # String | Hash of smart contract
 
 
@@ -310,7 +310,7 @@ begin
   #Get NEO contract details
   result = api_instance.neo_contract_detail(script_hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_contract_detail: #{e}"
 end
 ```
@@ -346,22 +346,22 @@ Generate NEO account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 
 begin
   #Generate NEO account
   result = api_instance.neo_generate_wallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_generate_wallet: #{e}"
 end
 ```
@@ -394,16 +394,16 @@ Get NEO block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 hash = 'hash_example' # String | Block hash or height.
 
 
@@ -411,7 +411,7 @@ begin
   #Get NEO block
   result = api_instance.neo_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_get_block: #{e}"
 end
 ```
@@ -447,22 +447,22 @@ Get current NEO block
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 
 begin
   #Get current NEO block
   result = api_instance.neo_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_get_current_block: #{e}"
 end
 ```
@@ -495,16 +495,16 @@ Get NEO transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 hash = 'hash_example' # String | Transaction hash.
 
 
@@ -512,7 +512,7 @@ begin
   #Get NEO transaction by hash
   result = api_instance.neo_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_get_transaction: #{e}"
 end
 ```
@@ -548,24 +548,24 @@ Send NEO smart contract tokens
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
-body = SwaggerClient::NeoInvokeSmart.new # NeoInvokeSmart | 
+api_instance = Tatum::BlockchainNEOApi.new
+body = Tatum::NeoInvokeSmart.new # NeoInvokeSmart | 
 
 
 begin
   #Send NEO smart contract tokens
   result = api_instance.neo_invoke_smart(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_invoke_smart: #{e}"
 end
 ```
@@ -601,24 +601,24 @@ Send NEO assets
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
-body = SwaggerClient::TransferNeoBlockchain.new # TransferNeoBlockchain | 
+api_instance = Tatum::BlockchainNEOApi.new
+body = Tatum::TransferNeoBlockchain.new # TransferNeoBlockchain | 
 
 
 begin
   #Send NEO assets
   result = api_instance.neo_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_transfer: #{e}"
 end
 ```
@@ -654,25 +654,25 @@ Get NEO unspent transaction outputs
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainNEOApi.new
+api_instance = Tatum::BlockchainNEOApi.new
 tx_id = 'tx_id_example' # String | Transaction ID.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Index of output.
+index = Tatum::BigDecimal.new # BigDecimal | Index of output.
 
 
 begin
   #Get NEO unspent transaction outputs
   result = api_instance.neo_tx_out(tx_id, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainNEOApi->neo_tx_out: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::TrustLineXrpBlockchainKMS
+# Tatum::TrustLineXrpBlockchainKMS
 
 ## Properties
 Name | Type | Description | Notes

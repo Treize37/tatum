@@ -1,4 +1,4 @@
-# SwaggerClient::Address
+# Tatum::Address
 
 ## Properties
 Name | Type | Description | Notes

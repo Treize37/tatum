@@ -1,4 +1,4 @@
-# SwaggerClient::CreateAccountBatch
+# Tatum::CreateAccountBatch
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTransactionBody
+# Tatum::FlowTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

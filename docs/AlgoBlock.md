@@ -1,4 +1,4 @@
-# SwaggerClient::AlgoBlock
+# Tatum::AlgoBlock
 
 ## Properties
 Name | Type | Description | Notes

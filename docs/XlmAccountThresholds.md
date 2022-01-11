@@ -1,4 +1,4 @@
-# SwaggerClient::XlmAccountThresholds
+# Tatum::XlmAccountThresholds
 
 ## Properties
 Name | Type | Description | Notes

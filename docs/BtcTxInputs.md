@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTxInputs
+# Tatum::BtcTxInputs
 
 ## Properties
 Name | Type | Description | Notes

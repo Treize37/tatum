@@ -1,4 +1,4 @@
-# SwaggerClient::XrpTxMetaAffectedNodes
+# Tatum::XrpTxMetaAffectedNodes
 
 ## Properties
 Name | Type | Description | Notes

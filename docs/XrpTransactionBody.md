@@ -1,4 +1,4 @@
-# SwaggerClient::XrpTransactionBody
+# Tatum::XrpTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

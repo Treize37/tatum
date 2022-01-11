@@ -1,4 +1,4 @@
-# SwaggerClient::BchInfo
+# Tatum::BchInfo
 
 ## Properties
 Name | Type | Description | Notes

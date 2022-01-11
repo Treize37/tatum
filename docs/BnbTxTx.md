@@ -1,4 +1,4 @@
-# SwaggerClient::BnbTxTx
+# Tatum::BnbTxTx
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::SellAssetOnMarketplaceKMS
+# Tatum::SellAssetOnMarketplaceKMS
 
 ## Properties
 Name | Type | Description | Notes

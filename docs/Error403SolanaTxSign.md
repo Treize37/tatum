@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SolanaTxSign
+# Tatum::Error403SolanaTxSign
 
 ## Properties
 Name | Type | Description | Notes

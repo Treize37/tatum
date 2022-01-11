@@ -1,4 +1,4 @@
-# SwaggerClient::Error403EthErc20Unsupported
+# Tatum::Error403EthErc20Unsupported
 
 ## Properties
 Name | Type | Description | Notes

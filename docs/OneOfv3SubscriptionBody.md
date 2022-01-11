@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfv3SubscriptionBody
+# Tatum::OneOfv3SubscriptionBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AddressXpub
+# Tatum::Error403AddressXpub
 
 ## Properties
 Name | Type | Description | Notes

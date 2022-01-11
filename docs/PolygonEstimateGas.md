@@ -1,4 +1,4 @@
-# SwaggerClient::PolygonEstimateGas
+# Tatum::PolygonEstimateGas
 
 ## Properties
 Name | Type | Description | Notes

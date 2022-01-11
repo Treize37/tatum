@@ -1,4 +1,4 @@
-# SwaggerClient::TronWallet
+# Tatum::TronWallet
 
 ## Properties
 Name | Type | Description | Notes

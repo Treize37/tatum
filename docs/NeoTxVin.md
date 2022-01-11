@@ -1,4 +1,4 @@
-# SwaggerClient::NeoTxVin
+# Tatum::NeoTxVin
 
 ## Properties
 Name | Type | Description | Notes

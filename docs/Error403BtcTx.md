@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BtcTx
+# Tatum::Error403BtcTx
 
 ## Properties
 Name | Type | Description | Notes

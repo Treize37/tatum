@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonBep20Set
+# Tatum::Error403PolygonBep20Set
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionIncoming
+# Tatum::CreateSubscriptionIncoming
 
 ## Properties
 Name | Type | Description | Notes

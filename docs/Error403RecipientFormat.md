@@ -1,4 +1,4 @@
-# SwaggerClient::Error403RecipientFormat
+# Tatum::Error403RecipientFormat
 
 ## Properties
 Name | Type | Description | Notes

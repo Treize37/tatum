@@ -1,4 +1,4 @@
-# SwaggerClient::OneOferc20DeployBody2
+# Tatum::OneOferc20DeployBody2
 
 ## Properties
 Name | Type | Description | Notes

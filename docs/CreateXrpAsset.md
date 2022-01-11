@@ -1,4 +1,4 @@
-# SwaggerClient::CreateXrpAsset
+# Tatum::CreateXrpAsset
 
 ## Properties
 Name | Type | Description | Notes

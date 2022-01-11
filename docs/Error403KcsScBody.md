@@ -1,4 +1,4 @@
-# SwaggerClient::Error403KcsScBody
+# Tatum::Error403KcsScBody
 
 ## Properties
 Name | Type | Description | Notes

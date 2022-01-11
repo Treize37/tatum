@@ -1,4 +1,4 @@
-# SwaggerClient::TransferEth
+# Tatum::TransferEth
 
 ## Properties
 Name | Type | Description | Notes

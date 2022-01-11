@@ -1,4 +1,4 @@
-# SwaggerClient::XdcTx
+# Tatum::XdcTx
 
 ## Properties
 Name | Type | Description | Notes

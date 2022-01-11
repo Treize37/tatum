@@ -1,4 +1,4 @@
-# SwaggerClient::Error403CustomerDeactivateActiveAccounts
+# Tatum::Error403CustomerDeactivateActiveAccounts
 
 ## Properties
 Name | Type | Description | Notes

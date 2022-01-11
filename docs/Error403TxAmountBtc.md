@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxAmountBtc
+# Tatum::Error403TxAmountBtc
 
 ## Properties
 Name | Type | Description | Notes

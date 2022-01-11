@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonErc20TxSign
+# Tatum::Error403PolygonErc20TxSign
 
 ## Properties
 Name | Type | Description | Notes

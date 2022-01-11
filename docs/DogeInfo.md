@@ -1,4 +1,4 @@
-# SwaggerClient::DogeInfo
+# Tatum::DogeInfo
 
 ## Properties
 Name | Type | Description | Notes

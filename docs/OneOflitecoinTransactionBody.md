@@ -1,4 +1,4 @@
-# SwaggerClient::OneOflitecoinTransactionBody
+# Tatum::OneOflitecoinTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SolanaBroadcast
+# Tatum::Error403SolanaBroadcast
 
 ## Properties
 Name | Type | Description | Notes

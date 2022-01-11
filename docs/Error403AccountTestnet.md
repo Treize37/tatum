@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountTestnet
+# Tatum::Error403AccountTestnet
 
 ## Properties
 Name | Type | Description | Notes

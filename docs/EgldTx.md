@@ -1,4 +1,4 @@
-# SwaggerClient::EgldTx
+# Tatum::EgldTx
 
 ## Properties
 Name | Type | Description | Notes

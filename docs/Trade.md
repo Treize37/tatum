@@ -1,4 +1,4 @@
-# SwaggerClient::Trade
+# Tatum::Trade
 
 ## Properties
 Name | Type | Description | Notes

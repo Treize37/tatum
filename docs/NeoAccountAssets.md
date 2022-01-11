@@ -1,4 +1,4 @@
-# SwaggerClient::NeoAccountAssets
+# Tatum::NeoAccountAssets
 
 ## Properties
 Name | Type | Description | Notes

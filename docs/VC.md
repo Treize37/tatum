@@ -1,4 +1,4 @@
-# SwaggerClient::VC
+# Tatum::VC
 
 ## Properties
 Name | Type | Description | Notes

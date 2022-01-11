@@ -1,4 +1,4 @@
-# SwaggerClient::XrpFeeLevels
+# Tatum::XrpFeeLevels
 
 ## Properties
 Name | Type | Description | Notes

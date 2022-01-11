@@ -1,4 +1,4 @@
-# SwaggerClient::BnbWallet
+# Tatum::BnbWallet
 
 ## Properties
 Name | Type | Description | Notes

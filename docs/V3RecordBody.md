@@ -1,4 +1,4 @@
-# SwaggerClient::V3RecordBody
+# Tatum::V3RecordBody
 
 ## Properties
 Name | Type | Description | Notes

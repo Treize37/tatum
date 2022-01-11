@@ -1,4 +1,4 @@
-# SwaggerClient::LtcTxOutputs
+# Tatum::LtcTxOutputs
 
 ## Properties
 Name | Type | Description | Notes

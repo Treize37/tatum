@@ -1,4 +1,4 @@
-# SwaggerClient::ChainDeployErc20
+# Tatum::ChainDeployErc20
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SubscriptionBalance
+# Tatum::Error403SubscriptionBalance
 
 ## Properties
 Name | Type | Description | Notes

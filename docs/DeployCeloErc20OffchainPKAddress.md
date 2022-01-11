@@ -1,4 +1,4 @@
-# SwaggerClient::DeployCeloErc20OffchainPKAddress
+# Tatum::DeployCeloErc20OffchainPKAddress
 
 ## Properties
 Name | Type | Description | Notes

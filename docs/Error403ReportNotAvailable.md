@@ -1,4 +1,4 @@
-# SwaggerClient::Error403ReportNotAvailable
+# Tatum::Error403ReportNotAvailable
 
 ## Properties
 Name | Type | Description | Notes

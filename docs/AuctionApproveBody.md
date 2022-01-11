@@ -1,4 +1,4 @@
-# SwaggerClient::AuctionApproveBody
+# Tatum::AuctionApproveBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransferMultiTokenBatchKMSCelo
+# Tatum::TransferMultiTokenBatchKMSCelo
 
 ## Properties
 Name | Type | Description | Notes

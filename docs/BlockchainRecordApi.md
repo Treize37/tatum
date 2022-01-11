@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainRecordApi
+# Tatum::BlockchainRecordApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -17,16 +17,16 @@ Get log record
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainRecordApi.new
+api_instance = Tatum::BlockchainRecordApi.new
 chain = 'chain_example' # String | The blockchain to get the log record from
 id = 'id_example' # String | ID of the log record / transaction on the blockchain
 
@@ -35,7 +35,7 @@ begin
   #Get log record
   result = api_instance.get_log(chain, id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainRecordApi->get_log: #{e}"
 end
 ```
@@ -72,24 +72,24 @@ Store log record
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainRecordApi.new
-body = SwaggerClient::V3RecordBody.new # V3RecordBody | 
+api_instance = Tatum::BlockchainRecordApi.new
+body = Tatum::V3RecordBody.new # V3RecordBody | 
 
 
 begin
   #Store log record
   result = api_instance.store_log(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainRecordApi->store_log: #{e}"
 end
 ```

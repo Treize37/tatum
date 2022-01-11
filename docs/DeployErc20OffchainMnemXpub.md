@@ -1,4 +1,4 @@
-# SwaggerClient::DeployErc20OffchainMnemXpub
+# Tatum::DeployErc20OffchainMnemXpub
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateCashbackValueForAuthorNft
+# Tatum::UpdateCashbackValueForAuthorNft
 
 ## Properties
 Name | Type | Description | Notes

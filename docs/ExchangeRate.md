@@ -1,4 +1,4 @@
-# SwaggerClient::ExchangeRate
+# Tatum::ExchangeRate
 
 ## Properties
 Name | Type | Description | Notes

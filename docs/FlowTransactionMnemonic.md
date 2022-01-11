@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTransactionMnemonic
+# Tatum::FlowTransactionMnemonic
 
 ## Properties
 Name | Type | Description | Notes

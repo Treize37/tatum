@@ -1,4 +1,4 @@
-# SwaggerClient::Subscription
+# Tatum::Subscription
 
 ## Properties
 Name | Type | Description | Notes

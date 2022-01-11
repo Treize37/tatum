@@ -1,4 +1,4 @@
-# SwaggerClient::MintErc721
+# Tatum::MintErc721
 
 ## Properties
 Name | Type | Description | Notes

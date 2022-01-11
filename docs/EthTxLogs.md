@@ -1,4 +1,4 @@
-# SwaggerClient::EthTxLogs
+# Tatum::EthTxLogs
 
 ## Properties
 Name | Type | Description | Notes

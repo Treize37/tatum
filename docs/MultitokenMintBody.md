@@ -1,4 +1,4 @@
-# SwaggerClient::MultitokenMintBody
+# Tatum::MultitokenMintBody
 
 ## Properties
 Name | Type | Description | Notes

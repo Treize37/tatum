@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainSolanaApi
+# Tatum::BlockchainSolanaApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -22,24 +22,24 @@ Send SOL from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
-body = SwaggerClient::SolanaTransactionBody.new # SolanaTransactionBody | 
+api_instance = Tatum::BlockchainSolanaApi.new
+body = Tatum::SolanaTransactionBody.new # SolanaTransactionBody | 
 
 
 begin
   #Send SOL from account to account
   result = api_instance.solana_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_blockchain_transfer: #{e}"
 end
 ```
@@ -75,22 +75,22 @@ Generate Solana wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
+api_instance = Tatum::BlockchainSolanaApi.new
 
 begin
   #Generate Solana wallet
   result = api_instance.solana_generate_wallet
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_generate_wallet: #{e}"
 end
 ```
@@ -123,16 +123,16 @@ Get Solana Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
+api_instance = Tatum::BlockchainSolanaApi.new
 address = 'address_example' # String | Account address
 
 
@@ -140,7 +140,7 @@ begin
   #Get Solana Account balance
   result = api_instance.solana_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_get_balance: #{e}"
 end
 ```
@@ -176,24 +176,24 @@ Get Solana block by number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
-height = SwaggerClient::BigDecimal.new # BigDecimal | Block number
+api_instance = Tatum::BlockchainSolanaApi.new
+height = Tatum::BigDecimal.new # BigDecimal | Block number
 
 
 begin
   #Get Solana block by number
   result = api_instance.solana_get_block(height)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_get_block: #{e}"
 end
 ```
@@ -229,22 +229,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
+api_instance = Tatum::BlockchainSolanaApi.new
 
 begin
   #Get current block number
   result = api_instance.solana_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_get_current_block: #{e}"
 end
 ```
@@ -277,16 +277,16 @@ Get Solana Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
+api_instance = Tatum::BlockchainSolanaApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -294,7 +294,7 @@ begin
   #Get Solana Transaction
   result = api_instance.solana_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_get_transaction: #{e}"
 end
 ```
@@ -330,9 +330,9 @@ JSON RPC HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainSolanaApi.new
+api_instance = Tatum::BlockchainSolanaApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
@@ -341,7 +341,7 @@ begin
   #JSON RPC HTTP driver
   result = api_instance.solana_web3_driver(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainSolanaApi->solana_web3_driver: #{e}"
 end
 ```

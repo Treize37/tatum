@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionInterval
+# Tatum::CreateSubscriptionInterval
 
 ## Properties
 Name | Type | Description | Notes

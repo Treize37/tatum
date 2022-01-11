@@ -1,4 +1,4 @@
-# SwaggerClient::FlowCreateAddressFromPubKeyKMS
+# Tatum::FlowCreateAddressFromPubKeyKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Broadcast
+# Tatum::Broadcast
 
 ## Properties
 Name | Type | Description | Notes

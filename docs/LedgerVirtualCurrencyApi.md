@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerVirtualCurrencyApi
+# Tatum::LedgerVirtualCurrencyApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -20,24 +20,24 @@ Create new virtual currency
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerVirtualCurrencyApi.new
-body = SwaggerClient::VirtualCurrency.new # VirtualCurrency | 
+api_instance = Tatum::LedgerVirtualCurrencyApi.new
+body = Tatum::VirtualCurrency.new # VirtualCurrency | 
 
 
 begin
   #Create new virtual currency
   result = api_instance.create_currency(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerVirtualCurrencyApi->create_currency: #{e}"
 end
 ```
@@ -73,16 +73,16 @@ Get virtual currency
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerVirtualCurrencyApi.new
+api_instance = Tatum::LedgerVirtualCurrencyApi.new
 name = 'name_example' # String | 
 
 
@@ -90,7 +90,7 @@ begin
   #Get virtual currency
   result = api_instance.get_currency(name)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerVirtualCurrencyApi->get_currency: #{e}"
 end
 ```
@@ -126,24 +126,24 @@ Create new supply of virtual currency
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerVirtualCurrencyApi.new
-body = SwaggerClient::VirtualCurrencyOperation.new # VirtualCurrencyOperation | 
+api_instance = Tatum::LedgerVirtualCurrencyApi.new
+body = Tatum::VirtualCurrencyOperation.new # VirtualCurrencyOperation | 
 
 
 begin
   #Create new supply of virtual currency
   result = api_instance.mint_currency(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerVirtualCurrencyApi->mint_currency: #{e}"
 end
 ```
@@ -179,24 +179,24 @@ Destroy supply of virtual currency
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerVirtualCurrencyApi.new
-body = SwaggerClient::VirtualCurrencyOperation.new # VirtualCurrencyOperation | 
+api_instance = Tatum::LedgerVirtualCurrencyApi.new
+body = Tatum::VirtualCurrencyOperation.new # VirtualCurrencyOperation | 
 
 
 begin
   #Destroy supply of virtual currency
   result = api_instance.revoke_currency(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerVirtualCurrencyApi->revoke_currency: #{e}"
 end
 ```
@@ -232,23 +232,23 @@ Update virtual currency
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerVirtualCurrencyApi.new
-body = SwaggerClient::VirtualCurrencyUpdate.new # VirtualCurrencyUpdate | 
+api_instance = Tatum::LedgerVirtualCurrencyApi.new
+body = Tatum::VirtualCurrencyUpdate.new # VirtualCurrencyUpdate | 
 
 
 begin
   #Update virtual currency
   api_instance.update_currency(body)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerVirtualCurrencyApi->update_currency: #{e}"
 end
 ```

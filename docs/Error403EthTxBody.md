@@ -1,4 +1,4 @@
-# SwaggerClient::Error403EthTxBody
+# Tatum::Error403EthTxBody
 
 ## Properties
 Name | Type | Description | Notes

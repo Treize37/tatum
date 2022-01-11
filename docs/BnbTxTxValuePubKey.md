@@ -1,4 +1,4 @@
-# SwaggerClient::BnbTxTxValuePubKey
+# Tatum::BnbTxTxValuePubKey
 
 ## Properties
 Name | Type | Description | Notes

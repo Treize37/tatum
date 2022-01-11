@@ -1,4 +1,4 @@
-# SwaggerClient::VirtualCurrencyOperation
+# Tatum::VirtualCurrencyOperation
 
 ## Properties
 Name | Type | Description | Notes

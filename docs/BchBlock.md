@@ -1,4 +1,4 @@
-# SwaggerClient::BchBlock
+# Tatum::BchBlock
 
 ## Properties
 Name | Type | Description | Notes

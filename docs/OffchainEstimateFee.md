@@ -1,4 +1,4 @@
-# SwaggerClient::OffchainEstimateFee
+# Tatum::OffchainEstimateFee
 
 ## Properties
 Name | Type | Description | Notes

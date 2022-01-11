@@ -1,4 +1,4 @@
-# SwaggerClient::BroadcastKMS
+# Tatum::BroadcastKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ChainTransferKcsEthErc20
+# Tatum::ChainTransferKcsEthErc20
 
 ## Properties
 Name | Type | Description | Notes

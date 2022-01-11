@@ -1,4 +1,4 @@
-# SwaggerClient::AddNftMinterKMS
+# Tatum::AddNftMinterKMS
 
 ## Properties
 Name | Type | Description | Notes

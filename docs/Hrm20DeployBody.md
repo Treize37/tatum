@@ -1,4 +1,4 @@
-# SwaggerClient::Hrm20DeployBody
+# Tatum::Hrm20DeployBody
 
 ## Properties
 Name | Type | Description | Notes

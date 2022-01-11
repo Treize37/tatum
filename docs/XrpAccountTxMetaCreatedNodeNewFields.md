@@ -1,4 +1,4 @@
-# SwaggerClient::XrpAccountTxMetaCreatedNodeNewFields
+# Tatum::XrpAccountTxMetaCreatedNodeNewFields
 
 ## Properties
 Name | Type | Description | Notes

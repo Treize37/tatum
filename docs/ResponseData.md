@@ -1,4 +1,4 @@
-# SwaggerClient::ResponseData
+# Tatum::ResponseData
 
 ## Properties
 Name | Type | Description | Notes

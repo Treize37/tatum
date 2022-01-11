@@ -1,4 +1,4 @@
-# SwaggerClient::DeployErc20KMSCelo
+# Tatum::DeployErc20KMSCelo
 
 ## Properties
 Name | Type | Description | Notes

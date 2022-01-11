@@ -1,4 +1,4 @@
-# SwaggerClient::Account
+# Tatum::Account
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountNotExists
+# Tatum::Error403AccountNotExists
 
 ## Properties
 Name | Type | Description | Notes

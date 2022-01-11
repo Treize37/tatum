@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTransactionFromAddressKMSFromAddress
+# Tatum::BtcTransactionFromAddressKMSFromAddress
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAlgorandBlockchain
+# Tatum::TransferAlgorandBlockchain
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CallCeloSmartContractMethod
+# Tatum::CallCeloSmartContractMethod
 
 ## Properties
 Name | Type | Description | Notes

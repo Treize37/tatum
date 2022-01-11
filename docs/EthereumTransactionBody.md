@@ -1,4 +1,4 @@
-# SwaggerClient::EthereumTransactionBody
+# Tatum::EthereumTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

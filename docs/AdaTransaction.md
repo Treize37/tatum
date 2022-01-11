@@ -1,4 +1,4 @@
-# SwaggerClient::AdaTransaction
+# Tatum::AdaTransaction
 
 ## Properties
 Name | Type | Description | Notes

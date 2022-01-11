@@ -1,4 +1,4 @@
-# SwaggerClient::SellAssetOnMarketplaceTron
+# Tatum::SellAssetOnMarketplaceTron
 
 ## Properties
 Name | Type | Description | Notes

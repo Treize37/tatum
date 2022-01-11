@@ -1,4 +1,4 @@
-# SwaggerClient::MintNftKMSTron
+# Tatum::MintNftKMSTron
 
 ## Properties
 Name | Type | Description | Notes

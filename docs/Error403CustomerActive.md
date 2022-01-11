@@ -1,4 +1,4 @@
-# SwaggerClient::Error403CustomerActive
+# Tatum::Error403CustomerActive
 
 ## Properties
 Name | Type | Description | Notes

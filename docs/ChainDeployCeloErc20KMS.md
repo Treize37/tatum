@@ -1,4 +1,4 @@
-# SwaggerClient::ChainDeployCeloErc20KMS
+# Tatum::ChainDeployCeloErc20KMS
 
 ## Properties
 Name | Type | Description | Notes

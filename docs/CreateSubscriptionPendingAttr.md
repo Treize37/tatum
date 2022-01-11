@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionPendingAttr
+# Tatum::CreateSubscriptionPendingAttr
 
 ## Properties
 Name | Type | Description | Notes

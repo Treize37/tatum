@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerOrderBookApi
+# Tatum::LedgerOrderBookApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -26,24 +26,24 @@ Obtain chart data from historical closed trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-body = SwaggerClient::ChartRequest.new # ChartRequest | 
+api_instance = Tatum::LedgerOrderBookApi.new
+body = Tatum::ChartRequest.new # ChartRequest | 
 
 
 begin
   #Obtain chart data from historical closed trades
   result = api_instance.chart_request(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->chart_request: #{e}"
 end
 ```
@@ -79,23 +79,23 @@ Cancel all existing trades for account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
+api_instance = Tatum::LedgerOrderBookApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Cancel all existing trades for account
   api_instance.delete_account_trades(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->delete_account_trades: #{e}"
 end
 ```
@@ -131,23 +131,23 @@ Cancel existing trade
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
+api_instance = Tatum::LedgerOrderBookApi.new
 id = 'id_example' # String | Trade ID
 
 
 begin
   #Cancel existing trade
   api_instance.delete_trade(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->delete_trade: #{e}"
 end
 ```
@@ -183,21 +183,21 @@ List all active buy trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerOrderBookApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
   id: 'id_example', # String | Account ID. If present, list current active buy trades for that account.
   customer_id: 'customer_id_example', # String | Customer ID. If present, list current active buy trades for that customer.
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
   pair: 'pair_example', # String | Trade pair. If present, list current active buy trades for that pair.
   count: true, # BOOLEAN | Get the total trade pair count based on the filter. Either count or pageSize is accepted.
   trade_type: 'trade_type_example' # String | Trade type.
@@ -207,7 +207,7 @@ begin
   #List all active buy trades
   result = api_instance.get_buy_trades(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_buy_trades: #{e}"
 end
 ```
@@ -249,24 +249,24 @@ List all active buy trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-body = SwaggerClient::ListOderBookActiveBuyBody.new # ListOderBookActiveBuyBody | 
+api_instance = Tatum::LedgerOrderBookApi.new
+body = Tatum::ListOderBookActiveBuyBody.new # ListOderBookActiveBuyBody | 
 
 
 begin
   #List all active buy trades
   result = api_instance.get_buy_trades_body(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_buy_trades_body: #{e}"
 end
 ```
@@ -302,21 +302,21 @@ List all historical trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerOrderBookApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
   id: 'id_example', # String | Account ID. If present, only closed trades for given account will be present.
   pair: 'pair_example', # String | Trade pair. If present, only closed trades on given trade pair will be present.
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
   count: true, # BOOLEAN | Get the total trade pair count based on the filter. Either count or pageSize is accepted.
   types: ['types_example'] # Array<String> | Trade types.
 }
@@ -325,7 +325,7 @@ begin
   #List all historical trades
   result = api_instance.get_historical_trades(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_historical_trades: #{e}"
 end
 ```
@@ -366,25 +366,25 @@ List all historical trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
+api_instance = Tatum::LedgerOrderBookApi.new
 opts = { 
-  body: SwaggerClient::ListOderBookHistoryBody.new # ListOderBookHistoryBody | 
+  body: Tatum::ListOderBookHistoryBody.new # ListOderBookHistoryBody | 
 }
 
 begin
   #List all historical trades
   result = api_instance.get_historical_trades_body(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_historical_trades_body: #{e}"
 end
 ```
@@ -420,21 +420,21 @@ List all active sell trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerOrderBookApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
   id: 'id_example', # String | Account ID. If present, list current active sell trades for that account.
   customer_id: 'customer_id_example', # String | Customer ID. If present, list current active buy trades for that customer.
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain next page of the data.
   pair: 'pair_example', # String | Trade pair. If present, list current active sell trades for that pair.
   count: true, # BOOLEAN | Get the total trade pair count based on the filter. Either count or pageSize is accepted.
   trade_type: 'trade_type_example' # String | Trade type.
@@ -444,7 +444,7 @@ begin
   #List all active sell trades
   result = api_instance.get_sell_trades(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_sell_trades: #{e}"
 end
 ```
@@ -486,24 +486,24 @@ List all active sell trades
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-body = SwaggerClient::ListOderBookActiveSellBody.new # ListOderBookActiveSellBody | 
+api_instance = Tatum::LedgerOrderBookApi.new
+body = Tatum::ListOderBookActiveSellBody.new # ListOderBookActiveSellBody | 
 
 
 begin
   #List all active sell trades
   result = api_instance.get_sell_trades_body(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_sell_trades_body: #{e}"
 end
 ```
@@ -539,16 +539,16 @@ Get existing trade
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
+api_instance = Tatum::LedgerOrderBookApi.new
 id = 'id_example' # String | Trade ID
 
 
@@ -556,7 +556,7 @@ begin
   #Get existing trade
   result = api_instance.get_trade_by_id(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->get_trade_by_id: #{e}"
 end
 ```
@@ -592,24 +592,24 @@ Store buy / sell trade
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerOrderBookApi.new
-body = SwaggerClient::CreateTrade.new # CreateTrade | 
+api_instance = Tatum::LedgerOrderBookApi.new
+body = Tatum::CreateTrade.new # CreateTrade | 
 
 
 begin
   #Store buy / sell trade
   result = api_instance.store_trade(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerOrderBookApi->store_trade: #{e}"
 end
 ```

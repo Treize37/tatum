@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OneBep20Unsupported
+# Tatum::Error403OneBep20Unsupported
 
 ## Properties
 Name | Type | Description | Notes

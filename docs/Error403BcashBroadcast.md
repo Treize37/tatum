@@ -1,4 +1,4 @@
-# SwaggerClient::Error403BcashBroadcast
+# Tatum::Error403BcashBroadcast
 
 ## Properties
 Name | Type | Description | Notes

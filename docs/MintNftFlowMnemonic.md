@@ -1,4 +1,4 @@
-# SwaggerClient::MintNftFlowMnemonic
+# Tatum::MintNftFlowMnemonic
 
 ## Properties
 Name | Type | Description | Notes

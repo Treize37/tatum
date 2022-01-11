@@ -1,4 +1,4 @@
-# SwaggerClient::BidOnAuctionCeloKMS
+# Tatum::BidOnAuctionCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::AlgorandTransferBody
+# Tatum::AlgorandTransferBody
 
 ## Properties
 Name | Type | Description | Notes

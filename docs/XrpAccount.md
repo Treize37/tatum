@@ -1,4 +1,4 @@
-# SwaggerClient::XrpAccount
+# Tatum::XrpAccount
 
 ## Properties
 Name | Type | Description | Notes

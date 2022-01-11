@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfnftDeployBody
+# Tatum::OneOfnftDeployBody
 
 ## Properties
 Name | Type | Description | Notes

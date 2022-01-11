@@ -1,4 +1,4 @@
-# SwaggerClient::Trc10DeployBody
+# Tatum::Trc10DeployBody
 
 ## Properties
 Name | Type | Description | Notes

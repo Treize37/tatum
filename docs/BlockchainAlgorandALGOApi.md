@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainAlgorandALGOApi
+# Tatum::BlockchainAlgorandALGOApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -27,16 +27,16 @@ Access Algorand Algod GET node endpoints
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
 
@@ -44,7 +44,7 @@ begin
   #Access Algorand Algod GET node endpoints
   result = api_instance.algo_node_get_driver(x_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algo_node_get_driver: #{e}"
 end
 ```
@@ -80,16 +80,16 @@ Access Algorand Indexer GET node endpoints
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
 
@@ -97,7 +97,7 @@ begin
   #Access Algorand Indexer GET node endpoints
   result = api_instance.algo_node_indexer_get_driver(x_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algo_node_indexer_get_driver: #{e}"
 end
 ```
@@ -133,17 +133,17 @@ Access Algorand Algod POST node endpoints
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
-body = SwaggerClient::XApiKeyBody.new # XApiKeyBody | 
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
+body = Tatum::XApiKeyBody.new # XApiKeyBody | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
 
@@ -151,7 +151,7 @@ begin
   #Access Algorand Algod POST node endpoints
   result = api_instance.algo_node_post_driver(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algo_node_post_driver: #{e}"
 end
 ```
@@ -188,24 +188,24 @@ Broadcast signed Algorand transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Algorand transaction
   result = api_instance.algoand_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algoand_broadcast: #{e}"
 end
 ```
@@ -241,24 +241,24 @@ Send ALGO from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
-body = SwaggerClient::AlgorandTransactionBody.new # AlgorandTransactionBody | 
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
+body = Tatum::AlgorandTransactionBody.new # AlgorandTransactionBody | 
 
 
 begin
   #Send ALGO from account to account
   result = api_instance.algorand_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_blockchain_transfer: #{e}"
 end
 ```
@@ -294,16 +294,16 @@ Generate Algorand account address from private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 priv = 'priv_example' # String | private key of wallet.
 
 
@@ -311,7 +311,7 @@ begin
   #Generate Algorand account address from private key
   result = api_instance.algorand_generate_address(priv)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_generate_address: #{e}"
 end
 ```
@@ -347,16 +347,16 @@ Generate Algorand wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -365,7 +365,7 @@ begin
   #Generate Algorand wallet
   result = api_instance.algorand_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_generate_wallet: #{e}"
 end
 ```
@@ -401,16 +401,16 @@ Get Algorand Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 address = 'address_example' # String | Account address
 
 
@@ -418,7 +418,7 @@ begin
   #Get Algorand Account balance
   result = api_instance.algorand_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_get_balance: #{e}"
 end
 ```
@@ -454,24 +454,24 @@ Get Algorand block by block round number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
-round_number = SwaggerClient::BigDecimal.new # BigDecimal | Block round number
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
+round_number = Tatum::BigDecimal.new # BigDecimal | Block round number
 
 
 begin
   #Get Algorand block by block round number
   result = api_instance.algorand_get_block(round_number)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_get_block: #{e}"
 end
 ```
@@ -507,22 +507,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 
 begin
   #Get current block number
   result = api_instance.algorand_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_get_current_block: #{e}"
 end
 ```
@@ -555,16 +555,16 @@ Get Algorand Transactions between from and to
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 from = 'from_example' # String | Start timestamp in specified period of time
 to = 'to_example' # String | End timestamp in specified period of time
 opts = { 
@@ -576,7 +576,7 @@ begin
   #Get Algorand Transactions between from and to
   result = api_instance.algorand_get_pay_transactions_by_from_to(from, to, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_get_pay_transactions_by_from_to: #{e}"
 end
 ```
@@ -615,16 +615,16 @@ Get Algorand Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainAlgorandALGOApi.new
+api_instance = Tatum::BlockchainAlgorandALGOApi.new
 txid = 'txid_example' # String | Transaction id
 
 
@@ -632,7 +632,7 @@ begin
   #Get Algorand Transaction
   result = api_instance.algorand_get_transaction(txid)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainAlgorandALGOApi->algorand_get_transaction: #{e}"
 end
 ```

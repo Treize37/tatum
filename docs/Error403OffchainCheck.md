@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OffchainCheck
+# Tatum::Error403OffchainCheck
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::AdaAccountSummaryAsset
+# Tatum::AdaAccountSummaryAsset
 
 ## Properties
 Name | Type | Description | Notes

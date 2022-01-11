@@ -1,4 +1,4 @@
-# SwaggerClient::TronAccountTrc10
+# Tatum::TronAccountTrc10
 
 ## Properties
 Name | Type | Description | Notes

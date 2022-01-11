@@ -1,4 +1,4 @@
-# SwaggerClient::NeoWallet
+# Tatum::NeoWallet
 
 ## Properties
 Name | Type | Description | Notes

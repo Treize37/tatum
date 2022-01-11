@@ -1,4 +1,4 @@
-# SwaggerClient::DogeUTXO
+# Tatum::DogeUTXO
 
 ## Properties
 Name | Type | Description | Notes

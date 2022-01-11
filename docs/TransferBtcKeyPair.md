@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBtcKeyPair
+# Tatum::TransferBtcKeyPair
 
 ## Properties
 Name | Type | Description | Notes

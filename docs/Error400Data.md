@@ -1,4 +1,4 @@
-# SwaggerClient::Error400Data
+# Tatum::Error400Data
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CancelSellAssetOnMarketplaceCeloKMS
+# Tatum::CancelSellAssetOnMarketplaceCeloKMS
 
 ## Properties
 Name | Type | Description | Notes

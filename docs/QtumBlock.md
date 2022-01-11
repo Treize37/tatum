@@ -1,4 +1,4 @@
-# SwaggerClient::QtumBlock
+# Tatum::QtumBlock
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveErc20
+# Tatum::ApproveErc20
 
 ## Properties
 Name | Type | Description | Notes

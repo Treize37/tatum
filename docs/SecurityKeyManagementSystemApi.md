@@ -1,4 +1,4 @@
-# SwaggerClient::SecurityKeyManagementSystemApi
+# Tatum::SecurityKeyManagementSystemApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -19,16 +19,16 @@ Complete pending transaction to sign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::SecurityKeyManagementSystemApi.new
+api_instance = Tatum::SecurityKeyManagementSystemApi.new
 id = 'id_example' # String | ID of pending transaction
 tx_id = 'tx_id_example' # String | transaction ID of blockchain transaction
 
@@ -36,7 +36,7 @@ tx_id = 'tx_id_example' # String | transaction ID of blockchain transaction
 begin
   #Complete pending transaction to sign
   api_instance.complete_pending_signature(id, tx_id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling SecurityKeyManagementSystemApi->complete_pending_signature: #{e}"
 end
 ```
@@ -73,16 +73,16 @@ Delete transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::SecurityKeyManagementSystemApi.new
+api_instance = Tatum::SecurityKeyManagementSystemApi.new
 id = 'id_example' # String | ID of transaction
 opts = { 
   revert: true # BOOLEAN | Defines whether fee should be reverted to account balance as well as amount. Defaults to true. Revert true would be typically used when withdrawal was not broadcast to blockchain. False is used usually for Ethereum ERC20 based currencies.
@@ -91,7 +91,7 @@ opts = {
 begin
   #Delete transaction
   api_instance.delete_pending_transaction_to_sign(id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling SecurityKeyManagementSystemApi->delete_pending_transaction_to_sign: #{e}"
 end
 ```
@@ -128,16 +128,16 @@ Get transaction details
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::SecurityKeyManagementSystemApi.new
+api_instance = Tatum::SecurityKeyManagementSystemApi.new
 id = 'id_example' # String | ID of transaction
 
 
@@ -145,7 +145,7 @@ begin
   #Get transaction details
   result = api_instance.get_pending_transaction_to_sign(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling SecurityKeyManagementSystemApi->get_pending_transaction_to_sign: #{e}"
 end
 ```
@@ -181,16 +181,16 @@ Get pending transactions to sign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::SecurityKeyManagementSystemApi.new
+api_instance = Tatum::SecurityKeyManagementSystemApi.new
 chain = 'chain_example' # String | Blockchain to get pending transactions for.
 opts = { 
   signatures: 'signatures_example' # String | Signature IDs of the KMS which invokes this endpoint. If multiple, they should be separated by comma.
@@ -200,7 +200,7 @@ begin
   #Get pending transactions to sign
   result = api_instance.get_pending_transactions_to_sign(chain, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling SecurityKeyManagementSystemApi->get_pending_transactions_to_sign: #{e}"
 end
 ```

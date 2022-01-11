@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OneGasCalculation
+# Tatum::Error403OneGasCalculation
 
 ## Properties
 Name | Type | Description | Notes

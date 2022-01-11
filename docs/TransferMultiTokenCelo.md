@@ -1,4 +1,4 @@
-# SwaggerClient::TransferMultiTokenCelo
+# Tatum::TransferMultiTokenCelo
 
 ## Properties
 Name | Type | Description | Notes

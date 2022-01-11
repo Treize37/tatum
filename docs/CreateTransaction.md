@@ -1,4 +1,4 @@
-# SwaggerClient::CreateTransaction
+# Tatum::CreateTransaction
 
 ## Properties
 Name | Type | Description | Notes

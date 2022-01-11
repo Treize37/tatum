@@ -1,4 +1,4 @@
-# SwaggerClient::BurnNftFlowMnemonic
+# Tatum::BurnNftFlowMnemonic
 
 ## Properties
 Name | Type | Description | Notes

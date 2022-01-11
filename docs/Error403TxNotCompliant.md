@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxNotCompliant
+# Tatum::Error403TxNotCompliant
 
 ## Properties
 Name | Type | Description | Notes

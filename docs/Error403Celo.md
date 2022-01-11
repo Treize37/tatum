@@ -1,4 +1,4 @@
-# SwaggerClient::Error403Celo
+# Tatum::Error403Celo
 
 ## Properties
 Name | Type | Description | Notes

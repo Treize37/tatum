@@ -1,4 +1,4 @@
-# SwaggerClient::XlmAccountBalances
+# Tatum::XlmAccountBalances
 
 ## Properties
 Name | Type | Description | Notes

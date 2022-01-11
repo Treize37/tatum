@@ -1,4 +1,4 @@
-# SwaggerClient::Error403WithdrawalPending
+# Tatum::Error403WithdrawalPending
 
 ## Properties
 Name | Type | Description | Notes

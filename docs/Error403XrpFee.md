@@ -1,4 +1,4 @@
-# SwaggerClient::Error403XrpFee
+# Tatum::Error403XrpFee
 
 ## Properties
 Name | Type | Description | Notes

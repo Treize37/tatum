@@ -1,4 +1,4 @@
-# SwaggerClient::SolanaBlockTransactionMessageHeader
+# Tatum::SolanaBlockTransactionMessageHeader
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfethereumTransferBody
+# Tatum::OneOfethereumTransferBody
 
 ## Properties
 Name | Type | Description | Notes

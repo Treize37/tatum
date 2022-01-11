@@ -1,4 +1,4 @@
-# SwaggerClient::TronBroadcast
+# Tatum::TronBroadcast
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainBitcoinCashApi
+# Tatum::BlockchainBitcoinCashApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -25,24 +25,24 @@ Broadcast signed Bitcoin Cash transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainBitcoinCashApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Bitcoin Cash transaction
   result = api_instance.bch_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_broadcast: #{e}"
 end
 ```
@@ -78,25 +78,25 @@ Generate Bitcoin Cash deposit address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Bitcoin Cash deposit address from Extended public key
   result = api_instance.bch_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_generate_address: #{e}"
 end
 ```
@@ -133,24 +133,24 @@ Generate Bitcoin Cash private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainBitcoinCashApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Bitcoin Cash private key
   result = api_instance.bch_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_generate_address_private_key: #{e}"
 end
 ```
@@ -186,16 +186,16 @@ Generate Bitcoin Cash wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -204,7 +204,7 @@ begin
   #Generate Bitcoin Cash wallet
   result = api_instance.bch_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_generate_wallet: #{e}"
 end
 ```
@@ -240,16 +240,16 @@ Get Bitcoin Cash Block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 hash = 'hash_example' # String | Block hash or height
 
 
@@ -257,7 +257,7 @@ begin
   #Get Bitcoin Cash Block by hash
   result = api_instance.bch_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_get_block: #{e}"
 end
 ```
@@ -293,22 +293,22 @@ Get Bitcoin Cash Blockchain Information
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 
 begin
   #Get Bitcoin Cash Blockchain Information
   result = api_instance.bch_get_block_chain_info
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_get_block_chain_info: #{e}"
 end
 ```
@@ -341,24 +341,24 @@ Get Bitcoin Cash Block hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
-i = SwaggerClient::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
+api_instance = Tatum::BlockchainBitcoinCashApi.new
+i = Tatum::BigDecimal.new # BigDecimal | The number of blocks preceding a particular block on a block chain.
 
 
 begin
   #Get Bitcoin Cash Block hash
   result = api_instance.bch_get_block_hash(i)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_get_block_hash: #{e}"
 end
 ```
@@ -394,16 +394,16 @@ Get Bitcoin Cash Transaction by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -411,7 +411,7 @@ begin
   #Get Bitcoin Cash Transaction by hash
   result = api_instance.bch_get_raw_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_get_raw_transaction: #{e}"
 end
 ```
@@ -447,16 +447,16 @@ Get Bitcoin Cash Transactions by address
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
+api_instance = Tatum::BlockchainBitcoinCashApi.new
 address = 'address_example' # String | Address
 opts = { 
   skip: 56 # Integer | Define, how much transactions should be skipped to obtain another page.
@@ -466,7 +466,7 @@ begin
   #Get Bitcoin Cash Transactions by address
   result = api_instance.bch_get_tx_by_address(address, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_get_tx_by_address: #{e}"
 end
 ```
@@ -503,24 +503,24 @@ Send Bitcoin Cash to blockchain addresses
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainBitcoinCashApi.new
-body = SwaggerClient::BcashTransactionBody.new # BcashTransactionBody | 
+api_instance = Tatum::BlockchainBitcoinCashApi.new
+body = Tatum::BcashTransactionBody.new # BcashTransactionBody | 
 
 
 begin
   #Send Bitcoin Cash to blockchain addresses
   result = api_instance.bch_transfer_blockchain(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainBitcoinCashApi->bch_transfer_blockchain: #{e}"
 end
 ```

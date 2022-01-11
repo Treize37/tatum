@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateFeeRecipientKMS
+# Tatum::UpdateFeeRecipientKMS
 
 ## Properties
 Name | Type | Description | Notes

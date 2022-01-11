@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionBalance
+# Tatum::CreateSubscriptionBalance
 
 ## Properties
 Name | Type | Description | Notes

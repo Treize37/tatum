@@ -1,4 +1,4 @@
-# SwaggerClient::CreateAccount
+# Tatum::CreateAccount
 
 ## Properties
 Name | Type | Description | Notes

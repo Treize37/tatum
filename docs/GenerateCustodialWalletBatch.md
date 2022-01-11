@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateCustodialWalletBatch
+# Tatum::GenerateCustodialWalletBatch
 
 ## Properties
 Name | Type | Description | Notes

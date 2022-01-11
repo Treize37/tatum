@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonTxHash
+# Tatum::Error403PolygonTxHash
 
 ## Properties
 Name | Type | Description | Notes

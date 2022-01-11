@@ -1,4 +1,4 @@
-# SwaggerClient::TransferErc20Mnemonic
+# Tatum::TransferErc20Mnemonic
 
 ## Properties
 Name | Type | Description | Notes

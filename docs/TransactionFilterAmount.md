@@ -1,4 +1,4 @@
-# SwaggerClient::TransactionFilterAmount
+# Tatum::TransactionFilterAmount
 
 ## Properties
 Name | Type | Description | Notes

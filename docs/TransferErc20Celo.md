@@ -1,4 +1,4 @@
-# SwaggerClient::TransferErc20Celo
+# Tatum::TransferErc20Celo
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAdaKeyPair
+# Tatum::TransferAdaKeyPair
 
 ## Properties
 Name | Type | Description | Notes

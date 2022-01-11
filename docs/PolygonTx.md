@@ -1,4 +1,4 @@
-# SwaggerClient::PolygonTx
+# Tatum::PolygonTx
 
 ## Properties
 Name | Type | Description | Notes

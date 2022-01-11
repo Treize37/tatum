@@ -1,4 +1,4 @@
-# SwaggerClient::OneOftronFreezeBalanceBody
+# Tatum::OneOftronFreezeBalanceBody
 
 ## Properties
 Name | Type | Description | Notes

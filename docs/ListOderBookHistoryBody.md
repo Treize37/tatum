@@ -1,4 +1,4 @@
-# SwaggerClient::ListOderBookHistoryBody
+# Tatum::ListOderBookHistoryBody
 
 ## Properties
 Name | Type | Description | Notes

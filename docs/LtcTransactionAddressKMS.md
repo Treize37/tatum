@@ -1,4 +1,4 @@
-# SwaggerClient::LtcTransactionAddressKMS
+# Tatum::LtcTransactionAddressKMS
 
 ## Properties
 Name | Type | Description | Notes

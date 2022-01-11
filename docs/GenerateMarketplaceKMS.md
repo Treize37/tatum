@@ -1,4 +1,4 @@
-# SwaggerClient::GenerateMarketplaceKMS
+# Tatum::GenerateMarketplaceKMS
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::EstimateFeeFromUTXOFromUTXO
+# Tatum::EstimateFeeFromUTXOFromUTXO
 
 ## Properties
 Name | Type | Description | Notes

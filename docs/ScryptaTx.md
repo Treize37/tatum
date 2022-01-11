@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaTx
+# Tatum::ScryptaTx
 
 ## Properties
 Name | Type | Description | Notes

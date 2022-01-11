@@ -1,4 +1,4 @@
-# SwaggerClient::TransferSolanaBlockchain
+# Tatum::TransferSolanaBlockchain
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerAccountApi
+# Tatum::LedgerAccountApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -32,23 +32,23 @@ Activate account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Activate account
   api_instance.activate_account(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->activate_account: #{e}"
 end
 ```
@@ -84,17 +84,17 @@ Block an amount in an account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-body = SwaggerClient::BlockAmount.new # BlockAmount | 
+api_instance = Tatum::LedgerAccountApi.new
+body = Tatum::BlockAmount.new # BlockAmount | 
 id = 'id_example' # String | Account ID
 
 
@@ -102,7 +102,7 @@ begin
   #Block an amount in an account
   result = api_instance.block_amount(bodyid)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->block_amount: #{e}"
 end
 ```
@@ -139,24 +139,24 @@ Create new account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-body = SwaggerClient::CreateAccount.new # CreateAccount | 
+api_instance = Tatum::LedgerAccountApi.new
+body = Tatum::CreateAccount.new # CreateAccount | 
 
 
 begin
   #Create new account
   result = api_instance.create_account(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->create_account: #{e}"
 end
 ```
@@ -192,24 +192,24 @@ Create multiple accounts in a batch call
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-body = SwaggerClient::CreateAccountBatch.new # CreateAccountBatch | 
+api_instance = Tatum::LedgerAccountApi.new
+body = Tatum::CreateAccountBatch.new # CreateAccountBatch | 
 
 
 begin
   #Create multiple accounts in a batch call
   result = api_instance.create_account_batch(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->create_account_batch: #{e}"
 end
 ```
@@ -245,23 +245,23 @@ Deactivate account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Deactivate account
   api_instance.deactivate_account(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->deactivate_account: #{e}"
 end
 ```
@@ -297,23 +297,23 @@ Unblock all blocked amounts in an account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Unblock all blocked amounts in an account
   api_instance.delete_all_block_amount(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->delete_all_block_amount: #{e}"
 end
 ```
@@ -349,23 +349,23 @@ Unblock a blocked amount in an account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Blockage ID
 
 
 begin
   #Unblock a blocked amount in an account
   api_instance.delete_block_amount(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->delete_block_amount: #{e}"
 end
 ```
@@ -401,23 +401,23 @@ Freeze account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Freeze account
   api_instance.freeze_account(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->freeze_account: #{e}"
 end
 ```
@@ -453,16 +453,16 @@ Get account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
@@ -470,7 +470,7 @@ begin
   #Get account balance
   result = api_instance.get_account_balance(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_account_balance: #{e}"
 end
 ```
@@ -506,16 +506,16 @@ Get account by ID
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
@@ -523,7 +523,7 @@ begin
   #Get account by ID
   result = api_instance.get_account_by_account_id(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_account_by_account_id: #{e}"
 end
 ```
@@ -559,20 +559,20 @@ List all customer accounts
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerAccountApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 id = 'id_example' # String | Internal customer ID
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain the next page of data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain the next page of data.
   account_code: 'account_code_example' # String | For bookkeeping to distinct account purpose.
 }
 
@@ -580,7 +580,7 @@ begin
   #List all customer accounts
   result = api_instance.get_accounts_by_customer_id(page_size, id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_accounts_by_customer_id: #{e}"
 end
 ```
@@ -619,19 +619,19 @@ List all accounts
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerAccountApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new, # BigDecimal | Offset to obtain the next page of data.
+  offset: Tatum::BigDecimal.new, # BigDecimal | Offset to obtain the next page of data.
   account_code: 'account_code_example' # String | For bookkeeping to distinct account purpose.
 }
 
@@ -639,7 +639,7 @@ begin
   #List all accounts
   result = api_instance.get_all_accounts(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_all_accounts: #{e}"
 end
 ```
@@ -677,27 +677,27 @@ Get blocked amounts in an account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain the next page of data.
 }
 
 begin
   #Get blocked amounts in an account
   result = api_instance.get_block_amount(id, page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_block_amount: #{e}"
 end
 ```
@@ -735,16 +735,16 @@ Get blocked amount by ID
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Blocked amount ID
 
 
@@ -752,7 +752,7 @@ begin
   #Get blocked amount by ID
   result = api_instance.get_block_amount_by_id(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->get_block_amount_by_id: #{e}"
 end
 ```
@@ -788,17 +788,17 @@ Unblock an amount in an account and perform a transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-body = SwaggerClient::UnblockAmount.new # UnblockAmount | 
+api_instance = Tatum::LedgerAccountApi.new
+body = Tatum::UnblockAmount.new # UnblockAmount | 
 id = 'id_example' # String | Blockage ID
 
 
@@ -806,7 +806,7 @@ begin
   #Unblock an amount in an account and perform a transaction
   result = api_instance.unblock_amount_with_transaction(bodyid)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->unblock_amount_with_transaction: #{e}"
 end
 ```
@@ -843,23 +843,23 @@ Unfreeze account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
+api_instance = Tatum::LedgerAccountApi.new
 id = 'id_example' # String | Account ID
 
 
 begin
   #Unfreeze account
   api_instance.unfreeze_account(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->unfreeze_account: #{e}"
 end
 ```
@@ -895,24 +895,24 @@ Update account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerAccountApi.new
-body = SwaggerClient::UpdateAccount.new # UpdateAccount | 
+api_instance = Tatum::LedgerAccountApi.new
+body = Tatum::UpdateAccount.new # UpdateAccount | 
 id = 'id_example' # String | Account ID
 
 
 begin
   #Update account
   api_instance.update_account_by_account_id(bodyid)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerAccountApi->update_account_by_account_id: #{e}"
 end
 ```

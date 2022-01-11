@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OrderFeeNotFound
+# Tatum::Error403OrderFeeNotFound
 
 ## Properties
 Name | Type | Description | Notes

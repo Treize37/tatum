@@ -1,4 +1,4 @@
-# SwaggerClient::DeployCeloErc20OffchainKMSXpub
+# Tatum::DeployCeloErc20OffchainKMSXpub
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PrivKeyScrypta
+# Tatum::PrivKeyScrypta
 
 ## Properties
 Name | Type | Description | Notes

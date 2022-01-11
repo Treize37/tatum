@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VCNotFound
+# Tatum::Error403VCNotFound
 
 ## Properties
 Name | Type | Description | Notes

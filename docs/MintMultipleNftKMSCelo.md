@@ -1,4 +1,4 @@
-# SwaggerClient::MintMultipleNftKMSCelo
+# Tatum::MintMultipleNftKMSCelo
 
 ## Properties
 Name | Type | Description | Notes

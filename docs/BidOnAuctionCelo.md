@@ -1,4 +1,4 @@
-# SwaggerClient::BidOnAuctionCelo
+# Tatum::BidOnAuctionCelo
 
 ## Properties
 Name | Type | Description | Notes

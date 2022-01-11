@@ -1,4 +1,4 @@
-# SwaggerClient::InlineResponse20049
+# Tatum::InlineResponse20049
 
 ## Properties
 Name | Type | Description | Notes

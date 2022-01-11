@@ -1,4 +1,4 @@
-# SwaggerClient::CeloTransactionBody
+# Tatum::CeloTransactionBody
 
 ## Properties
 Name | Type | Description | Notes

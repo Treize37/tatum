@@ -1,4 +1,4 @@
-# SwaggerClient::TransferBtcMnemonic
+# Tatum::TransferBtcMnemonic
 
 ## Properties
 Name | Type | Description | Notes

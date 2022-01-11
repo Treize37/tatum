@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainElrondNetworkEGLDApi
+# Tatum::BlockchainElrondNetworkEGLDApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,22 +28,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 
 begin
   #Get current block number
   result = api_instance.e_gld_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->e_gld_get_current_block: #{e}"
 end
 ```
@@ -76,24 +76,24 @@ Send EGLD from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
-body = SwaggerClient::EgldTransactionBody.new # EgldTransactionBody | 
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
+body = Tatum::EgldTransactionBody.new # EgldTransactionBody | 
 
 
 begin
   #Send EGLD from account to account
   result = api_instance.egld_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_blockchain_transfer: #{e}"
 end
 ```
@@ -129,24 +129,24 @@ Broadcast signed EGLD transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed EGLD transaction
   result = api_instance.egld_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_broadcast: #{e}"
 end
 ```
@@ -182,25 +182,25 @@ Generate EGLD account address from mnemonic
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 mnemonic = 'mnemonic_example' # String | Mnemonic to use for generation of address.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate EGLD account address from mnemonic
   result = api_instance.egld_generate_address(mnemonic, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_generate_address: #{e}"
 end
 ```
@@ -237,24 +237,24 @@ Generate EGLD private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate EGLD private key
   result = api_instance.egld_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_generate_address_private_key: #{e}"
 end
 ```
@@ -290,16 +290,16 @@ Generate EGLD wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of private key.
 }
@@ -308,7 +308,7 @@ begin
   #Generate EGLD wallet
   result = api_instance.egld_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_generate_wallet: #{e}"
 end
 ```
@@ -344,16 +344,16 @@ Get EGLD Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 address = 'address_example' # String | Account address
 
 
@@ -361,7 +361,7 @@ begin
   #Get EGLD Account balance
   result = api_instance.egld_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_get_balance: #{e}"
 end
 ```
@@ -397,16 +397,16 @@ Get EGLD block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 hash = 'hash_example' # String | Block hash or nonce
 
 
@@ -414,7 +414,7 @@ begin
   #Get EGLD block by hash
   result = api_instance.egld_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_get_block: #{e}"
 end
 ```
@@ -450,16 +450,16 @@ Get EGLD Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -467,7 +467,7 @@ begin
   #Get EGLD Transaction
   result = api_instance.egld_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_get_transaction: #{e}"
 end
 ```
@@ -503,16 +503,16 @@ Get count of outgoing EGLD transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 address = 'address_example' # String | address
 
 
@@ -520,7 +520,7 @@ begin
   #Get count of outgoing EGLD transactions
   result = api_instance.egld_get_transaction_address(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_get_transaction_address: #{e}"
 end
 ```
@@ -556,16 +556,16 @@ Get count of outgoing EGLD transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 address = 'address_example' # String | address
 
 
@@ -573,7 +573,7 @@ begin
   #Get count of outgoing EGLD transactions
   result = api_instance.egld_get_transaction_count(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_get_transaction_count: #{e}"
 end
 ```
@@ -609,9 +609,9 @@ Node HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
 
@@ -619,7 +619,7 @@ begin
   #Node HTTP driver
   result = api_instance.egld_node_get(x_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_node_get: #{e}"
 end
 ```
@@ -655,9 +655,9 @@ Node HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainElrondNetworkEGLDApi.new
+api_instance = Tatum::BlockchainElrondNetworkEGLDApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
@@ -666,7 +666,7 @@ begin
   #Node HTTP driver
   result = api_instance.egld_node_post(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainElrondNetworkEGLDApi->egld_node_post: #{e}"
 end
 ```

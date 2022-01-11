@@ -1,4 +1,4 @@
-# SwaggerClient::EgldShardBlock
+# Tatum::EgldShardBlock
 
 ## Properties
 Name | Type | Description | Notes

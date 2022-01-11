@@ -1,4 +1,4 @@
-# SwaggerClient::MintMultiTokenBatchKMS
+# Tatum::MintMultiTokenBatchKMS
 
 ## Properties
 Name | Type | Description | Notes

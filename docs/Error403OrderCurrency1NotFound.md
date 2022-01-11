@@ -1,4 +1,4 @@
-# SwaggerClient::Error403OrderCurrency1NotFound
+# Tatum::Error403OrderCurrency1NotFound
 
 ## Properties
 Name | Type | Description | Notes

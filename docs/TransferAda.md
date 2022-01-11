@@ -1,4 +1,4 @@
-# SwaggerClient::TransferAda
+# Tatum::TransferAda
 
 ## Properties
 Name | Type | Description | Notes

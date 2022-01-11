@@ -1,4 +1,4 @@
-# SwaggerClient::CeloErc20Body
+# Tatum::CeloErc20Body
 
 ## Properties
 Name | Type | Description | Notes

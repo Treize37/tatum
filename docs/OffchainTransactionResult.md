@@ -1,4 +1,4 @@
-# SwaggerClient::OffchainTransactionResult
+# Tatum::OffchainTransactionResult
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::LedgerCustomerApi
+# Tatum::LedgerCustomerApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -22,23 +22,23 @@ Activate customer
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
+api_instance = Tatum::LedgerCustomerApi.new
 id = 'id_example' # String | Customer internal ID
 
 
 begin
   #Activate customer
   api_instance.activate_customer(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->activate_customer: #{e}"
 end
 ```
@@ -74,23 +74,23 @@ Deactivate customer
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
+api_instance = Tatum::LedgerCustomerApi.new
 id = 'id_example' # String | Customer internal ID
 
 
 begin
   #Deactivate customer
   api_instance.deactivate_customer(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->deactivate_customer: #{e}"
 end
 ```
@@ -126,23 +126,23 @@ Disable customer
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
+api_instance = Tatum::LedgerCustomerApi.new
 id = 'id_example' # String | Customer internal ID
 
 
 begin
   #Disable customer
   api_instance.disable_customer(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->disable_customer: #{e}"
 end
 ```
@@ -178,23 +178,23 @@ Enable customer
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
+api_instance = Tatum::LedgerCustomerApi.new
 id = 'id_example' # String | Customer internal ID
 
 
 begin
   #Enable customer
   api_instance.enable_customer(id)
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->enable_customer: #{e}"
 end
 ```
@@ -230,26 +230,26 @@ List all customers
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
-page_size = SwaggerClient::BigDecimal.new # BigDecimal | Max number of items per page is 50.
+api_instance = Tatum::LedgerCustomerApi.new
+page_size = Tatum::BigDecimal.new # BigDecimal | Max number of items per page is 50.
 opts = { 
-  offset: SwaggerClient::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
+  offset: Tatum::BigDecimal.new # BigDecimal | Offset to obtain next page of the data.
 }
 
 begin
   #List all customers
   result = api_instance.find_all_customers(page_size, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->find_all_customers: #{e}"
 end
 ```
@@ -286,16 +286,16 @@ Get customer details
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
+api_instance = Tatum::LedgerCustomerApi.new
 id = 'id_example' # String | Customer external or internal ID
 
 
@@ -303,7 +303,7 @@ begin
   #Get customer details
   result = api_instance.get_customer_by_external_or_internal_id(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->get_customer_by_external_or_internal_id: #{e}"
 end
 ```
@@ -339,17 +339,17 @@ Update customer
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::LedgerCustomerApi.new
-body = SwaggerClient::CustomerUpdate.new # CustomerUpdate | 
+api_instance = Tatum::LedgerCustomerApi.new
+body = Tatum::CustomerUpdate.new # CustomerUpdate | 
 id = 'id_example' # String | Customer internal ID
 
 
@@ -357,7 +357,7 @@ begin
   #Update customer
   result = api_instance.update_customer(bodyid)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling LedgerCustomerApi->update_customer: #{e}"
 end
 ```

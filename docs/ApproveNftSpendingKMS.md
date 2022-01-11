@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveNftSpendingKMS
+# Tatum::ApproveNftSpendingKMS
 
 ## Properties
 Name | Type | Description | Notes

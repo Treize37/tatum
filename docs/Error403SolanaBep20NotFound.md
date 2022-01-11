@@ -1,4 +1,4 @@
-# SwaggerClient::Error403SolanaBep20NotFound
+# Tatum::Error403SolanaBep20NotFound
 
 ## Properties
 Name | Type | Description | Notes

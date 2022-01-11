@@ -1,4 +1,4 @@
-# SwaggerClient::XApiKeyBody
+# Tatum::XApiKeyBody
 
 ## Properties
 Name | Type | Description | Notes

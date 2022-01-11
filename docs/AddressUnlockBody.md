@@ -1,4 +1,4 @@
-# SwaggerClient::AddressUnlockBody
+# Tatum::AddressUnlockBody
 
 ## Properties
 Name | Type | Description | Notes

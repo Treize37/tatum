@@ -1,4 +1,4 @@
-# SwaggerClient::DeployErc20OffchainKMSAddress
+# Tatum::DeployErc20OffchainKMSAddress
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CreateSubscriptionTradeMatch
+# Tatum::CreateSubscriptionTradeMatch
 
 ## Properties
 Name | Type | Description | Notes

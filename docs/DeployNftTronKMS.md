@@ -1,4 +1,4 @@
-# SwaggerClient::DeployNftTronKMS
+# Tatum::DeployNftTronKMS
 
 ## Properties
 Name | Type | Description | Notes

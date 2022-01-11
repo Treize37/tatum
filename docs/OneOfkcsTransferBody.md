@@ -1,4 +1,4 @@
-# SwaggerClient::OneOfkcsTransferBody
+# Tatum::OneOfkcsTransferBody
 
 ## Properties
 Name | Type | Description | Notes

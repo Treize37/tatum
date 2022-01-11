@@ -1,4 +1,4 @@
-# SwaggerClient::Error403PolygonBroadcast
+# Tatum::Error403PolygonBroadcast
 
 ## Properties
 Name | Type | Description | Notes

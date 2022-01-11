@@ -1,4 +1,4 @@
-# SwaggerClient::BurnNftFlowPK
+# Tatum::BurnNftFlowPK
 
 ## Properties
 Name | Type | Description | Notes

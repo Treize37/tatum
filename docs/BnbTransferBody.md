@@ -1,4 +1,4 @@
-# SwaggerClient::BnbTransferBody
+# Tatum::BnbTransferBody
 
 ## Properties
 Name | Type | Description | Notes

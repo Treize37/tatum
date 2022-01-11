@@ -1,4 +1,4 @@
-# SwaggerClient::WalletPrivBody
+# Tatum::WalletPrivBody
 
 ## Properties
 Name | Type | Description | Notes

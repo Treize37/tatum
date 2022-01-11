@@ -1,4 +1,4 @@
-# SwaggerClient::Error403AccountIncompatibleXpub
+# Tatum::Error403AccountIncompatibleXpub
 
 ## Properties
 Name | Type | Description | Notes

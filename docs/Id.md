@@ -1,4 +1,4 @@
-# SwaggerClient::Id
+# Tatum::Id
 
 ## Properties
 Name | Type | Description | Notes

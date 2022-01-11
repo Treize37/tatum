@@ -1,4 +1,4 @@
-# SwaggerClient::TransferNftSolanaKMS
+# Tatum::TransferNftSolanaKMS
 
 ## Properties
 Name | Type | Description | Notes

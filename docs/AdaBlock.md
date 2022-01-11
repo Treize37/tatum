@@ -1,4 +1,4 @@
-# SwaggerClient::AdaBlock
+# Tatum::AdaBlock
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Error403TxSenderCustomerDisabled
+# Tatum::Error403TxSenderCustomerDisabled
 
 ## Properties
 Name | Type | Description | Notes

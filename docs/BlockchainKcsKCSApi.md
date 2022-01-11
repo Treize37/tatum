@@ -1,4 +1,4 @@
-# SwaggerClient::BlockchainKcsKCSApi
+# Tatum::BlockchainKcsKCSApi
 
 All URIs are relative to *https://api-eu1.tatum.io*
 
@@ -28,24 +28,24 @@ Invoke Smart Contract method
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
-body = SwaggerClient::KcsSmartcontractBody.new # KcsSmartcontractBody | 
+api_instance = Tatum::BlockchainKcsKCSApi.new
+body = Tatum::KcsSmartcontractBody.new # KcsSmartcontractBody | 
 
 
 begin
   #Invoke Smart Contract method
   result = api_instance.kcs_blockchain_smart_contract_invocation(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_blockchain_smart_contract_invocation: #{e}"
 end
 ```
@@ -81,24 +81,24 @@ Send KCS from account to account
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
-body = SwaggerClient::KcsTransactionBody.new # KcsTransactionBody | 
+api_instance = Tatum::BlockchainKcsKCSApi.new
+body = Tatum::KcsTransactionBody.new # KcsTransactionBody | 
 
 
 begin
   #Send KCS from account to account
   result = api_instance.kcs_blockchain_transfer(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_blockchain_transfer: #{e}"
 end
 ```
@@ -134,24 +134,24 @@ Broadcast signed Kcs transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
-body = SwaggerClient::BroadcastKMS.new # BroadcastKMS | 
+api_instance = Tatum::BlockchainKcsKCSApi.new
+body = Tatum::BroadcastKMS.new # BroadcastKMS | 
 
 
 begin
   #Broadcast signed Kcs transaction
   result = api_instance.kcs_broadcast(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_broadcast: #{e}"
 end
 ```
@@ -187,24 +187,24 @@ Estimate Kcs transaction fees
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
-body = SwaggerClient::KcsEstimateGas.new # KcsEstimateGas | 
+api_instance = Tatum::BlockchainKcsKCSApi.new
+body = Tatum::KcsEstimateGas.new # KcsEstimateGas | 
 
 
 begin
   #Estimate Kcs transaction fees
   result = api_instance.kcs_estimate_gas(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_estimate_gas: #{e}"
 end
 ```
@@ -240,25 +240,25 @@ Generate Kcs account address from Extended public key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 xpub = 'xpub_example' # String | Extended public key of wallet.
-index = SwaggerClient::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
+index = Tatum::BigDecimal.new # BigDecimal | Derivation index of desired address to be generated.
 
 
 begin
   #Generate Kcs account address from Extended public key
   result = api_instance.kcs_generate_address(xpub, index)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_generate_address: #{e}"
 end
 ```
@@ -295,24 +295,24 @@ Generate Kcs private key
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
-body = SwaggerClient::PrivKeyRequest.new # PrivKeyRequest | 
+api_instance = Tatum::BlockchainKcsKCSApi.new
+body = Tatum::PrivKeyRequest.new # PrivKeyRequest | 
 
 
 begin
   #Generate Kcs private key
   result = api_instance.kcs_generate_address_private_key(body)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_generate_address_private_key: #{e}"
 end
 ```
@@ -348,16 +348,16 @@ Generate Kcs wallet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 opts = { 
   mnemonic: 'mnemonic_example' # String | Mnemonic to use for generation of extended public and private keys.
 }
@@ -366,7 +366,7 @@ begin
   #Generate Kcs wallet
   result = api_instance.kcs_generate_wallet(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_generate_wallet: #{e}"
 end
 ```
@@ -402,16 +402,16 @@ Get Kcs Account balance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 address = 'address_example' # String | Account address
 
 
@@ -419,7 +419,7 @@ begin
   #Get Kcs Account balance
   result = api_instance.kcs_get_balance(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_get_balance: #{e}"
 end
 ```
@@ -455,16 +455,16 @@ Get Kcs block by hash
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 hash = 'hash_example' # String | Block hash or block number
 
 
@@ -472,7 +472,7 @@ begin
   #Get Kcs block by hash
   result = api_instance.kcs_get_block(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_get_block: #{e}"
 end
 ```
@@ -508,22 +508,22 @@ Get current block number
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 
 begin
   #Get current block number
   result = api_instance.kcs_get_current_block
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_get_current_block: #{e}"
 end
 ```
@@ -556,16 +556,16 @@ Get Kcs Transaction
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 hash = 'hash_example' # String | Transaction hash
 
 
@@ -573,7 +573,7 @@ begin
   #Get Kcs Transaction
   result = api_instance.kcs_get_transaction(hash)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_get_transaction: #{e}"
 end
 ```
@@ -609,16 +609,16 @@ Get count of outgoing Kcs transactions
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 # setup authorization
-SwaggerClient.configure do |config|
+Tatum.configure do |config|
   # Configure API key authorization: X-Api-Key
   config.api_key['x-api-key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['x-api-key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 address = 'address_example' # String | address
 
 
@@ -626,7 +626,7 @@ begin
   #Get count of outgoing Kcs transactions
   result = api_instance.kcs_get_transaction_count(address)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_get_transaction_count: #{e}"
 end
 ```
@@ -662,9 +662,9 @@ Web3 HTTP driver
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tatum'
 
-api_instance = SwaggerClient::BlockchainKcsKCSApi.new
+api_instance = Tatum::BlockchainKcsKCSApi.new
 body = nil # Object | 
 x_api_key = 'x_api_key_example' # String | Tatum X-API-Key used for authorization.
 
@@ -673,7 +673,7 @@ begin
   #Web3 HTTP driver
   result = api_instance.kcs_web3_driver(bodyx_api_key)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Tatum::ApiError => e
   puts "Exception when calling BlockchainKcsKCSApi->kcs_web3_driver: #{e}"
 end
 ```

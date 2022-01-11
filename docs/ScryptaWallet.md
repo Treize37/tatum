@@ -1,4 +1,4 @@
-# SwaggerClient::ScryptaWallet
+# Tatum::ScryptaWallet
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeployTrcOffchainKMSAddress
+# Tatum::DeployTrcOffchainKMSAddress
 
 ## Properties
 Name | Type | Description | Notes

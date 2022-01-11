@@ -1,4 +1,4 @@
-# SwaggerClient::Error403VCRevokeBalance
+# Tatum::Error403VCRevokeBalance
 
 ## Properties
 Name | Type | Description | Notes

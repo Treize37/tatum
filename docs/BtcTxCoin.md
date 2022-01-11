@@ -1,4 +1,4 @@
-# SwaggerClient::BtcTxCoin
+# Tatum::BtcTxCoin
 
 ## Properties
 Name | Type | Description | Notes

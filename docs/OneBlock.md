@@ -1,4 +1,4 @@
-# SwaggerClient::OneBlock
+# Tatum::OneBlock
 
 ## Properties
 Name | Type | Description | Notes

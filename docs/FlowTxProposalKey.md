@@ -1,4 +1,4 @@
-# SwaggerClient::FlowTxProposalKey
+# Tatum::FlowTxProposalKey
 
 ## Properties
 Name | Type | Description | Notes

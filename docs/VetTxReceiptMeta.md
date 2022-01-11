@@ -1,4 +1,4 @@
-# SwaggerClient::VetTxReceiptMeta
+# Tatum::VetTxReceiptMeta
 
 ## Properties
 Name | Type | Description | Notes

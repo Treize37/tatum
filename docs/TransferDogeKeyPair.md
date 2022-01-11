@@ -1,4 +1,4 @@
-# SwaggerClient::TransferDogeKeyPair
+# Tatum::TransferDogeKeyPair
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::FlowBlockBlockSeals
+# Tatum::FlowBlockBlockSeals
 
 ## Properties
 Name | Type | Description | Notes

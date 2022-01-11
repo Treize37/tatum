@@ -1,4 +1,4 @@
-# SwaggerClient::CreateBnbAsset
+# Tatum::CreateBnbAsset
 
 ## Properties
 Name | Type | Description | Notes

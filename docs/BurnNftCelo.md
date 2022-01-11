@@ -1,4 +1,4 @@
-# SwaggerClient::BurnNftCelo
+# Tatum::BurnNftCelo
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ChainMintErc20KMS
+# Tatum::ChainMintErc20KMS
 
 ## Properties
 Name | Type | Description | Notes

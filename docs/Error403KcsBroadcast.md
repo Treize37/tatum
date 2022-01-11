@@ -1,4 +1,4 @@
-# SwaggerClient::Error403KcsBroadcast
+# Tatum::Error403KcsBroadcast
 
 ## Properties
 Name | Type | Description | Notes

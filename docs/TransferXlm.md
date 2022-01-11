@@ -1,4 +1,4 @@
-# SwaggerClient::TransferXlm
+# Tatum::TransferXlm
 
 ## Properties
 Name | Type | Description | Notes

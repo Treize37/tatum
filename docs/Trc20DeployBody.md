@@ -1,4 +1,4 @@
-# SwaggerClient::Trc20DeployBody
+# Tatum::Trc20DeployBody
 
 ## Properties
 Name | Type | Description | Notes

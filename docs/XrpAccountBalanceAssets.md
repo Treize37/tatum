@@ -1,4 +1,4 @@
-# SwaggerClient::XrpAccountBalanceAssets
+# Tatum::XrpAccountBalanceAssets
 
 ## Properties
 Name | Type | Description | Notes

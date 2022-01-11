@@ -1,4 +1,4 @@
-# SwaggerClient::PolygonBlock
+# Tatum::PolygonBlock
 
 ## Properties
 Name | Type | Description | Notes

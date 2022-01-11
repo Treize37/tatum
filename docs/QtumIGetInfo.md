@@ -1,4 +1,4 @@
-# SwaggerClient::QtumIGetInfo
+# Tatum::QtumIGetInfo
 
 ## Properties
 Name | Type | Description | Notes

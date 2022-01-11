@@ -1,4 +1,4 @@
-# SwaggerClient::AdaTx
+# Tatum::AdaTx
 
 ## Properties
 Name | Type | Description | Notes

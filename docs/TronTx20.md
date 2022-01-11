@@ -1,4 +1,4 @@
-# SwaggerClient::TronTx20
+# Tatum::TronTx20
 
 ## Properties
 Name | Type | Description | Notes

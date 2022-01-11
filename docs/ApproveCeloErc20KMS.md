@@ -1,4 +1,4 @@
-# SwaggerClient::ApproveCeloErc20KMS
+# Tatum::ApproveCeloErc20KMS
 
 ## Properties
 Name | Type | Description | Notes

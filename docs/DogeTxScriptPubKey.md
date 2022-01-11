@@ -1,4 +1,4 @@
-# SwaggerClient::DogeTxScriptPubKey
+# Tatum::DogeTxScriptPubKey
 
 ## Properties
 Name | Type | Description | Notes

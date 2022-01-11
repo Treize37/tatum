@@ -1,4 +1,4 @@
-# SwaggerClient::QuorumTxReceipt
+# Tatum::QuorumTxReceipt
 
 ## Properties
 Name | Type | Description | Notes
