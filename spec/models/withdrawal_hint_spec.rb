@@ -18,12 +18,7 @@ require 'date'
 # Please update as you see appropriate
 describe 'WithdrawalHint' do
   before do
-    # run before each test
     @instance = SwaggerClient::WithdrawalHint.new
-  end
-
-  after do
-    # run after each test
   end
 
   describe 'test an instance of WithdrawalHint' do

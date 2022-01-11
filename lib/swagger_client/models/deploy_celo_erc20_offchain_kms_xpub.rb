@@ -36,7 +36,7 @@ module SwaggerClient
     # Derivation index for xpub to generate specific deposit address.
     attr_accessor :derivation_index
 
-    # Identifier of the mnemonic / private key associated in signing application. When hash identifies mnemonic, index must be present to represent specific account to pay from. Private key, mnemonic or signature Id must be present. 
+    # Identifier of the mnemonic / private key associated in signing application. When hash identifies mnemonic, index must be present to represent specific account to pay from. Private key, mnemonic or signature Id must be present.
     attr_accessor :signature_id
 
     # Nonce to be set to Ethereum transaction. If not present, last known nonce will be used.
@@ -106,7 +106,7 @@ module SwaggerClient
       Set.new([
       ])
     end
-  
+
     # Initializes the object
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
@@ -121,9 +121,6 @@ module SwaggerClient
         end
         h[k.to_sym] = v
       }
-
-      # call parent's initialize
-      super(attributes)
 
       if attributes.key?(:'symbol')
         self.symbol = attributes[:'symbol']
@@ -291,7 +288,7 @@ module SwaggerClient
     # @return [Object] Returns the model itself
     def build_from_hash(attributes)
       return nil unless attributes.is_a?(Hash)
-      super(attributes)
+      super
       self.class.openapi_types.each_pair do |key, type|
         if type =~ /\AArray<(.*)>/i
           # check to ensure the input is an array given that the attribute

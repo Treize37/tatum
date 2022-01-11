@@ -31,7 +31,7 @@ module SwaggerClient
       Set.new([
       ])
     end
-  
+
     # Initializes the object
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
@@ -46,9 +46,6 @@ module SwaggerClient
         end
         h[k.to_sym] = v
       }
-
-      # call parent's initialize
-      super(attributes)
     end
 
     # Show invalid properties with the reasons. Usually used together with valid?
@@ -95,7 +92,7 @@ module SwaggerClient
     # @return [Object] Returns the model itself
     def build_from_hash(attributes)
       return nil unless attributes.is_a?(Hash)
-      super(attributes)
+      super
       self.class.openapi_types.each_pair do |key, type|
         if type =~ /\AArray<(.*)>/i
           # check to ensure the input is an array given that the attribute
